@@ -103,4 +103,7 @@ with open("data.csv","w+") as file:
     filewriter = csv.writer(file, delimiter=';')
     filewriter.writerow(["title", "datetime", "partner", "excerpt", "text", "tags", "url"])
     articles = []
-    scrap_main_page(url_atualidade)
+    for page_number in range(1, 10):
+        print("Page", page_number)
+        page_str = "?pagina=" + str(page_number)
+        scrap_main_page(url_atualidade + page_str)
