@@ -2,6 +2,7 @@ from requests import get
 import bs4
 import requests
 import csv
+from hashlib import md5
 
 column_names = ["id", "title", "datetime", "partner", "excerpt", "text", "tags", "url"]
 article_counter = 0
@@ -41,7 +42,6 @@ def scrap_tags(html_article_soup):
 
     if(tag_list_html != None):
         for tag_html in tag_list_html:
-            tag_text = tag_html.text
             if(tag_html.text != ''):
                 tags.append(tag_html.text)
     return tags
@@ -75,7 +75,7 @@ def scrap_main_page(url_atualidade):
         response = requests.get(article_url)
         html_article_soup = bs4.BeautifulSoup(response.text, 'html.parser')
 
-        article['id'] = (6-len(str(article_counter)))*"0"+str(article_counter)
+        article['id'] = md5(article_url.encode()).hexdigest()
         article['url'] = article_url
         article['title'] = html_article_soup.find(id='article-title').text
         article['datetime'] = scrap_date(html_article_soup)
@@ -86,6 +86,9 @@ def scrap_main_page(url_atualidade):
 
         row = article_dict_to_list(article)
         filewriter.writerow(row)
+
+
+
 
 
 # SAPO 24 URLS FOR SCRAPING
