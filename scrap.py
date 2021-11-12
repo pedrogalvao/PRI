@@ -21,6 +21,7 @@ def scrap_date(html_article_soup):
 def scrap_partner(html_article_soup):
     try:
         partner = html_article_soup.find(class_='partner-name').text
+        partner = partner.split(" / ")
         return partner
     except AttributeError:
         print("no partner")
@@ -76,7 +77,7 @@ def scrap_main_page(url_atualidade):
         html_article_soup = bs4.BeautifulSoup(response.text, 'html.parser')
 
         article['id'] = md5(article_url.encode()).hexdigest()
-        article['url'] = article_url
+        article['url'] = link["href"]
         article['title'] = html_article_soup.find(id='article-title').text
         article['datetime'] = scrap_date(html_article_soup)
         article['partner'] = scrap_partner(html_article_soup)
