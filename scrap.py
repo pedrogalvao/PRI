@@ -4,7 +4,7 @@ import requests
 import csv
 from hashlib import md5
 
-column_names = ["id", "title", "datetime", "partner", "excerpt", "text", "tags", "url"]
+column_names = ["id", "title", "date", "time", "partner", "excerpt", "text", "tags", "url"]
 article_counter = 0
 
 def scrap_date(html_article_soup):
@@ -15,8 +15,8 @@ def scrap_date(html_article_soup):
     year = date_html.find(class_='year').text
     time = date_html.find(class_='time').text
 
-    datetime = '{} {} {} {}'.format(day, month, year, time)
-    return datetime
+    date = '{} {} {}'.format(day, month, year)
+    return date, time
 
 def scrap_partner(html_article_soup):
     try:
@@ -79,7 +79,7 @@ def scrap_main_page(url_atualidade):
         article['id'] = md5(article_url.encode()).hexdigest()
         article['url'] = link["href"]
         article['title'] = html_article_soup.find(id='article-title').text
-        article['datetime'] = scrap_date(html_article_soup)
+        article['date'], article['time'] = scrap_date(html_article_soup)
         article['partner'] = scrap_partner(html_article_soup)
         article['excerpt'] = scrap_excerpt(html_article_soup)
         article['tags'] = scrap_tags(html_article_soup)
