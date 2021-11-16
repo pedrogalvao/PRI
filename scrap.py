@@ -4,12 +4,14 @@ import requests
 import csv
 from hashlib import md5
 
-column_names = ["id", "title", "date", "time", "partner", "excerpt", "text", "tags", "url"]
+column_names = ["id", "title", "date", "time",
+                "partner", "excerpt", "text", "tags", "url"]
 article_counter = 0
+
 
 def scrap_date(html_article_soup):
     date_html = html_article_soup.find(class_='date')
-    
+
     day = date_html.find(class_='day').text
     month = date_html.find(class_='month').text
     year = date_html.find(class_='year').text
@@ -17,6 +19,7 @@ def scrap_date(html_article_soup):
 
     date = '{} {} {}'.format(day, month, year)
     return date, time
+
 
 def scrap_partner(html_article_soup):
     try:
@@ -27,12 +30,15 @@ def scrap_partner(html_article_soup):
         print("no partner")
         return ""
 
+
 def scrap_text(html_article_soup):
-    paragraphs = html_article_soup.find(class_='article-body-ctn').find(class_='content').find_all('p')
-    text=''
+    paragraphs = html_article_soup.find(
+        class_='article-body-ctn').find(class_='content').find_all('p')
+    text = ''
     for p in paragraphs:
-        text+=p.text
+        text += p.text
     return text
+
 
 def scrap_tags(html_article_soup):
     tags = []
@@ -47,18 +53,21 @@ def scrap_tags(html_article_soup):
                 tags.append(tag_html.text)
     return tags
 
+
 def scrap_excerpt(html_article_soup):
     excerpt = ''
     excerpt = html_article_soup.find(class_='article-excerpt')
     if(excerpt != None):
-        excerpt = excerpt.text 
+        excerpt = excerpt.text
     return excerpt
+
 
 def article_dict_to_list(article_dict):
     article_list = []
     for column_name in column_names:
         article_list.append(article_dict[column_name])
     return article_list
+
 
 def scrap_main_page(url_atualidade):
     global article_counter
@@ -72,7 +81,7 @@ def scrap_main_page(url_atualidade):
 
         link = article_html.find_all("a")[0]
         article_url = base_url + link["href"]
-        
+
         response = requests.get(article_url)
         html_article_soup = bs4.BeautifulSoup(response.text, 'html.parser')
 
@@ -89,14 +98,11 @@ def scrap_main_page(url_atualidade):
         filewriter.writerow(row)
 
 
-
-
-
 # SAPO 24 URLS FOR SCRAPING
 base_url = "https://24.sapo.pt"
 url_atualidade = base_url + "/atualidade"
 
-with open("data.csv","w+") as file:
+with open("data.csv", "w+") as file:
     filewriter = csv.writer(file, delimiter=';')
     filewriter.writerow(column_names)
     for page_number in range(1, 10):
