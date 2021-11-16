@@ -105,7 +105,7 @@ url_atualidade = base_url + "/atualidade"
 with open("data.csv", "w+") as file:
     filewriter = csv.writer(file, delimiter=';')
     filewriter.writerow(column_names)
-    for page_number in range(1000, 1500):
+    for page_number in range(1155, 1500):
         print("Page", page_number)
         page_str = "?pagina=" + str(page_number)
         scrap_main_page(url_atualidade + page_str)
