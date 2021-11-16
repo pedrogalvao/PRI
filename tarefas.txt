@@ -10,6 +10,11 @@ palavras relevantes mais comuns nos titulos
 Partners mais comuns
 Distribuição por hora
 Distribuiçao por data
+tamanho do texto
 Longest value
 Organizar noticias por tags
 organizar noticias por partners
+Minumum data and time
+Maximum data and time
+
+
