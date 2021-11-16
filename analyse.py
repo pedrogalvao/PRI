@@ -25,7 +25,7 @@ def boolean_df(item_lists, unique_items):
     return pandas.DataFrame(bool_dict)
 
 
-df = pandas.read_csv("data1000_1150.csv", delimiter=";", encoding="ISO-8859-1")
+df = pandas.read_csv("data.csv", delimiter=";", encoding="ISO-8859-1")
 
 
 ###########################
