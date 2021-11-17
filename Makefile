@@ -17,5 +17,6 @@ clean_data:
 
 
 # Delete all created files
+# TODO Still not deleting files
 clean:
-	rm parsed_text.csv data_clean.csv 
+	rm -rf parsed_text.csv data_clean.csv 
