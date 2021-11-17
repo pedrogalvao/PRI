@@ -12,13 +12,13 @@ def join_csv(file1, file2, outfile):
     joined_df.to_csv(outfile, sep=";", index=False)
 
 
-def remove_null_values(file):
-    df = pandas.read_csv(file, delimiter=";", encoding="ISO-8859-1")
-    df = df[df['text'].notnull()]
+def remove_null_values(file, outfile):
+    df = pandas.read_csv(file, delimiter=";")
+    df = df[df.text != None]
     df = df[df.text != ""]
+    df = df[df.title != None]
     df = df[df.title != ""]
-    df = df[df.title != ""]
-    df.to_csv("data_clean.csv", sep=";", index=False)
+    df.to_csv(outfile, sep=";", index=False)
 
 
 remove_null_values("data.csv")

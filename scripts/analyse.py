@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
-
+import sys
 
 def to_1D(series):
     return pandas.Series([x for _list in series for x in _list])
@@ -24,9 +24,29 @@ def boolean_df(item_lists, unique_items):
     # Return the results as a dataframe
     return pandas.DataFrame(bool_dict)
 
+def text_len_statistics(df):
+    df["TextLen"] = df["text"].map(len)
+    print(df)
+    ax = df["TextLen"].plot.hist(bins=50)
+    ax.set_title("Text Length", size=14)
+    fig = ax.get_figure()
+    fig.savefig('text_length.png')
+    print("Mean:")
+    print(df["TextLen"].mean())
+    print("Median:")
+    print(df["TextLen"].median())
+    print("Max:")
+    print(df["TextLen"].max())
+    print("Min:")
+    print(df["TextLen"].min())
 
-df = pandas.read_csv("data_clean.csv", delimiter=";", encoding="UTF-8")
 
+csv_data_file = sys.argv[1]
+if csv_data_file == "" or csv_data_file == None:
+    csv_data_file = "data_clean.csv"
+df = pandas.read_csv(csv_data_file, delimiter=";", encoding="UTF-8")
+
+text_len_statistics(df)
 
 ###########################
 #          TAGS           #
