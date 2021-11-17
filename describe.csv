@@ -1,12 +1,12 @@
 ,id,title,date,time,partner,excerpt,text,tags,url,TextLen
-count,267,267,267,267,267,262,267,267,267,267.0
-unique,266,266,7,160,4,261,265,202,266,
-top,a6b6890453a0d7596686fd5d5e5e2b17,"A Camisola Poveira chega ao mundo desde o seu local de origem. Em 15 dias, foram feitos mais de 300 pedidos",12 nov 2021,11:51,"['MadreMedia', 'Lusa']","A Camisola Poveira, produzida por artesãos do concelho da Póvoa de Varzim, distrito do Porto, já pode ser comprada através de uma plataforma eletrónica. Depois da polémica, em 15 dias foram feitos mais de 300 pedidos — e de várias partes do mundo. ","A nível nacional Portugal está com uma incidência a 14 dias de 65,7 casos por 100 mil habitantes e um índice de transmissibilidade R(t) de 1,02. Ou seja, está a aproximar-se do amarelo da matriz.No continente, a incidência está nos 63,8 casos de infeção e o índice de transmissibilidade R(t) é de 1,02.O que isso significa? Desde que o país se mantenha a baixo dos 120 casos por 100 mil habitantes e com o R(t) abaixo de 1 (no verde) o plano de desconfinamento pode seguir como previsto. Se o país tiver uma incidência a 14 dias superior a este patamar (com os indicadores nas zonas laranja ou vermelha) o plano de desconfinamento será revisto.*Dados atualizados a 09/04/2021 (a matriz de risco é atualizada todas as segundas, quartas e sextas pela DGS)* Dados atualizados a 06/04/2021 (a informação de incidência por concelho é atualizada pela DGS todas as segundas-feiras)Já foram administradas mais de 2 milhões de vacinas, sendo que este número divide-se da seguinte forma:- 1 453.212 pessoas receberam apenas a primeira dose da vacina- 586.316 pessoas receberam as duas doses da vacina, ou seja, estão imunizadas.* Dados atualizados a 08/04/2021Fique a saber em que fase do plano de vacinação está integrado aqui.",[],/atualidade/artigos/a-camisola-poveira-chega-ao-mundo-desde-o-seu-local-de-origem-em-15-dias-foram-feitos-mais-de-300-pedidos,
-freq,2,2,89,89,199,2,2,17,2,
-mean,,,,,,,,,,2783.6704119850187
-std,,,,,,,,,,2104.208635375524
-min,,,,,,,,,,429.0
-25%,,,,,,,,,,1668.0
-50%,,,,,,,,,,2375.0
-75%,,,,,,,,,,3289.5
-max,,,,,,,,,,20284.0
+count,11741,11741,11741,11741,11741,11521,11741,11741,11741,11741.0
+unique,11741,11720,141,1155,9,11507,11730,7092,11741,
+top,829d5b90d9e7b4e648f5b00d421689cb,Covid-19: AÃ§ores sem novos casos nas Ãºltimas 24 horas,12 nov 2021,11:51,"['MadreMedia', 'Lusa']","Um pedido de aprovaÃÂ§ÃÂ£o de emergÃÂªncia da vacina contra a covid-19 desenvolvida pela Pfizer e a BioNTech deve ser hoje apresentado nos Estados Unidos, anunciou na quinta-feira o Governo americano.",Concelhos de Risco Moderado(240 a 480 casos por 100 mil habitates)Concelhos de Risco Elevado(>480 casos por 100 mil habitates)Concelhos de Risco Muito ElevadoConcelhos de Risco Extremamente ElevadoPlanear a Passagem de Ano: saiba quais as restriÃÂ§ÃÂµes,['Covid-19'],/atualidade/artigos/metro-de-lisboa-comecou-a-ser-construido-ha-65-anos-e-deixou-a-cidade-curiosa,
+freq,1,4,4277,4286,9978,2,3,443,1,
+mean,,,,,,,,,,2907.9114215143513
+std,,,,,,,,,,2750.3925594348802
+min,,,,,,,,,,9.0
+25%,,,,,,,,,,1644.0
+50%,,,,,,,,,,2474.0
+75%,,,,,,,,,,3562.0
+max,,,,,,,,,,112608.0

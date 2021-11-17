@@ -1,3 +1,5 @@
+from nltk.util import pr
+from numpy.core.fromnumeric import partition
 import seaborn as sn
 import csv
 import pandas
@@ -6,6 +8,8 @@ import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
 import sys
+from datetime import datetime
+
 
 def to_1D(series):
     return pandas.Series([x for _list in series for x in _list])
@@ -24,29 +28,52 @@ def boolean_df(item_lists, unique_items):
     # Return the results as a dataframe
     return pandas.DataFrame(bool_dict)
 
+
+def parse_date(date_string, months):
+    date_string = date_string.split()
+    date_string[1] = months[date_string[1]]
+    date_string = ' '.join(str(e) for e in date_string)
+
+    print(date_string)
+    #date_time = datetime.strptime(date_string, '%d %m %y')
+
+
+def date_analysis(df):
+    months = {"jan": 1, "fev": 2, "mar": 3, "abr": 4, "mai": 5,
+              "jun": 6, "jul": 7, "ago": 8, "set": 9, "out": 10, "nov": 11, "dez": 12}
+    #df['date'] = pandas.to_datetime(df['date'])
+    dates = [parse_date(date_string, months)
+             for date_string in df['date'].tolist()]
+
+
 def text_len_statistics(df):
     df["TextLen"] = df["text"].map(len)
-    print(df)
     ax = df["TextLen"].plot.hist(bins=50)
     ax.set_title("Text Length", size=14)
     fig = ax.get_figure()
     fig.savefig('text_length.png')
-    print("Mean:")
-    print(df["TextLen"].mean())
-    print("Median:")
-    print(df["TextLen"].median())
-    print("Max:")
-    print(df["TextLen"].max())
-    print("Min:")
-    print(df["TextLen"].min())
+    with open('statistics.txt', 'a') as f:
+        f.write("Text Length Statistics:")
+        f.write("\n\tMean: ")
+        f.write(str(df["TextLen"].mean()))
+        f.write("\n\tMedian:")
+        f.write(str(df["TextLen"].median()))
+        f.write("\n\tMax:")
+        f.write(str(df["TextLen"].max()))
+        f.write("\n\tMin:")
+        f.write(str(df["TextLen"].min()))
 
 
-csv_data_file = sys.argv[1]
+csv_data_file = ""
+
+if (len(sys.argv) > 1):
+    csv_data_file = sys.argv[1]
 if csv_data_file == "" or csv_data_file == None:
     csv_data_file = "data_clean.csv"
 df = pandas.read_csv(csv_data_file, delimiter=";", encoding="UTF-8")
 
 text_len_statistics(df)
+# date_analysis(df)
 
 ###########################
 #          TAGS           #
@@ -136,7 +163,7 @@ if(advanced_analysys_partners):
 
 
 # Mostrar gráficos
-plt.show()
+# plt.show()
 
 
 # Por os graficos com UTF8

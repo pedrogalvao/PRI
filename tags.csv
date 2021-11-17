@@ -1,262 +1,5143 @@
 ,0
-Covid-19,99
-Operação Marquês,27
-AstraZeneca,15
-Brasil,9
-José Sócrates,8
-Reino Unido,8
-Vacinas,7
-Príncipe Filipe,6
-Madeira,6
-itália,5
-Revista de imprensa,5
-PSP,5
-Hoje o dia foi assim,5
-França,4
-SEF,4
-Vacinação,4
-EUA,4
-Jorge Coelho,4
-Escolas,4
-PS,3
-Autárquicas2021,3
-Autárquicas,3
-Espanha,3
-Sputnik V,3
-Rússia,3
-Estudo,3
-INSA,3
-Açores,3
-Ministério Público,3
-Alemanha,3
-SofaGate,2
-Lisboa,2
-13 de Maio,2
-Marta Temido,2
-Função Pública,2
-Marcelo Rebelo de Sousa,2
-Turquia,2
-Coimbra,2
-Ensino,2
-Indonésia,2
-OMS,2
-Óbito,2
-GNR,2
-PSD,2
-Moçambique,2
-Ivo Rosa,2
-Santuário de Fátima,2
-Bolsonaro,2
-Mau tempo,2
-Ucrânia,2
-Camisola poveira,2
-União Europeia,2
-Conselho de Ministros,2
-Irão,2
-Póvoa de Varzim,2
-Vacina,2
-Faro,2
-António Joaquim Piçarra,2
-Tempo,2
-Testes rápidos,2
-Novo Banco,2
-Fátima,2
-Apoios Sociais,1
-Universidade,1
-Alunos,1
-Palmela,1
-Pinhal Novo,1
-Ministério da Administração Interna,1
-BE,1
-fronteiras,1
-Quarentena,1
-Forças Armadas,1
-Putin,1
-Corrupção,1
-André Ventura,1
-Temporal,1
-Fermilab,1
-Prince,1
-Kyoto,1
-Operação Esplanada Segura,1
-Eslováquia,1
-Aguaceiros,1
-Cabo Delgado,1
-Inquérito Serológico,1
-ARS-N,1
-Parlamento,1
-presunção de inocência,1
-substituição temporária de deputados,1
-Hong Kong,1
-Braga,1
-Adolfo Luxúria Canibal,1
-Eduardo Ferro Rodrigues,1
-Racismo,1
-Carlos Alexandre,1
-Mediatização da justiça,1
-Merkel,1
-Hannover Messe,1
-lei eleitoral autárquica,1
-Desigualdades,1
-Reinfeção,1
-Madrid,1
-Moura,1
-Jogos Olímpicos de Inverno,1
-Pequim2022,1
-Jogos Pequim2022,1
-Ministério do Trabalho,1
-Trabalhadores Independentes,1
-solidariedade e segurança social,1
-Apoios,1
-Viseu,1
-Vereador João Paulo Gouveia,1
-Pandemia,1
-Sexta-Feira Santa,1
-"""Ama-San""",1
-Jerónimo de sousa,1
-União Europeia da Saúde,1
-CDU,1
-Maia,1
-Acidente,1
-Macau,1
-Ursula von der Leyen,1
-Coronavac,1
-Agência Europeia do Medicamento,1
-Pílula,1
-Índia,1
-Thomas Byrne,1
-Irlanda,1
-Cafés,1
-Adolescentes,1
-Esplanadas,1
-Póvoa de Santa Iria,1
-surtos,1
-Guterres,1
-Ambiente,1
-Antártida,1
-Football Leaks,1
-Rui Pinto,1
-Páscoa,1
-Mobilidade,1
-Polónia,1
-Mar Egeu,1
-Von der Leyen,1
-Inglaterra,1
-University College,1
-Irlanda do Norte,1
-Migrantes,1
-Mira de Aire,1
-7 Maravilhas Naturais de Portugal,1
-Leonardo da Vinci,1
-Salvator Mundi,1
-José Aranda da Silva,1
-tubarão,1
-Raia,1
-Conselho Superior da Magistratura,1
-Juiz negacionista,1
-Prémio Mário Soares,1
-testagem,1
-Polícia Judiciária,1
-Multibanco,1
-Myanmar,1
-Cultura,1
-EDP,1
-Fundação EDP,1
-Artistas,1
-Tolentino Mendonça,1
-Dilma Rousseff,1
-Infarmed,1
-Amadora-Sintra,1
-Pedro Proença,1
-José Ribeiro dos Santos,1
-José Diogo Gaspar Ferreira,1
-José Paulo Pinto de Sousa,1
-Bárbara Vara,1
-João Perna,1
-Rui Mão de Ferro,1
-Gonçalo Trindade Ferreira,1
-Inês Pontes do Rosário,1
-Joaquim Barroca,1
-Sofia Fava,1
-Henrique Granadeiro,1
-Zeinal Bava,1
-Carlos Santos Silva,1
-Papa Francisco,1
-Sismo,1
-La Soufrière,1
-Cova da Moura,1
-pobreza,1
-Natalidade,1
-Nascimentos,1
-Janssen,1
-Ensino Superior,1
-Associação Académia de Coimbra,1
-BBC,1
-Porto,1
-Polícia Municipal,1
-Amadora,1
-Jordânia,1
-Vulcão,1
-Israel,1
-Bélgica,1
-Natanz,1
-CDS,1
-Pfizer,1
-China,1
-Férias,1
-Sondagem,1
-Cavaco Silva,1
-Recep Tayyip Erdogan.,1
-Armando Vara,1
-Hélder Bataglia,1
-Ricardo Salgado,1
-Fenprof,1
-Escutas,1
-processo Face Oculta,1
-RT,1
-campanhas agrícolas,1
-Burlas,1
-Presidente da República,1
-Rainha de Inglaterra Isabel II,1
-Vulcão La Soufrière,1
-Boris Johnson,1
-Forth Bridge,1
-Organização Mundial de Saúde,1
-Profissionais da Cultura,1
-Manuel Heitor,1
-Ciência,1
-Santa Maria,1
-Johnson & Johnson,1
-Vodafone Portugal,1
-Vila Real,1
-Pastores,1
-Antonio Costa,1
-Lares,1
+Covid-19,6045
+EUA,386
+Brasil,363
+IncÃªndios,253
+Reino Unido,228
+Madeira,184
+China,177
+Marcelo Rebelo de Sousa,169
+Donald Trump,164
+Espanha,159
+EleiÃÂ§ÃÂµes americanas 2020,153
+PCP,152
+Antonio Costa,151
+PSD,150
+Alemanha,148
+Hoje o dia foi assim,138
+Lisboa,136
+Porto,134
+Presidenciais 2021,133
+FranÃ§a,129
+PSP,127
+OE2021,118
+Chega,117
+SaÃºde,116
+Aulas em tempo de pandemia,112
+Ambiente,112
+GNR,109
+AÃ§ores,108
+EleiÃ§Ãµes americanas 2020,105
+BielorrÃºssia,103
+itÃ¡lia,102
+Revista de imprensa,99
+UniÃ£o Europeia,97
+ONU,90
+AÃÂ§ores,89
+LÃ­bano,88
+PS,80
+TAP,79
+UniÃÂ£o Europeia,73
+Venezuela,73
+Portugal,72
+Ensino Superior,72
+FranÃÂ§a,71
+Estados Unidos Da AmÃ©rica,69
+OMS,66
+RÃºssia,65
+DGS,64
+Escolas,62
+IPMA,60
+SEF,59
+Brexit,59
+Vacina,58
+Rui Rio,58
+Joe Biden,57
+Novo Banco,57
+Ãndia,55
+Governo,54
+EleiÃ§Ãµes nos AÃ§ores,54
+BE,53
+Turismo,53
+Ensino,53
+CDS-PP,52
+Israel,52
+Jair Bolsonaro,52
+Football Leaks,50
+Mau tempo,50
+Migrantes,48
+PJ,47
+SaÃÂºde,47
+Planeta A,46
+Beirute,46
+Algarve,46
+Ana Gomes,45
+GrÃ©cia,44
+Vacinas,44
+Hong Kong,44
+itÃÂ¡lia,43
+Ãfrica,43
+JustiÃ§a,42
+AndrÃ© Ventura,42
+Trump,40
+CDS,39
+Turquia,38
+RÃÂºssia,37
+Angola,37
+Cultura,37
+Racismo,37
+Papa Francisco,36
+Estados Unidos,34
+EleiÃÂ§ÃÂµes nos AÃÂ§ores,34
+MoÃ§ambique,34
+Iniciativa Liberal,34
+MÃ©xico,33
+AlexeÃ¯ Navalny,33
+SNS,33
+Meteorologia,32
+PAN,32
+Ãvora,32
+Rui Pinto,32
+Estado de EmergÃÂªncia,31
+Infarmed,31
+Beja,31
+Eduardo Cabrita,30
+Catarina Martins,30
+Marta Temido,30
+Festa do Avante!,30
+PolÃ­cia JudiciÃ¡ria,29
+Fenprof,29
+EuromilhÃµes,29
+Parlamento,29
+Congresso do PCP,28
+EducaÃ§Ã£o,28
+Bruxelas,28
+Assembleia da RepÃºblica,27
+Legionella,27
+Ordem dos MÃ©dicos,27
+IrÃ£o,27
+Bloco de Esquerda,27
+Mora,27
+Tribunal de Contas,27
+Nagorno-Karabakh,27
+Reguengos de Monsaraz,27
+ComissÃÂ£o europeia,26
+ComissÃ£o europeia,26
+Viana do Castelo,26
+Augusto Santos Silva,26
+Sintra,25
+Conselho de Ministros,24
+RestauracÃÂ£o,24
+ArmÃ©nia,24
+CP,24
+Francisco Rodrigues dos Santos,24
+Idosos,23
+Presidente da RepÃºblica,23
+Boris Johnson,23
+Braga,23
+Animais,23
+matosinhos,23
+Macau,23
+Parlamento Europeu,23
+Funchal,23
+Lares,23
+Vila Nova de Gaia,22
+Alexander Lukashenko,22
+professores,22
+AzerbaijÃ£o,22
+Metro de Lisboa,22
+Enfermeiros,22
+MinistÃ©rio PÃºblico,22
+Paris,21
+Avante!,21
+Chaves,21
+JapÃ£o,21
+JustiÃÂ§a,21
+Miguel Albuquerque,21
+BraganÃ§a,20
+BÃ©lgica,20
+Coimbra,20
+AntÃ³nio Guterres,20
+ASAE,20
+JerÃÂ³nimo de sousa,20
+Biden,19
+Europa,19
+5G,19
+Gripe,19
+AndrÃÂ© Ventura,19
+IncÃªndio,19
+EutanÃ¡sia,19
+Jornais,19
+Aveiro,19
+Refugiados,19
+Torres Vedras,19
+Natal,19
+ProteÃ§Ã£o Civil,18
+PresidÃÂªncia Portuguesa UE,18
+Castelo Branco,18
+AlteraÃ§Ãµes ClimÃ¡ticas,18
+Leiria,18
+BES,18
+Universidade do Porto,18
+Clima,17
+MÃ©dicos,17
+Assembleia da RepÃÂºblica,17
+Rio de Janeiro,17
+Ryanair,17
+Facebook,17
+NATO,17
+StayAway COVID,17
+CGTP,17
+MoÃÂ§ambique,17
+violÃÂªncia domÃÂ©stica,16
+AustrÃ¡lia,16
+Praias,16
+CiÃªncia,16
+Banco de portugal,16
+JerÃ³nimo de sousa,16
+Bolsonaro,16
+Cabo Verde,15
+Gondomar,15
+Oleiros,15
+SantuÃ¡rio de FÃ¡tima,15
+Medicina,15
+Ferro Rodrigues,15
+FÃ¡tima,15
+Amadora,15
+Vila Real,15
+Escola,15
+Cancro,15
+Alfa Pendular,15
+PedrÃ³gÃ£o Grande,15
+Loures,15
+Metro do Porto,14
+Berlim,14
+Vaticano,14
+ProenÃ§a-a-Nova,14
+Hungria,14
+Marcelo,14
+Emmanuel Macron,14
+INE,14
+Cascais,14
+Pfizer,14
+Teletrabalho,14
+Mali,14
+Pedro Nuno Santos,14
+Tempo,14
+covering climate now,14
+Moria,14
+SuÃ­Ã§a,14
+Ordem dos MÃÂ©dicos,13
+Madrid,13
+PolÃÂ­cia JudiciÃÂ¡ria,13
+Caminha,13
+Cinema,13
+JoÃ£o Gomes Cravinho,13
+Vila do Conde,13
+Bombeiros,13
+CTT,13
+Inglaterra,13
+Figueira da Foz,13
+Ursula von der Leyen,13
+Unicef,13
+Lesbos,13
+Fogo,13
+Conselho Europeu,13
+Coreia do Norte,13
+Pandemia,13
+GrÃÂ©cia,13
+Tancos,13
+Greve,13
+Zero,13
+AmazÃ³nia,13
+Chuva,13
+Marisa Matias,13
+EuromilhÃÂµes,13
+Argentina,12
+Montalegre,12
+Reportagem,12
+Sismo,12
+Austria,12
+AHRESP,12
+PolÃ³nia,12
+Ponte de Lima,12
+Ana Mendes Godinho,12
+ÃÂfrica,12
+Tiago BrandÃ£o Rodrigues,12
+CrianÃ§as,12
+Filipinas,12
+OrÃÂ§amento do Estado,12
+Viseu,12
+TVI,12
+seguranÃ§a social,12
+Lar,12
+Lukashenko,12
+Agricultura,12
+Ãfrica do Sul,12
+TikTok,12
+EleiÃ§Ãµes,12
+Bruno CandÃ©,12
+RTP,11
+SATA,11
+SÃ£o Miguel,11
+Empresas,11
+JoÃÂ£o Ferreira,11
+Dinamarca,11
+GuinÃ©-Bissau,11
+INEM,11
+DECO,11
+ForÃ§as Armadas,11
+AstraZeneca,11
+Ponta Delgada,11
+Ovar,11
+Mike Pompeo,11
+SantarÃ©m,11
+Comboios,11
+ForÃÂ§as Armadas,11
+PresidÃÂªncia da UE,11
+Porto Santo,11
+Fernando Medina,11
+IrÃÂ£o,11
+OrganizaÃ§Ã£o Mundial da SaÃºde,11
+PÃ³voa de Varzim,11
+Calor,11
+Emirados Ãrabes Unidos,10
+Ordem dos Advogados,10
+BielorrÃÂºssia,10
+Corredores aÃ©reos,10
+Nova Iorque,10
+GuimarÃ£es,10
+ColÃ´mbia,10
+SaÃºde mental,10
+MAI,10
+UcrÃ¢nia,10
+violÃªncia domÃ©stica,10
+Casa Branca,10
+JoÃ£o Pedro Matos Fernandes,10
+AmazÃÂ³nia,10
+Aeroporto do Montijo,10
+SL Benfica,10
+Soure,10
+Manuel Heitor,10
+Insta,10
+Estudo,10
+Charlie Hebdo,10
+Angela Merkel,10
+TailÃ¢ndia,10
+ÃÂbito,10
+CovilhÃ£,10
+Transportes PÃºblicos,10
+Emigrantes,10
+OperaÃ§Ã£o Lex,10
+Charles Michel,10
+Santo Tirso,10
+Ferrovia,10
+MÃÂ©xico,9
+Cabo Delgado,9
+Montemor-o-Novo,9
+Taiwan,9
+Governo dos AÃÂ§ores,9
+Portalegre,9
+Juan Carlos,9
+IncÃªndios 2020,9
+migraÃ§Ãµes,9
+TrÃ¡fico de Droga,9
+DepressÃÂ£o Dora,9
+Alentejo,9
+SetÃºbal,9
+JosÃÂ© Manuel Bolieiro,9
+Nova ZelÃ¢ndia,9
+Ana Catarina Mendes,9
+Universidade de Coimbra,9
+EleiÃÂ§ÃÂµes,9
+Literatura,9
+CCDR,9
+CemitÃ©rios,9
+Vila ViÃ§osa,9
+Palestina,9
+IncÃÂªndios,9
+MÃ¡scara,9
+Rui Moreira,9
+HabitaÃ§Ã£o,9
+O que se ouve quando o paÃ­s pÃ¡ra,9
+Futebol,9
+Remdesivir,9
+UE,9
+Entrevistas SAPO24,9
+Timor-Leste,9
+Guarda,9
+EDP,9
+Eduardo LourenÃÂ§o,9
+Transportes,9
+Huawei,9
+Luanda,9
+BÃÂ©lgica,9
+Presidenciais,9
+Coreia do Sul,9
+Felgueiras,9
+Lula da Silva,9
+Vasco Cordeiro,9
+CalifÃ³rnia,8
+HabitaÃÂ§ÃÂ£o,8
+Putin,8
+Droga,8
+Sardinha,8
+Douro,8
+DireÃ§Ã£o Geral da SaÃºde,8
+ÃÂvora,8
+CanadÃ¡,8
+Vladimir Putin,8
+Kamala Harris,8
+Sindicato dos Enfermeiros Portugueses,8
+Faixa de Gaza,8
+Borba,8
+Boletim,8
+ÃÂndia,8
+Arqueologia,8
+Ourique,8
+OrganizaÃÂ§ÃÂ£o Mundial de SaÃÂºde,8
+MÃ¡scaras,8
+MinistÃÂ©rio PÃÂºblico,8
+Global Media,8
+ERC,8
+Podcasts,8
+Emprego,8
+Para ouvir no SAPO24,8
+Galiza,8
+GerÃªs,8
+Livros,8
+Media Capital,8
+JoÃ£o Ferreira,8
+ProteÃÂ§ÃÂ£o Civil,8
+OCDE,8
+Marinha,8
+AfeganistÃ£o,8
+Minsk,8
+Sputnik V,8
+MÃºsica,8
+EtiÃÂ³pia,8
+Mobilidade,8
+Alto Minho,8
+Universidade de Aveiro,8
+AntÃÂ³nio Guterres,8
+FÃ¡tima em tempo de pandemia,8
+Joacine Katar Moreira,8
+GraÃÂ§a Freitas,7
+Peniche,7
+Benjamin Netanyahu,7
+Terceira,7
+Norte,7
+Hospital de Braga,7
+Abrantes,7
+NaÃ§Ãµes Unidas,7
+Oliveira de Frades,7
+PaÃ­ses Baixos,7
+Livre,7
+Londres,7
+Maia,7
+AlteraÃÂ§ÃÂµes ClimÃÂ¡ticas,7
+NASA,7
+ConferÃªncia de imprensa,7
+Almada,7
+Hospitais,7
+Sines,7
+AlijÃ³,7
+AntÃ³nio Lacerda Sales,7
+Moderna,7
+MaurÃ­cias,7
+Isabel dos Santos,7
+Arouca,7
+Odivelas,7
+Lousada,7
+AviaÃ§Ã£o,7
+ANACOM,7
+Ãbito,7
+Albufeira,7
+NicolÃ¡s Maduro,7
+Aborto,7
+Coronavac,7
+Estados Unidos Da AmÃÂ©rica,7
+LuÃ­s Filipe Vieira,7
+Von der Leyen,7
+Lei da Nacionalidade,7
+ComÃÂ©rcio,7
+Papa,7
+Terrorismo,7
+Estremoz,7
+Mirandela,7
+Rabo de Peixe,7
+ReligiÃ£o,7
+Acordo de Paris,7
+Pedro Siza Vieira,7
+Vietname,7
+Amnistia Internacional,7
+Praxe,7
+Porto de MÃ³s,6
+PaÃ§os de Ferreira,6
+CDU,6
+Teatro,6
+FECTRANS,6
+Sem-abrigo,6
+Volt Portugal,6
+Castelo de Vide,6
+Macron,6
+Feiras,6
+Pesca,6
+Presidente da RepÃÂºblica,6
+Tabaco,6
+Faro,6
+VacinaÃÂ§ÃÂ£o,6
+Universidade CatÃ³lica Portuguesa,6
+propinas,6
+SantarÃÂ©m,6
+Ãrea Metropolitana de Lisboa,6
+Iraque,6
+Vacinas Covid-19,6
+PrisÃÂµes,6
+Vizela,6
+Mondim de Basto,6
+Jornalismo,6
+Maradona,6
+Cruzeiro Seixas,6
+NOS,6
+Florida,6
+Vitor Caldeira,6
+Sernancelhe,6
+Human Rights Watch,6
+PEV,6
+lay-off,6
+Quercus,6
+G20,6
+OrÃ§amento do Estado,6
+Silvio Berlusconi,6
+Centros de dia,6
+Grande Porto,6
+gravidez,6
+GonÃÂ§alo Ribeiro Telles,6
+IncÃÂªndio,6
+Marrocos,6
+PolÃÂ³nia,6
+DepressÃ£o BÃ¡rbara,6
+Irlanda do Norte,6
+Creche,6
+GraÃ§a Fonseca,6
+Cristina Ferreira,6
+Moura,6
+Jimmy Lai,6
+Acidente,6
+Hospital de Beja,6
+Face Oculta,6
+Valongo,6
+SustentÃ¡vel por natureza,6
+Vacina da gripe,6
+Santa Maria da Feira,6
+Santiago do CacÃ©m,6
+Steve Bannon,6
+Google,6
+Discotecas,6
+Fado,6
+Web Summit,6
+Portagens,6
+Barcelos,6
+Armas,6
+Sindicato Independente dos MÃ©dicos,6
+FuracÃ£o Laura,6
+EscÃ³cia,6
+Nice,6
+Defesa,6
+EducaÃÂ§ÃÂ£o,6
+Vila Pouca De Aguiar,6
+Santa Casa da MisericÃ³rdia de BraganÃ§a,6
+Nobel,6
+CO2,6
+Regresso Ã s aulas,6
+Peru,6
+PolÃ­cia,5
+Mafra,5
+estudantes,5
+Extrema Direita,5
+Montijo,5
+Desporto,5
+TelevisÃ£o,5
+Hospital Santa Maria,5
+Gaza,5
+SertÃ£,5
+JP,5
+MÃÂ©dicos,5
+Seixal,5
+JoÃÂ£o Gomes Cravinho,5
+DurÃ£o Barroso,5
+GeÃÂ³rgia,5
+Mogadouro,5
+ConferÃÂªncia Episcopal Portuguesa,5
+Nuno Artur Silva,5
+Noruega,5
+Hospital do EspÃ­rito Santo de Ãvora,5
+Internet,5
+Sara Carreira,5
+Mariana Vieira da Silva,5
+Cruz Vermelha,5
+Anacleto Oliveira,5
+Ordem dos Enfermeiros,5
+Siza Vieira,5
+UGT,5
+Touradas,5
+FCT,5
+AustrÃÂ¡lia,5
+AutÃ¡rquicas 2021,5
+Trabalho,5
+Juventude Popular,5
+Desemprego,5
+Eduardo Ferro Rodrigues,5
+Recep Tayyip Erdogan.,5
+Batalha,5
+Jacob Blake,5
+JoÃÂ£o Cotrim Figueiredo,5
+Nicolas Sarkozy,5
+MinistÃ©rio dos NegÃ³cios Estrangeiros,5
+Texas,5
+Francisca Van Dunem,5
+Exames Nacionais,5
+Jorge Salavisa,5
+Economia,5
+Xi Jinping,5
+Aurora Dourada,5
+Ponte 25 de abril,5
+fake news,5
+JMJ2023,5
+Movimento a PÃÂ£o e ÃÂgua,5
+SuÃÂ©cia,5
+Bares,5
+Igreja CatÃÂ³lica,5
+BielorrÃºsia,5
+Ministro da AdministraÃ§Ã£o Interna,5
+Irlanda,5
+Universidade do Minho,5
+ADSE,5
+Direitos Humanos,5
+Costa,5
+Ericeira,5
+CEiiA,5
+LuÃ­s Grilo,5
+AgÃªncia Espacial Europeia,5
+AntÃ³nio Joaquim,5
+Matos Fernandes,5
+Catalunha,5
+Estado Islamico,5
+AdÃ£o Silva,5
+IL,5
+Bolieiro,5
+ForÃ§a AÃ©rea,5
+AfeganistÃÂ£o,5
+mecA,5
+DGArtes,5
+erasmus,5
+Plano de RecuperaÃ§Ã£o e ResiliÃªncia,5
+U.Porto,5
+JosÃ© LuÃ­s Carneiro,5
+Infraestruturas de Portugal,5
+Svetlana Tikhanovskaya,5
+Jornada Mundial da Juventude,5
+Paulo CafÃ´fo,5
+Francisco Ramos,5
+Audiovisual,5
+Hospital de SantarÃ©m,5
+Serra de Sintra,5
+Sever do Vouga,5
+Pingo Doce,5
+Cuidados Intensivos,5
+Felipe VI,5
+Sindicato,5
+Manuel Machado,5
+PolÃ­cia MarÃ­tima,5
+GrÃ¢ndola,5
+Alenquer,5
+PaÃÂ§os de Ferreira,5
+Alojamento Estudantil,5
+Mealhada,5
+Praia,4
+Evo Morales,4
+Cantanhede,4
+SÃ£o JoÃ£o,4
+A23,4
+Belmonte,4
+F1,4
+AzerbaijÃÂ£o,4
+ValpaÃ§os,4
+Espinho,4
+PaquistÃ£o,4
+AmÃ©rica Latina,4
+Metro,4
+Media,4
+OE2020,4
+Moncorvo,4
+IURD,4
+IndonÃÂ©sia,4
+Hospital Amadora-Sintra,4
+RepÃºblica Checa,4
+Conselho de Estado,4
+Praia dos Pescadores,4
+Arruda dos Vinhos,4
+Ciclismo,4
+Restaurantes,4
+Santos Silva,4
+CÃ¢mara Municipal do Porto,4
+STCP,4
+Testes rÃ¡pidos,4
+ArmÃÂ©nia,4
+Hospital de Aveiro,4
+Elisa Ferreira,4
+OrganizaÃ§Ã£o Mundial de SaÃºde,4
+SÃ£o JoÃ£o da Madeira,4
+Surto,4
+Serpa,4
+Jovens,4
+Trofa,4
+SalÃ¡rios,4
+Mike Pence,4
+Netflix,4
+EleiÃ§Ãµes no Benfica,4
+Doyen,4
+Take-away,4
+WeChat,4
+Governo da Madeira,4
+Arcos de Valdevez,4
+IRS,4
+Oeiras,4
+Lua,4
+Tuk tuk,4
+Senhora da GraÃ§a,4
+Michelle Bolsonaro,4
+Sindika Dokolo,4
+canÃÂ¡bis,4
+NicolÃÂ¡s Maduro,4
+FundaÃ§Ã£o de Serralves,4
+RestauracÃ£o,4
+Aulas,4
+SuÃ©cia,4
+Renfe,4
+MansÃ£o de SÃ£o JosÃ©,4
+fronteiras,4
+Sonangol,4
+Oxford,4
+APEFE,4
+Barreiro,4
+DGPC,4
+SÃÂ£o Miguel,4
+Serralves,4
+Esposende,4
+pobreza,4
+MinistÃ©rio da SaÃºde,4
+Navalny,4
+CMVM,4
+ACT,4
+Assembleia Municipal de Lisboa,4
+ÃÂrea Metropolitana de Lisboa,4
+Igreja CatÃ³lica,4
+Vila do Bispo,4
+Barcelona,4
+CÃ¢mara do Porto,4
+AdministraÃÂ§ÃÂ£o Regional de SaÃÂºde,4
+Singapura,4
+AviaÃÂ§ÃÂ£o,4
+Aeroporto de Lisboa,4
+Scut,4
+BBC,4
+Nicola Sturgeon,4
+Procuradoria-Geral da RepÃºblica,4
+ArÃ¡bia Saudita,4
+FÃÂ¡tima,4
+TrÃÂ¡fico de Droga,4
+FinlÃ¢ndia,4
+Amnistia Internacional Portugal,4
+Sustentabilidade,4
+Centros Comerciais,4
+Manuel Grilo,4
+i3s,4
+FESAP,4
+SOS Racismo,4
+Cancro da Mama,4
+I Liga,4
+CÃ¢mara de Lisboa,4
+SalÃ¡rio MÃ­nimo Nacional,4
+BolÃ­via,4
+Shinzo Abe,4
+ONG,4
+Oncologia,4
+BraganÃÂ§a,4
+Freixo de Espada ÃÂ  Cinta,4
+Marinha Grande,4
+Solidariedade,4
+Centro Hospitalar e UniversitÃÂ¡rio de Coimbra,4
+Rede Expressos,4
+A PÃÂ£o e ÃÂgua,4
+Marte,4
+CorrupÃ§Ã£o,4
+energia,4
+Ãgueda,4
+Penafiel,4
+Amianto,4
+EscÃÂ³cia,4
+LÃÂ­bano,4
+Neve,4
+Seca,4
+Cova da Moura,4
+SantuÃÂ¡rio de FÃÂ¡tima,4
+Greta Thunberg,4
+Ihor Homenyuk,4
+Barack Obama,4
+MinistÃ©rio da EducaÃ§Ã£o,4
+Interpol,4
+PÃºblico,4
+Pescadores,4
+Nancy Pelosi,4
+Melania Trump,4
+CocaÃ­na,4
+CiÃÂªncia,4
+Drones,4
+Gaia,4
+CÃ¢mara Municipal de Lisboa,4
+Bullying,4
+Liga Ãrabe,4
+TDT,4
+Maria do CÃ©u Antunes,4
+Mortalidade,4
+PolÃ­tica,4
+SetÃÂºbal,4
+IP,4
+FC Barcelona,4
+Sabugal,4
+Creches,4
+Kim Jong-un,4
+Supremo Tribunal Administrativo,4
+Intercidades,4
+Gomes Cravinho,4
+Congresso,4
+Maputo,4
+Refood,4
+FundaÃ§Ã£o Calouste Gulbenkian,4
+Benfica,4
+ÃÂrea Metropolitana do Porto,4
+Mota Amaral,4
+David Sassoli,4
+Francisco,4
+Vila Verde,4
+Floresta,4
+RomÃÂ©nia,4
+CisjordÃ¢nia,4
+Lava Jato,4
+Ãgua,4
+Vila Franca de Xira,4
+Tribunal,4
+NigÃ©ria,4
+NazarÃÂ©,4
+Aljustrel,3
+Acho Que Vais Gostar Disto,3
+hÃÂ³teis,3
+MÃÂ¡scaras,3
+Eletricidade,3
+migraÃÂ§ÃÂµes,3
+AgÃÂªncia Europeia do Medicamento,3
+EUA 2020,3
+FarmÃÂ¡cias,3
+AdministraÃ§Ã£o Regional de SaÃºde de Lisboa e Vale do Tejo,3
+Arte,3
+Plano de recuperaÃÂ§ÃÂ£o,3
+ParanÃ¡,3
+Banco Alimentar,3
+Autoridade Nacional de EmergÃªncia e ProteÃ§Ã£o Civil,3
+JosÃÂ© LuÃÂ­s Carneiro,3
+Porto de Sines,3
+SÃ©rgio moro,3
+Confinamento,3
+JapÃÂ£o,3
+FundÃ£o,3
+Tribunal da RelaÃÂ§ÃÂ£o de Lisboa,3
+JoÃ£o Cotrim Figueiredo,3
+FÃ³rmula 1,3
+Faculdade de Direito,3
+AntÃ³nio Rolo Duarte,3
+Entroncamento,3
+Ambiente e AÃ§Ã£o ClimÃ¡tica,3
+Cruz Vermelha Portuguesa,3
+DesinformaÃÂ§ÃÂ£o,3
+Altice,3
+Autoridade MarÃÂ­tima Nacional,3
+Finados,3
+Volta a Portugal,3
+AgÃªncia Europeia de Medicamentos,3
+Tondela,3
+Hospital Garcia de Orta,3
+Amadora-Sintra,3
+SuÃÂ­ÃÂ§a,3
+AlianÃ§a,3
+Amarante,3
+Nova ZelÃÂ¢ndia,3
+Hospital de Santa Maria,3
+Acesso ao ensino superior,3
+AntÃ³nio Ramalho,3
+Dia de Todos os Santos,3
+ConferÃªncia Episcopal Portuguesa,3
+Kosovo,3
+AnÃ­bal Pinto,3
+Agostinho Branquinho,3
+LituÃ¢nia,3
+AntÃ³nio Saraiva,3
+Campo de Ourique,3
+Anthony Fauci,3
+Ponte de Sor,3
+JosÃ© Manuel Bolieiro,3
+Merkel,3
+CemitÃÂ©rios,3
+Emel,3
+JoÃ£o Paulo Correia,3
+Manuais escolares,3
+Elvas,3
+TÃÂ¡xi,3
+Castro Daire,3
+Autoridade da concorrÃÂªncia,3
+FuracÃÂ£o Iota,3
+Isabel Moreira,3
+Vila Real de Santo AntÃ³nio,3
+OrganizaÃÂ§ÃÂ£o das NaÃÂ§ÃÂµes Unidas,3
+PÃÂ³voa de Varzim,3
+Tigray,3
+XXI Congresso do PCP,3
+Lampedusa,3
+Kremlin,3
+Lisboa e Vale do Tejo,3
+SudÃ£o,3
+Campismo,3
+EleiÃÂ§ÃÂµes nos AÃÂ§ores 2020,3
+TanzÃ¢nia,3
+Viena,3
+AssociaÃÂ§ÃÂ£o Nacional de MunicÃÂ­pios Portugueses,3
+GuimarÃÂ£es,3
+Estarreja,3
+Instituto PortuguÃÂªs do Mar e da Atmosfera,3
+militares,3
+Oliveira de AzemÃ©is,3
+Testes,3
+ServiÃ§o de Estrangeiros e Fronteiras,3
+ForÃ§a AÃ©rea Portuguesa,3
+MarvÃ£o,3
+Ricardo Rio,3
+JSD,3
+Michelle Obama,3
+Maratona de Cartas,3
+PolÃÂ­tica,3
+GAVI,3
+MonÃ§Ã£o,3
+A1,3
+Hospital,3
+Pantanal,3
+Monte Gordo,3
+SituaÃ§Ã£o de ContingÃªncia,3
+Hospital de Ãvora,3
+Jamila Madeira,3
+UNESCO,3
+Caravanismo,3
+Ataque,3
+Tesla,3
+SÃÂ£o Paulo,3
+Salto,3
+5 de Outubro,3
+OperaÃ§Ã£o Zeus,3
+Parque de Campismo,3
+Medicamentos,3
+leilÃ£o,3
+IMI,3
+SIM,3
+JerusalÃ©m,3
+Deco Proteste,3
+Vieira da Silva,3
+Lar do ComÃ©rcio,3
+seguranÃÂ§a social,3
+Boeing 737 MAX,3
+Casamento,3
+ValenÃ§a,3
+lixo,3
+SIC,3
+Fome,3
+Fronteira,3
+Unidade Local de SaÃºde do Baixo Alentejo,3
+LGBTI,3
+Mulheres,3
+LousÃ£,3
+Portland,3
+Guterres,3
+Black Lives Matter,3
+Bicicletas,3
+Feira do Livro do Porto,3
+Hospital de Vila Franca de Xira,3
+DiscriminaÃ§Ã£o,3
+Internacional,3
+Cabul,3
+Estabelecimento Prisional de Lisboa,3
+Partos,3
+indÃ­genas,3
+VulcÃÂ£o,3
+PoluiÃ§Ã£o,3
+Ventiladores,3
+MisericÃ³rdia,3
+Plantas,3
+Ministro da AdministraÃÂ§ÃÂ£o Interna,3
+Astronomia,3
+PolÃÂ­cia MarÃÂ­tima,3
+Paredes,3
+haxixe,3
+Diabetes,3
+Hotelaria,3
+CroÃ¡cia,3
+Sesimbra,3
+Pfizer/BioNTech,3
+Rio Maior,3
+monÃÂ³lito,3
+CovilhÃÂ£,3
+Fernanda Lapa,3
+Holanda,3
+Hiroshima,3
+Partidos,3
+LucÃÂ­lia Gago,3
+Joanesburgo,3
+DurÃÂ£o Barroso,3
+LoulÃ©,3
+Cuba,3
+ResidÃªncias Montepio,3
+BielorÃºssia,3
+ServiÃÂ§o Nacional de SaÃÂºde,3
+Linha do Oeste,3
+cemitÃ©rio,3
+Alojamento,3
+PrisÃÂ£o,3
+Tires,3
+PatrÃ­cia Gaspar,3
+Miguel GuimarÃÂ£es,3
+IVA,3
+AntÃÂ³nio Lacerda Sales,3
+Pombal,3
+Alberto Manguel,3
+Pedro SÃ¡nchez,3
+Biblioteca,3
+visons,3
+Liga Portuguesa Contra o Cancro,3
+Ylva Johansson,3
+Baixo Alentejo,3
+Ensino Ã  distÃ¢ncia,3
+Cadaval,3
+Jeremy Corbyn,3
+Protesto,3
+TÃÂ¢mega e Sousa,3
+Casa da MÃºsica,3
+Plano 2020/2030,3
+Bangladesh,3
+Santa Casa da MisericÃ³rdia,3
+Celorico de Basto,3
+SÃ© de Lisboa,3
+IPSS,3
+Autoridade MarÃ­tima Nacional,3
+PortimÃ£o,3
+CPLP,3
+Paulo Pedroso,3
+Washington,3
+CÃÂ¢mara de Lisboa,3
+Programa Alimentar Mundial,3
+Myanmar,3
+Auchan,3
+OE 2021,3
+Twitter,3
+ministro do ambiente,3
+PaÃ­s de Gales,3
+internamentos,3
+GraÃ§a Freitas,3
+ArgÃ©lia,3
+Vila de Rei,3
+Trovoada,3
+MediterrÃ¢neo,3
+Ã©poca balnear,3
+hospital de Penafiel,3
+Bairro Padre Cruz,3
+Centro Hospitalar e UniversitÃ¡rio de Coimbra,3
+GuinÃÂ©-Bissau,3
+Aeroporto de Faro,3
+"""Adoptar em Portugal",3
+FamalicÃ£o,3
+baleias,3
+ServiÃÂ§o de Estrangeiros e Fronteiras,3
+Nuno Melo,3
+Ana Rita Cavaco,3
+Luanda Leaks,3
+Tavira,3
+Rui Rangel,3
+hidrogÃÂ©nio verde,3
+KPMG,3
+Hospital Distrital de SantarÃ©m,3
+ResÃ­duos,3
+Moscovo,3
+Cimeira Luso-espanhola,3
+CanÃ¡rias,3
+DiÃÂ¡rio de NotÃÂ­cias,3
+Cavaco Silva,3
+TailÃÂ¢ndia,3
+Tribunal de GuimarÃÂ£es,3
+Ricardo Salgado,3
+Cimeira IbÃ©rica,3
+Almaraz,3
+Edward Snowden,3
+OlhÃ£o,3
+lÃ­tio,3
+Risto Rail,3
+Alunos,3
+Regeneron,3
+Linha do Norte,3
+Centro Hospitalar de Leiria,3
+Universidade de Lisboa,3
+Canadair,3
+Universidade de Ãvora,3
+C-295,3
+MÃ¡rio Centeno,3
+EspaÃÂ§o Schengen,3
+Miguel GuimarÃ£es,3
+anta,3
+Biodiversidade,3
+Breonna Taylor,3
+Tedros Adhanom Ghebreyesus,3
+ARS Norte,3
+VIH,3
+Portugal Space,3
+Alex Saab,3
+MinistÃ©rio da Cultura,3
+Faial,3
+PSD/Madeira,3
+Julian Assange,3
+Zeca Afonso,3
+linha azul,3
+SpaceX,3
+CÃÂ¢mara Municipal de Lisboa,3
+Amazon,3
+AgÃªncia Portuguesa do Ambiente,3
+Tempestade Leslie,3
+Valdemar Alves,3
+Computadores,3
+Nuclear,3
+IVA da eletricidade,3
+Xenofobia,3
+EleiÃÂ§ÃÂµes norte-americanas 2020,3
+TubarÃµes,3
+ByteDance,3
+CanadÃÂ¡,3
+Berta Nunes,3
+Instituto PortuguÃªs do Mar e da Atmosfera,3
+Hospitais de Coimbra,3
+Flores,3
+Costa da Caparica,3
+MB WAY,3
+Ministra da Cultura,3
+Michel Temer,3
+Joaquim VerÃ­ssimo SerrÃ£o,3
+AgitaÃÂ§ÃÂ£o MarÃÂ­tima,3
+Fogos,3
+Marine Le Pen,3
+Eurostat,3
+BulgÃ¡ria,3
+ServiÃ§o Nacional de SaÃºde,3
+Svetlana Tikhanovskaia,3
+Ana Abrunhosa,3
+Josep Borrell,3
+TVDE,3
+Naufragio,3
+Francisco SÃÂ¡ Carneiro,2
+DireÃÂ§ÃÂ£o-Geral de ReinserÃÂ§ÃÂ£o e ServiÃÂ§os Prisionais,2
+UCI,2
+Luxemburgo,2
+Voto Antecipado,2
+Serra d'Arga,2
+Nuno Vaz,2
+Artistas,2
+RegiÃÂ£o Norte,2
+Fundo Revita,2
+Bruno Fialho,2
+Roland Garros,2
+Porto Rico,2
+MisericÃÂ³rdia de Portalegre,2
+Supermercados,2
+Provedora de JustiÃ§a,2
+Alcanena,2
+homÃ­cidio,2
+Hospital de ÃÂvora,2
+2020,2
+Jacinda Ardern,2
+Pordata,2
+Sindicato dos Trabalhadores da AdministraÃ§Ã£o Local,2
+Apoios,2
+Rossio,2
+Universidades,2
+Profissionais de saÃÂºde,2
+Entrevista,2
+ColÃÂ´mbia,2
+Fundo de ResoluÃ§Ã£o,2
+Saeb Erekat,2
+OrganizaÃÂ§ÃÂ£o Mundial da SaÃÂºde,2
+ConvenÃ§Ã£o Republicana,2
+BebÃ©,2
+Interior,2
+CacÃ©m,2
+Cristina GatÃÂµes,2
+Testes rÃÂ¡pidos,2
+Frente UnitÃ¡ria Antifascista,2
+A4,2
+FAO,2
+MalÃÂ¡ria,2
+GraÃÂ§a Fonseca,2
+Campo Pequeno,2
+Lamego,2
+DireÃÂ§ÃÂ£o Geral da SaÃÂºde,2
+VIH/Sida,2
+Maternidade,2
+A28,2
+BMW,2
+Concelhos,2
+Acidentes,2
+Avenida da Liberdade,2
+Amares,2
+Transporte pÃÂºblico,2
+Vila ViÃÂ§osa,2
+ConvergÃªncia pela Cultura,2
+Museu do CÃ´a,2
+MisericÃÂ³rdia de Vila ViÃÂ§osa,2
+Sardoal,2
+Cuidados de SaÃÂºde PrimÃÂ¡rios,2
+Emirados ÃÂrabes Unidos,2
+SalÃÂ¡rio MÃÂ­nimo,2
+AgÃªncia Espacial Portuguesa,2
+GrÃÂ¢ndola,2
+SÃ£o Pedro do Estoril,2
+FuracÃ£o Sally,2
+Provedora de JustiÃÂ§a,2
+streaming,2
+Carta de ConduÃÂ§ÃÂ£o,2
+MÃ¡ximo dos Santos,2
+MigraÃ§Ã£o,2
+EDP DistribuiÃÂ§ÃÂ£o,2
+armas nucleares,2
+Tiago Mayan GonÃÂ§alves,2
+PrisÃµes,2
+BasÃ­lio Horta,2
+Leipzig,2
+BieolorrÃºssia,2
+ServiÃ§o de Ginecologia e ObstetrÃ­cia,2
+Erdogan,2
+Duarte Cordeiro,2
+Paulo Portas,2
+Ana Mendes Godinho. Covid-19,2
+Viktor OrbÃÂ¡n,2
+MOTOGP,2
+MisericÃÂ³rdia de Sines,2
+Professor,2
+Cidadania e Desenvolvimento,2
+Defesa Nacional,2
+Sindicato Nacional dos Maquinistas dos Caminhos de Ferro Portugueses,2
+Autoridade Nacional de SeguranÃ§a RodoviÃ¡ria,2
+AzerbeijÃ£o,2
+JoÃ£o Fernandes,2
+D. AntÃÂ³nio Marto,2
+Hospital de Leiria,2
+Arsenal do Alfeite,2
+Centro Hospitalar do TÃÂ¢mega e Sousa,2
+Trancoso,2
+OurÃÂ©m,2
+espetÃÂ¡culos,2
+Centro Hospitalar Lisboa Central,2
+SecretÃ¡rios de Estado,2
+8 de outubro,2
+WWF,2
+Portugal Fashion,2
+PlÃ¡stico,2
+judeus,2
+Museu da PresidÃªncia,2
+IEFP,2
+Drogas,2
+Quarentena,2
+GenÃ©tica,2
+Corredor aÃ©reo,2
+central nuclear de Almaraz,2
+Santa Comba DÃ£o,2
+Estado Novo,2
+Umaro Sissoco EmbalÃ³,2
+FundaÃ§Ã£o JosÃ© Neves,2
+Centro Hospitalar do TÃ¢mega e Sousa,2
+Ministra da Agricultura,2
+Manuela Bairos,2
+Parque Nacional da Peneda GerÃªs,2
+CIP - ConfederaÃ§Ã£o Empresarial de Portugal,2
+Comunidade cigana,2
+Silves,2
+Rudy Giuliani,2
+Vicente Jorge Silva,2
+Cruzeiros,2
+BastonÃ¡rio dos MÃ©dicos,2
+ConferÃªncia Nacional do PS,2
+Abuso sexual,2
+URSS,2
+Alzheimer,2
+ConfederaÃÂ§ÃÂ£o Empresarial de Portugal,2
+LGBTQ+,2
+JoÃ£o LourenÃ§o,2
+Mafalda,2
+AlcÃÂ¡cer do Sal,2
+Alfama,2
+Pampilhosa da Serra,2
+Centro Hospitalar Tondela Viseu,2
+FederaÃ§Ã£o Nacional dos Professores,2
+Mercados,2
+SertÃÂ£,2
+SÃÂ£o JoÃÂ£o,2
+Hospital de SÃÂ£o JoÃÂ£o,2
+Eli Lilly,2
+Orcas,2
+Museus,2
+Tartarugas,2
+SIBS,2
+Multibanco,2
+FundÃÂ£o,2
+Hospital Militar do Porto,2
+Penedono,2
+Castanheira de Pera,2
+Caracas,2
+Burla,2
+PGR,2
+AndrÃÂ© Silva,2
+ANSR,2
+PoluiÃÂ§ÃÂ£o,2
+Lacerda Sales,2
+Nelas,2
+Oregon,2
+Instituto Nacional de EstatÃ­stica,2
+Princesa Diana,2
+CroÃÂ¡cia,2
+Ljubomir Stanisic,2
+Maddie McCann,2
+Christian B,2
+SeguranÃ§a RodoviÃ¡ria,2
+PS Madeira,2
+Arquitetura,2
+Chile,2
+MarvÃÂ£o,2
+Sociedade Portuguesa de Cardiologia,2
+Vila Nova de FamalicÃÂ£o,2
+OrÃ§amento do Estado 2021,2
+Amy Coney Barrett,2
+SaÃÂºde mental,2
+Azeredo Lopes,2
+Centro Hospitalar UniversitÃ¡rio SÃ£o JoÃ£o,2
+ConstituiÃ§Ã£o,2
+Michelin,2
+Quino,2
+Washington DC,2
+Boeing,2
+Eduardo Paes,2
+Imprensa,2
+easyJet,2
+Protestos,2
+Alqueva,2
+liberdade de expressÃ£o,2
+PrÃ©mio Nobel da Paz,2
+Ano Letivo 2020/2021,2
+FÃ³rum La Toja,2
+VÃ©nus,2
+BCP,2
+Altice Portugal,2
+Transtejo,2
+Delphine BoÃ«l,2
+Pedro Neto,2
+Carlos Moedas,2
+Alexandre Lukashenko,2
+Pragas,2
+MÃ¡rio Ferreira,2
+GeÃ³rgia,2
+Manuel Maria Carrilho,2
+TÃºnel JoÃ£o XXI,2
+Francisco Lopes,2
+DivÃ³rcio,2
+Paredes de Coura,2
+AssociaÃ§Ã£o Comercial do Porto,2
+Lagos,2
+CÃ¢mara de Lobos,2
+MinistÃ©rio da Agricultura,2
+SÃ­ria,2
+Hepatite,2
+App StayAway COVID,2
+FundaÃ§Ã£o Oceano Azul,2
+Autoridade TributÃ¡ria e Aduaneira,2
+Wilson Witzel,2
+TSU,2
+Vodafone,2
+Kenosha,2
+Prisa,2
+CÃ¡ritas,2
+Pinhal de Leiria,2
+QuirguistÃ£o,2
+VideovigilÃ¢ncia,2
+Torre de Moncorvo,2
+FuncionÃ¡rios,2
+Ensino SecundÃ¡rio,2
+McDonald's,2
+Autoridade TributÃ¡ria,2
+LuÃÂ­s Macedo,2
+DGLAB,2
+Champalimaud,2
+Ponte Eiffel,2
+AssociaÃ§Ã£o das Casas de Fado de Lisboa,2
+TÃºnel do MarÃ£o,2
+JosÃ© SÃ³crates,2
+ensino artÃ­stico,2
+UrgÃÂªncias,2
+Pedro Pinto,2
+Tino de Rans,2
+AssÃ©dio Sexual,2
+Comboios de Portugal,2
+DiÃ³xido de Carbono,2
+UrgÃªncia,2
+JosÃ© Filomeno 'Zenu' dos Santos,2
+Bancos,2
+Paula Franco,2
+pescas,2
+MalÃ¡sia,2
+TaÃ§a de Portugal,2
+Pedro Rodrigues,2
+JosÃ© Eduardo dos Santos,2
+Banguecoque,2
+CÃÂ¢mara Municipal do Porto,2
+Inimigo PÃºblico,2
+Cuidados paliativos,2
+TÃ©nis,2
+Secretaria de Estado das Comunidades Portuguesas,2
+PÃ³voa de Lanhoso,2
+PPM,2
+Jornal PÃºblico,2
+GÃ¡s natural,2
+Moita,2
+Cabeceiras de Basto,2
+Francisco Aguilar,2
+RevoluÃ§Ã£o de 1820,2
+Harry Maguire,2
+Lyon,2
+Sitava,2
+AutÃÂ¡rquicas,2
+Palmela,2
+Dia da Defesa Nacional,2
+ViolÃÂªncia policial,2
+Proud Boys,2
+JoÃÂ£o Oliveira,2
+Congresso PCP,2
+Grandes OpÃ§Ãµes do Plano,2
+ETAR,2
+PortimÃÂ£o,2
+Isabel Camarinha,2
+Viana do Alentejo,2
+A brasileira,2
+Cabedelo,2
+MutilaÃÂ§ÃÂ£o Genital Feminina,2
+Burnout,2
+Teste do pezinho,2
+Nascimento,2
+Vieira do Minho,2
+Embraer,2
+Caixa Geral de DepÃ³sitos,2
+Wikileaks,2
+Mark Zuckerberg,2
+Oliveira do Hospital,2
+EleiÃ§Ãµes Presidenciais Americanas,2
+Lidl,2
+The New York Times,2
+BioNTech,2
+Corvo,2
+Tiago BrandÃÂ£o Rodrigues,2
+Taylor swift,2
+Ihor Homeniuk,2
+YouTube,2
+MinistÃÂ©rio da AdministraÃÂ§ÃÂ£o Interna,2
+NaÃÂ§ÃÂµes Unidas,2
+Ministra da SaÃÂºde,2
+Jornalistas,2
+Matteo Salvini,2
+PS/AÃÂ§ores,2
+Tiago Mayan,2
+Angela Gulbenkian,2
+Entrevistas Presidenciais 2021,2
+PolÃÂ­tica AgrÃÂ­cola Comum,2
+MÃÂ¡scara,2
+Renan Bolsonaro,2
+AgÃÂªncia Europeia de Medicamentos,2
+Bernardino Soares,2
+Neutralidade carbÃÂ³nica,2
+ANA - Aeroportos de Portugal,2
+BP,2
+CrianÃÂ§as,2
+Fafe,2
+Banksy,2
+FundaÃÂ§ÃÂ£o MÃÂ¡rio Soares e Maria Barroso,2
+JoÃ£o Sousa,2
+Oracle,2
+DGAV,2
+Hortense Martins,2
+CÃ¢mara Municipal de Aveiro,2
+Joana Marques Vidal,2
+Igualdade,2
+FarmacÃÂªuticos,2
+Vila Verde da Raia,2
+Miranda do Douro,2
+Hepatite C,2
+Rio Tejo,2
+AÃÂ§ores eleiÃÂ§ÃÂµes,2
+Covi-19,2
+Autoridade TributÃÂ¡ria e Aduaneira,2
+Porto de LeixÃµes,2
+Walmart,2
+FarmÃ¡cias,2
+E. M. de Melo e Castro,2
+Maria de La Salete Fernandes,2
+PrÃÂ©mios,2
+Cardiologia,2
+Bombeiro,2
+Helena Roseta,2
+Casas,2
+Terra,2
+PalÃÂ¡cio de BelÃÂ©m,2
+Uber,2
+Plano 2030,2
+AntÃ³nio Costa e Silva,2
+Sporting de Braga,2
+Waldemar Bastos,2
+FederaÃ§Ã£o Nacional da EducaÃ§Ã£o,2
+PÃ³voa de SÃ£o Miguel,2
+Partido Chega,2
+Sistema Nacional de SaÃºde,2
+Faculdade de Medicina do Porto,2
+UP,2
+Hamilton MourÃ£o,2
+Tomar,2
+Sal,2
+EducaÃ§Ã£o para a Cidadania,2
+Lone Star,2
+Ponte Morandi,2
+Stayway Covid,2
+PatrimÃ³nio,2
+Ventilador,2
+PALOP,2
+Efacec,2
+Orlando Nascimento,2
+Aeroporto Humberto Delgado,2
+PIB,2
+ministro do Ambiente e da AÃ§Ã£o ClimÃ¡tica,2
+Pedreiras,2
+TunÃ­sia,2
+Instituto PolitÃ©cnico de Viana do Castelo,2
+Lei do Mar,2
+Lindoso,2
+desperdÃ­cio alimentar,2
+Manuel Alegre,2
+Groundforce,2
+Instituto de InvestigaÃ§Ã£o e InovaÃ§Ã£o em SaÃºde,2
+Carlos CÃ©sar,2
+Ponte Luiz I,2
+ComunicaÃÂ§ÃÂ£o Social,2
+Giscard d'Estaing,2
+Maddie,2
+IndonÃ©sia,2
+UEFA,2
+Cristo Redentor,2
+Feirantes,2
+FPF,2
+Ponte da Barca,2
+Hospital de Santo AntÃÂ³nio,2
+Machu Picchu,2
+ReligiÃÂ£o,2
+CalifÃÂ³rnia,2
+FederaÃÂ§ÃÂ£o AcadÃÂ©mica do Porto,2
+Programa de RecuperaÃÂ§ÃÂ£o e ResiliÃÂªncia,2
+AssociaÃÂ§ÃÂ£o Internacional de Transporte AÃÂ©reo,2
+Premier League,2
+MelgaÃ§o,2
+Museu Nacional de Arqueologia,2
+Eixo-AtlÃ¢ntico,2
+FuracÃ£o IsaÃ­as,2
+BolÃÂ­via,2
+Rio Douro,2
+Assembleia da Madeira,2
+Ministro da EducaÃ§Ã£o,2
+Ciborro,2
+Curso de Medicina,2
+Fernando Leal da Costa,2
+RepÃºblica Centro Africana,2
+Meghan Markle,2
+EleiÃÂ§ÃÂµes no AÃÂ§ores,2
+UniÃ£o Audiovisual,2
+Transportes PÃÂºblicos,2
+Mira,2
+MarÃ­timo,2
+NÃÂ©lio Lucas,2
+Nobel da Paz,2
+Tolentino MendonÃÂ§a,2
+Viktor OrbÃ¡n,2
+Sindicato de Todos os Professores,2
+Wuhan,2
+Adalberto Campos Fernandes,2
+grÃ¡vidas,2
+Michigan,2
+Entidade Reguladora da SaÃºde,2
+TufÃÂ£o Vamco,2
+ForÃÂ§as de SeguranÃÂ§a,2
+David Attenborough,2
+F1 Portugal,2
+AntÃ¡rtida,2
+EslovÃ©nia,2
+InfantÃ¡rio,2
+Pico,2
+FlÃÂ¡vio Bolsonaro,2
+TufÃÂ£o Goni,2
+Carregado,2
+CML,2
+JoÃ£o LeÃ£o,2
+Elefante Branco,2
+Tribunal da ConcorrÃªncia,2
+leilÃÂ£o,2
+PrisÃ£o,2
+MÃÂ¡rio Ferreira,2
+Dexametasona,2
+Cartao do Cidadao,2
+"""Os Verdes""",2
+Centro Hospitalar Gaia/Espinho,2
+ViolÃªncia,2
+Natureza,2
+alimentos,2
+FundaÃ§Ã£o Portuguesa do PulmÃ£o,2
+Volta a FranÃ§a,2
+ExÃ©rcito,2
+UrgÃªncias,2
+Lionel Messi,2
+Mota Jr.,2
+UCP,2
+FLAD,2
+Universidade de TrÃ¡s-os-Montes e Alto Douro,2
+Governo Regional da Madeira,2
+STOP,2
+FuncionÃ¡rios PÃºblicos,2
+Ferreira do Alentejo,2
+Dinossauro,2
+Hashim Thaci,2
+Ãrea Metropolitana do Porto,2
+Tribunal da ConcorrÃÂªncia,2
+Penacova,2
+Carris,2
+Campo Grande,2
+Santo AntÃ³nio,2
+Harvey Weinstein,2
+Terras de TrÃ¡s-os-Montes,2
+Sporting,2
+Volkswagen,2
+JerÃ³nimo,2
+Foca-da-GronelÃ¢ndia,2
+Tarifa social,2
+NicarÃ¡gua,2
+CNE,2
+Joshua Wong,2
+Livro,2
+Pedro Marques,2
+Sindicato dos MÃ©dicos da Zona Sul,2
+Direitos das mulheres,2
+Maria Kolesnikova,2
+Caparica,2
+Praia da NazarÃ©,2
+JoÃ£o Catarino,2
+AlpiarÃ§a,2
+AlcobaÃÂ§a,2
+Biodiesel,2
+Comboio,2
+Voto,2
+Estacionamento,2
+IPO,2
+ASAS TAP,2
+Rui Portugal,2
+Fundo de EmergÃÂªncia Municipal,2
+Casa de SaÃºde do Telhal,2
+Sindicato dos Jornalistas,2
+golas antifumo,2
+STAL,2
+Sonda espacial,2
+14 agosto,2
+Liga Europa,2
+AlteraÃ§Ã£o climÃ¡ticas,2
+DepressÃ£o Alex,2
+CortiÃ§a,2
+Amazonas,2
+Cristina Rodrigues,2
+PrÃ©mio Sakharov,2
+Himalaias,2
+Wisconsin,2
+Sri Lanka,2
+Egito,2
+Brigada Estudantil,2
+Queima das Fitas de Coimbra,2
+D. JosÃÂ© Ornelas,2
+Atentados,2
+Estado,2
+Hospital de Vila Nova de Gaia,2
+Miguel Poiares Maduro,2
+Santiago de Compostela,2
+Brucelose,2
+Temperatura,2
+Pluris,2
+INSA,2
+CÃÂ¢mara do Porto,2
+Santa Casa da MisericÃ³rdia de Lisboa,2
+EutanÃÂ¡sia,2
+Lar da Mitra,2
+Leonardo DiCaprio,2
+Filmes,2
+Macedo de Cavaleiros,2
+Feira do Livro de Lisboa,2
+Instituto PolitÃ©cnico do Porto,2
+Pedofilia,2
+EstÃ¡dios,2
+Britney Spears,2
+Deloitte,2
+CanÃÂ¡rias,2
+Advogados,2
+Ministro dos NegÃÂ³cios Estrangeiros,2
+SNS24,2
+Universidade de Cambridge,2
+AlimentaÃÂ§ÃÂ£o,2
+Camboja,2
+MÃÂ¡rio Soares,2
+CocaÃÂ­na,2
+Cher,2
+Mariana MortÃ¡gua,2
+Rio Tinto,2
+7 de outubro,2
+Hamas,2
+Hell's Angels,2
+CÃ¢mara dos Comuns,2
+LeixÃµes,2
+Areeiro,2
+COVAX,2
+Portimonense,2
+Pedro Neves,2
+Andrew Cuomo,2
+ISPUP,2
+Instituto de SaÃºde PÃºblica da Universidade do Porto,2
+Telmo Correia,2
+Portugueses,2
+Buscas,2
+ComissÃÂ£o da Carteira Profissional de Jornalista,2
+PT,2
+George W. Bush,2
+Ota,2
+patos,2
+AlcÃ¡cer do Sal,2
+Profissionais de saÃºde,2
+Terras de Bouro,2
+CTP,2
+MÃ©dicos pela Verdade,2
+John Lennon,2
+Vera JourovÃÂ¡,2
+The Lancet,2
+Cimeira da UE,2
+Mundo,2
+tufÃ£o,2
+Barrancos,2
+Ã Desta Que Leio Isto,2
+Hospital de Santo AntÃ³nio,2
+vagas,2
+Medusas,2
+Cristiano Ronaldo,2
+Vinhos,2
+MV Wakashio,2
+VÃ­rus,2
+Moscavide,2
+IP2,2
+Serra da Estrela,2
+Freguesias,2
+Autarquias,2
+Rita Marques,2
+EspaÃ§o,2
+Manchester,2
+Escola Digital,2
+PÃ³voa de SantarÃ©m,2
+bispo de Viana do Castelo,2
+JosÃ© Tavares,2
+Ano novo,2
+Oficiais de justiÃ§a,2
+Ruth Bader Ginsburg,2
+votos,2
+Autoridade para as CondiÃ§Ãµes do Trabalho,2
+Carlos Furtado,2
+Vox,2
+Pinhel,2
+Santiago Abascal,2
+Utah,2
+FarmÃ¡cia,2
+Imigrantes,2
+Veto,2
+Placard,2
+Phil Hogan,2
+Zona Franca da Madeira,2
+Stepanakert,2
+Giovani Rodrigues,2
+Bahrein,2
+Castro Verde,2
+Alojamento Local,2
+Iberdrola,2
+ACNUR,2
+Dia Mundial do Professor,2
+Sindicato Independente de Professores e Educadores,2
+ANA,2
+AntibiÃÂ³ticos,2
+Gulbenkian,2
+Hospital de Vila Real,2
+Conselho Nacional de SaÃºde PÃºblica,2
+Covid-19 C,2
+Estado da UniÃ£o,2
+Impala,2
+CÃ¢mara Municipal do Funchal,2
+Telegram,2
+TÃ¡xis,2
+greve climÃÂ¡tica estudantil,2
+Pequim,2
+vespa asiÃ¡tica,2
+AssociaÃ§Ã£o da Hotelaria de Portugal,2
+Justin Trudeau,2
+Montepio,2
+Cirurgias,2
+Sindicato Nacional do Ensino Superior,2
+Melbourne,2
+Vistos,2
+Escola Segura,2
+Redondo,2
+Bairro Amarelo,2
+Comporta,2
+Ministro dos NegÃ³cios Estrangeiros,2
+Programa Nacional de HabitaÃÂ§ÃÂ£o,2
+ciberataques,2
+Morcego,2
+Southwester,2
+Museu do Chiado,2
+Filipe Froes,2
+Monchique,2
+Frankfurt,2
+Impostos,2
+ResidÃªncias universitÃ¡rias,2
+Igreja,2
+Sangue,2
+MÃ©dico de FamÃ­lia,1
+Faltam de mÃ©dicos,1
+Fepodabes,1
+Ana Paula Zacarias,1
+LuÃ­s CabaÃ§o,1
+Padornelos,1
+DesnutriÃ§Ã£o,1
+Bombarral,1
+LÃ­dia Jorge,1
+Kristen Welker,1
+Roubo,1
+Ribeiro de Crasto,1
+Poliomielite,1
+Hello Park,1
+Redes Sociais,1
+PoliovÃ­rus,1
+IÃ©men,1
+Nacy Pelosy,1
+"""Finding Freedom""",1
+Bruno CandÃ© Marques,1
+EstaÃ§Ã£o Salva-vidas de Cascais,1
+Governo Regional,1
+Anima Park,1
+Portugal dos Pequenitos,1
+Fleetwood Mac,1
+28 de agosto,1
+CÃ¢mara Municipal de OurÃ©m,1
+DoaÃ§Ã£o de Sangue,1
+General Motors,1
+Covid19,1
+Vinogradov,1
+Sviatlana Tsikhanouskaya,1
+plÃ¡sticos,1
+Juventude Socialista,1
+PCP Matosinhos,1
+Miguel Matos,1
+Ilham Aliev,1
+alta velocidade,1
+Lusoponte,1
+PrÃ©mio CamÃµes,1
+TÃ­tulo de residÃªncia,1
+ExpiÃ£o,1
+EurmilhÃµes,1
+Uganda,1
+John McCain,1
+Amiente,1
+Harry e Meghan,1
+Mahad,1
+Metrobus,1
+Fonte do CortiÃ§o,1
+Europol,1
+Alexander Lukashencko,1
+agressÃµes sexuais,1
+Conselho Regional,1
+Publicidade,1
+50 anos,1
+CÃ¢mara Municipal da Mealhada,1
+MOLIMA,1
+Dead Combo,1
+ConcorrÃªncia,1
+Tribunal da RelaÃ§Ã£o do Porto,1
+taxa de resÃ­duos,1
+Avenida D. Carlos I,1
+AfD,1
+DGES,1
+Andreas Kalbitz,1
+EN373,1
+AssociaÃ§Ã£o Portuguesa de AgÃªncias de Publicidade,1
+Transplantes,1
+WhatsApp,1
+Museu da TapeÃ§aria de Portalegre - Guy Fino,1
+Museu da TapeÃ§aria de Portalegre,1
+Teatro Nacional de S. Carlos,1
+deficiÃÂªncia,1
+Pompeia,1
+Burkina Faso,1
+FÃÂ¡tima Galante,1
+Maria Keil,1
+Rede Mundial de Reservas da Biosfera,1
+Lar Nossa Senhora do Pranto,1
+Almada Negreiros,1
+Igualdade de GÃ©nero,1
+Carles Puigdemont,1
+700 multas,1
+Manuel Clemente,1
+OperaÃÂ§ÃÂ£o Lex,1
+GÃÂ©rard Depardieu,1
+neonazi,1
+Supremo Tribunal de JustiÃÂ§a,1
+Petrogal,1
+Conselho da Europa,1
+CiÃªncia PolÃ­cia,1
+Riccardo Marchi,1
+Nelson Silva,1
+AndrÃ© Silva,1
+FederaÃ§Ã£o dos Sindicatos de Transportes e ComunicaÃ§Ãµes,1
+Sindicato dos TÃ©cnicos de ManutenÃ§Ã£o de Aeronaves,1
+XXI Congresso PCP,1
+Faculdade de Medicina da Universidade de Coimbra,1
+Sindicato Nacional do Pessoal de Voo da AviaÃÂ§ÃÂ£o Civil,1
+Sandra Pereira,1
+Censos 2021,1
+INCNF,1
+Pasteleira,1
+Assalto,1
+SalÃÂ¡rio MÃÂ­nimo Europeu,1
+Quim Torra,1
+Marcelo Crivella,1
+Escolas de danÃÂ§a,1
+Joana Vasconcelos,1
+Unidade Local de SaÃÂºde do Baixo Alentejo,1
+Instagram,1
+Pedro Sousa,1
+Dia de AÃÂ§ÃÂ£o de GraÃÂ§as,1
+Hezbollah,1
+Split,1
+Rainha Isabel II,1
+ConfederaÃ§Ã£o Empresarial de Portugal,1
+Ursos,1
+GuinÃ©-Conacri,1
+Leopoldo LÃ³pez,1
+Municipios,1
+BTV,1
+Mick Jagger,1
+Cabo Carvoeiro,1
+Carros hÃÂ­bridos,1
+CÃÂ¡ritas Portuguesa,1
+Harvard,1
+Ginecologia-ObstetrÃ­cia,1
+Dia Internacional para a EliminaÃÂ§ÃÂ£o da ViolÃÂªncia Contra as Mulheres,1
+Autoeuropa,1
+Jornada Mundial da Juventude 2023,1
+EleiÃ§Ãµes Regionais nos AÃ§ores,1
+Entidade Reguladora da SaÃÂºde,1
+Angelo Becciu,1
+CÃÂ¢mara Portuguesa de ComÃÂ©rcio,1
+Jornada Mundiais da Juventude,1
+Manuel Vicente,1
+AssociaÃ§Ã£o Sindical dos Profissionais da PolÃ­cia,1
+Pedro Dominguinhos,1
+AgressÃ£o,1
+AgressÃÂµes,1
+Economia SustentÃ¡vel do Oceano,1
+PrÃ©mio Oceanos de Literatura,1
+FÃ³rum MÃ©dico,1
+AÃÂ§ÃÂ£o de GraÃÂ§as,1
+Tratamento,1
+Grande PrÃ©mio de Portugal de FÃ³rmula 1,1
+Ecovia do Mondego,1
+Charles Darwin,1
+Air France,1
+Air France KLM,1
+KLM,1
+Vila Flor,1
+AgÃªncia de AvaliaÃ§Ã£o e AcreditaÃ§Ã£o,1
+MÃ­ssil,1
+Ratko Mladic,1
+CELAM,1
+Programa Nacional de Investimentos,1
+The Ellen DeGeneres Show,1
+Perus,1
+Plataforma para a FormaÃ§Ã£o MÃ©dica,1
+Bispos,1
+Suinicultura,1
+Santana Lopes,1
+ComissÃÂ£o de Programas Especiais de SeguranÃÂ§a,1
+testemunhas,1
+Ãguas do Alto Minho,1
+MÃÂ¡rio Nogueira,1
+Minho,1
+Faculdades de Medicina,1
+Vila Nova de Anha,1
+APEMIP,1
+TrÃ¢nsito,1
+Parque Natural Regional do Vale do Tua,1
+Atum-rabilho,1
+Compete 2020,1
+7 Margens,1
+Najib Razak,1
+Jacob Lawrence,1
+1MDB,1
+Joseph Wu,1
+Petroleiro,1
+Criminalidade,1
+Plano RecuperaÃ§Ã£o,1
+Rembrandt,1
+Bairrada,1
+Tekever,1
+RodoviÃ¡ria de Lisboa,1
+Louisville,1
+Scotturb,1
+Multas,1
+Falar PortuguÃÂªs,1
+MÃÂ¡scaras reutilizÃÂ¡veis,1
+Sindicato dos Pilotos da AviaÃÂ§ÃÂ£o Civil,1
+Museu Peabody Essex,1
+Zhong Shanshan,1
+Ministro das Infraestruturas,1
+Elon musk,1
+ArrÃ¡bida,1
+Cigarros,1
+David Dinkins,1
+FMUP,1
+Ronaldinho,1
+Duarte Pacheco,1
+Autoridade da concorrÃªncia,1
+Vatileaks,1
+terminal de contentores de LeixÃµes,1
+Parque Natural da ArrÃ¡bida,1
+MirÃ³,1
+Paolo Gabriele,1
+Camionista,1
+Congresso PSD,1
+Seul,1
+Tribunal Judicial de Leiria,1
+Rangel,1
+Fascismo,1
+RosÃ¡rio Oliveira Martins,1
+Neves-Corvo,1
+OperaÃ§Ã£o Ãter,1
+FuncionÃÂ¡rios das escolas,1
+PÃÂ³voa de Lanhoso,1
+Frente Comum de Sindicatos da AdministraÃ§Ã£o PÃºblica,1
+Maria FÃ¡tima Lucas,1
+AdministraÃÂ§ÃÂ£o Regional de SaÃÂºde do Norte,1
+PatrimÃ³nio Cultural Imaterial,1
+Marco Ficini,1
+EstÃ¡dio da Luz,1
+ExaustÃ£o,1
+Navegante,1
+FamÃ­lia Real BritÃ¢nica,1
+Torre Eiffel,1
+SÃ­lvia Silveira de BraganÃ§a,1
+Fadiga,1
+PrÃ­ncipe Harry,1
+TufÃ£o Molave,1
+Longo Curso,1
+Catar,1
+Seguro,1
+Marieke Lucas Rijneveld,1
+Abiy Ahmed,1
+Fracking,1
+Ensino do PortuguÃªs no Estrangeiro,1
+PolÃ­tica AgrÃ­cola Comum,1
+Fundo de Garantia AutomÃ³vel,1
+JosÃ© Avillez,1
+Entidade das Contas e Financiamentos PolÃ­ticos,1
+Qatar Airways,1
+Vacina Gripe,1
+GÃ©rald Darmanin,1
+Ibero-Americana,1
+Instituto de CiÃªncias Sociais da Universidade de Lisboa,1
+FemicÃÂ­dios,1
+Merkle,1
+The Best Chef Awards,1
+ConferÃÂªncia de imprensa,1
+Harald V,1
 Fisco,1
-Ordem dos Médicos,1
-FESAP,1
-Rui Horta e Costa,1
-CGTP,1
-Luis Ferreira Marques,1
-Rogério Alves,1
-Interpol,1
-contrabando de seres humanos,1
-Montepio,1
-Tribunal da Concorrência,1
+Fortaleza de Sagres,1
+George Glass,1
+movimento Protejo,1
+FÃ³ssil,1
+rande PrÃ©mio de Conto Camilo Castelo Branco,1
+AntuÃ£,1
+Juliette GrÃ©co,1
+Ul,1
+Ruben A.,1
+Pedro Abrunhosa,1
+Francisco Duarte Mangas,1
+PSD AÃ§ores,1
+crise climÃ¡tica,1
+alcoÃ³l,1
+Greve climÃ¡tica,1
+Lixo Marinho,1
+Pedro Santana Lopes,1
+Assembleia de RepÃºblica,1
+Calabor,1
+QAnon,1
+Torres das Amoreiras,1
+Faculdade de Engenharia,1
+AlfÃÂ¢ndegas,1
+Faculdade de Letras,1
+EducaÃ§Ã£o Moral e Religiosa CatÃ³lica,1
+UniÃ£o Democrata-CristÃ£,1
+Islamismo,1
+shopping,1
+Hospital do EspÃÂ­rito Santo de ÃÂvora,1
+InÃªs de Medeiros,1
+MNE,1
+Aliados,1
+Jens Stoltenberg,1
+AdministraÃÂ§ÃÂ£o da RegiÃÂ£o HidrogrÃÂ¡fica do Tejo e Oeste,1
+mina,1
+Mata,1
+Mastodonte,1
+Assembleia,1
+Voto em mobilidade,1
+Booker Internacional,1
+Olivia de Havilland,1
+IncÃªndio de Oleiros,1
+rio CÃ¡vado,1
+em Barcelos,1
+rentrÃ©e,1
+CristÃ³vÃ£o Colombo,1
+E Tudo O Vento Levou,1
+1.Âº Ciclo,1
+Tecnologia,1
+AlmodÃ³var,1
+Nikias Skapinakis,1
+Grande PrÃ©mio de Portugal,1
+Dia dos AvÃ³s,1
+CÃ¢mara de AlmodÃ´var,1
+Equipas multidisciplinares,1
+Festas de Barrancos,1
+seminÃ¡rio de Santa Teresinha,1
+AntÃ³nio Oliveira Salazar,1
+Nguyen Van Chien,1
+A17,1
+Nova SBE,1
+Instituto de AstrofÃ­sica e CiÃªncias do EspaÃ§o,1
+Vilar de Perdizes,1
+LÃ­bia,1
+Faculdade de Economia da Universidade Nova de Lisboa,1
+Frangos,1
+Medicina popular,1
+Bonjardim,1
+Congresso de Medicina Popular de Vilar de Perdizes,1
+Topless,1
+Ãlhavo,1
+Partido Republicano,1
+Piratas,1
+GasÃ³leo,1
+Movimento IbÃ©rico Antinuclear,1
+Saint-Marie la Mer,1
+Alexandre PoÃ§o,1
+Viagens,1
+Alegro de Alfragide,1
+Gastronomia,1
+Farmaceuticas,1
+ProcriaÃ§Ã£o medicamente assistida,1
+gestaÃ§Ã£o de substituiÃ§Ã£o,1
+MediterrÃÂ¢neo,1
+Acordo de centro-direita,1
+Minnesota,1
+Esquilo,1
+Fucking,1
+Louisiana,1
+Lei Europeia do Clima,1
+inovaÃÂ§ÃÂ£o,1
+Elvira Fortunato,1
+Grande Barreira de Coral,1
+La NiÃÂ±a,1
+SeguranÃÂ§a RodoviÃÂ¡ria,1
+Torre de BelÃ©m,1
+Sapadores Bombeiros de Lisboa,1
+Peter Shilton,1
+Mark Chapman,1
+ZÃ© Pedro,1
+Hospital de Viseu,1
+Diogo Varela Silva,1
+Segunda Circular,1
+26 de julho,1
+Nantes,1
+Catedral de Nantes,1
+Centro Hospitalar de Vila Nova de Gaia,1
+Mateusz Morawiecki,1
+rede ibÃ©rica de alta velocidade,1
+Ministro,1
+GP,1
+Museu Nacional de Arte ContemporÃ¢nea do Chiado,1
+Yoko Ono,1
+AngÃ©lico Vieira,1
+Nadia Saad,1
+Congresso Interculturalidade 4.0,1
+VÃÂ­timas de violÃÂªncia domÃÂ©stica,1
+ImigraÃ§Ã£o,1
+Instituto de Medicina e Higiene Tropical,1
+Peter Green,1
+Ãrvores,1
+Entrega,1
+Educadora,1
+GAS,1
+Laurentina Pedroso,1
+CÃ¢mara de Oleiros,1
+Gap Year Portugal,1
+FÃ¡tima Galante,1
+Malala Yousafzai,1
+RÃ³mulo Costa,1
+Hassan Rohani,1
+JosÃÂ© Azeredo Lopes,1
+Idalina SÃÂ¡ da Costa,1
+Modelo Continente,1
+Active Brands,1
+JosÃÂ© Ribeiro e Castro,1
+Michael Flynn,1
+Centros de SaÃÂºde,1
+Trinta,1
+AutomÃ³veis,1
+Caminho de Santiago,1
+Joacine,1
+Expresso,1
+temperaturas,1
+agenda,1
+Imposto do Selo,1
+TÃ³quio,1
+Kellyanne Conway,1
+Feira da Ladra,1
+Museu Nacional Romano,1
+Autoestradas,1
+educaÃÂ§ÃÂ£o inclusiva,1
+Liga dos CampeÃµes,1
+BogotÃ¡,1
+Provedora do Animal,1
+Ren Zhiqiang,1
+Praia do Camilo,1
+Vale de Cuba,1
+Corpo Nacional de Escutas,1
+ComissÃÂ£o EconÃÂ³mica das NaÃÂ§ÃÂµes Unidas para a Europa,1
+Atividade FÃÂ­sica,1
+Dinossauros,1
+Plataforma pela ReposiÃ§Ã£o das Scut na A23 e A25,1
+Direitos da CrianÃÂ§a,1
+Steffen Seibert,1
+EstratÃÂ©gia Nacional para os Direitos da CrianÃÂ§a,1
+A25,1
+David ValadÃÂ£o,1
+PirenÃ©us,1
+Candidataturas,1
+AntÃÂ³nio Ramalho,1
+SÃÂ­ndrome de NoÃÂ©,1
+Vaz das Neves,1
+Instituto da ConservaÃÂ§ÃÂ£o da Natureza e das Florestas,1
+Branqueamento de Capitais,1
+violÃÂªncia contra as mulheres,1
+Tribunal da RelaÃ§Ã£o de Lisboa,1
+Hospital de Sintra,1
+Jovem,1
+Hospital de SÃ£o JoÃ£o,1
+Pinhais,1
+Maryam al Balushi,1
+Ponte MÃ³vel,1
+Pinhais & Ca.,1
+Comandos,1
+Asteroide,1
+Gatos,1
+Oma,1
+Mercadona,1
+Planeta Terra,1
+Carlos Carvalhas,1
+Tejo,1
+Ministro das FinanÃÂ§as,1
+JoÃÂ£o LeÃÂ£o,1
+Caldas da Rainha,1
+Centro Hospitalar PÃÂ³voa de Varzim/Vila do Conde,1
+Filipe Santos Costa,1
+LuÃ­sa Salgueiro,1
+FESAHT,1
+NÃÂ¡poles,1
+Pedoflilia,1
+praÃ§a de touros,1
+Miguel Von Hafe PÃÂ©rez,1
+noiserv,1
+Salvar o Clima,1
+BMcar,1
+FundaÃÂ§ÃÂ£o Calouste Gulbenkian,1
+AssociaÃ§Ã£o de Escolas de Surf de Portugal,1
+AntÃ³nio Gamito,1
+Charles Miche,1
+Surf & Rescue,1
+HP Construction,1
+Trabalhadores,1
+Parque de Campismo Inatel Caparica,1
+SÃ©rvia,1
+AndrÃ© Moura,1
+Manuel Lopes da Costa,1
+Ice Bucket Challenge,1
+Benjamim,1
+Flordelis,1
+Pedro Guerra,1
+NarcotrÃ¡fico,1
+Tiago de Matos Gomes,1
+Studocu World University,1
+JosÃ© GonÃ§alez,1
+PCP/Congresso,1
+Sara Correia,1
+Janet Yellen,1
+Os Quatro e Meia,1
+Ar,1
+Instituto de Socorros a NÃ¡ufragos,1
+Cuidados Continuados,1
+AssociaÃ§Ã£o Nacional dos Cuidados Continuados,1
+nstituto de InvestigaÃ§Ã£o e InovaÃ§Ã£o em SaÃºde,1
+Valdis Dombrovskis,1
+SÃ£o Paulo,1
+Surf,1
+Chameleon Collective,1
+Super Bock,1
+MÃ­ssivel,1
+Francisco Figueiredo,1
+Fully,1
+Alvor,1
+Cancro do CÃ³lon,1
+AssociaÃ§Ã£o de DanÃ§a Desportiva do Distrito de Viana do Castelo,1
+Kansai Yamamoto,1
+Bolt,1
+Estado de EmergÃªncia,1
+Samsung,1
+Partido DemocrÃ¡tico Republicano,1
+Francisco CÃ©sar,1
+Renamo,1
+Rosa Monteiro,1
+Alerta,1
+motorista portuguÃÂªs,1
+Maria Antunes,1
+PS 752,1
+Geoparque Litoral de Viana do Castelo,1
+LuÃ­s Pereira,1
+Praia do Castelejo,1
+27 de agosto,1
+Faculdade de Direito da Universidade de Lisboa,1
+Esclerose Lateral AmiotrÃÂ³fica,1
+Perfil,1
+CDU Porto,1
+Parque Natural do AlvÃ£o,1
+Skapinakis,1
+Rui SÃ¡,1
+FDUL,1
+Resopre,1
+Sea-Watch 4,1
+EN 246,1
+NegÃ³cios Estrangeiros,1
+Sindicato dos Trabalhadores de Arqueologia,1
+Instituto de InvestigaÃ§Ã£o e InovaÃ§Ã£o em SaÃºde da Universidade do Porto,1
+Escola de Medicina da Universidade do Minho,1
+lei sobre audiovisual,1
+Cardeais,1
+OMAR,1
+Alcindo Monteiro,1
+EducaÃ§Ã£o FÃ­sica,1
+Reinp Unido,1
+central fotovoltaica,1
+Escola BÃ¡sica Teixeira de Pascoais,1
+FundaÃ§Ã£o para a CiÃªncia e a Tecnologia,1
+AntÃ³nio Saiote,1
+FIMUV,1
+Ventura,1
+Michael Cohen,1
+Zita Marlene de Andrade de Sousa,1
+Futebol de Praia,1
+MÃ¡rio Narciso,1
+Bailinho da Madeira,1
+7 maravilhas da cultura popular,1
+Romaria de SÃ£o JoÃ£o D'Arga,1
+e-VISA,1
+inclusÃ£o,1
+JosÃ© Manuel Pureza,1
+Teresa Black,1
+Sociedade Nacional de Belas Artes,1
+Alcoolismo,1
+Unidade de Alcoologia de Lisboa,1
+Pedro Borges de Lemos,1
+Batismos,1
+Nuno Santos,1
+7 de agosto,1
+Donadl Trump,1
+Carta de ConduÃ§Ã£o,1
+TubarÃ£o-Anequim,1
+tintureira,1
+noz,1
+6 Outubro,1
+Andrea Ghez,1
+Reinhard Genzel,1
+Guatemala,1
+ILGA,1
+Internamentos Sociais,1
+AviÃÂµes K-390,1
+PAN/AÃÂ§ores,1
+Hengfeng Bank,1
+vacinas da gripe,1
+Al Gore,1
+DÃÂ­li,1
+6 de novembro,1
+Caso Navalny,1
+SalÃ£o ImobiliÃ¡rio de Portugal,1
+TektÃ³nica,1
+Ordem dos Contabilistas Certificados,1
+InsuficiÃªncia cardÃ­aca,1
+Brest,1
+Eddie van Halen,1
+JoÃ£o Cotrim de Figueiredo,1
+AmÃ¡lia Rodrigues,1
+Queer Porto,1
+Rivoli,1
+Patric Chiha,1
+Uma ExperiÃªncia de Social-Democracia Moderna,1
+MCTES,1
+Mary L. Trump,1
+Maros Sefcovic,1
+Roger Penrose,1
+RepÃºblica,1
+Rei,1
+mudanÃ§a de gÃ©nero,1
+Oftalmologia,1
+Jennifer Doudna,1
+FuracÃ£o Delta,1
+Yucatan,1
+CENA-STE,1
+Johnny Nash,1
+AutÃ¡rquicas,1
+Copernicus,1
+Hospital Militar de BelÃ©m,1
+Mosteiro de AlcobaÃ§a,1
+OtÃ¡vio Rego Barros,1
+Afonso Reis Cabral,1
+âPÃ£o de AÃ§Ãºcarâ,1
+Christie's,1
+T-REX,1
+Nuno JÃºdice,1
+Fernando VenÃ¢ncio,1
+PrÃ©mio de Ensaio Jacinto do Prado Coelho,1
+AssociaÃ§Ã£o Portuguesa dos CrÃ­ticos LiterÃ¡rios,1
+Airbus,1
+pobreza extrema,1
+Praia da Tocha,1
+incÃªndio florestal,1
+IC2,1
+Albergaria-a-Velha,1
+Orca,1
+Albufeiras,1
+Jiri Menzel,1
+Emmanuelle Charpentier,1
+Manuel Godinho,1
+Julho,1
+muralha romana,1
+Robert Strayer,1
+Foz do Douro,1
+Carrie Lam,1
+AntÃ³nio FÃ©lix,1
+Furto,1
+Ernesto AraÃÂºjo,1
+Botijas de gÃÂ¡s,1
+JosÃÂ© Penedos,1
+Ernst,1
+Peter Singer,1
+Fundo de RecuperaÃÂ§ÃÂ£o,1
+Herdade da Contenda,1
+PrÃÂ©mio Nacional de Paisagem,1
+Ludovic Orban,1
+Supremo Tribunal Federal,1
+Conselho Nacional,1
+Programa VoluntÃÂ¡rio de ReinstalaÃÂ§ÃÂ£o do ACNUR,1
+EleiÃÂ§ÃÂµes presidenciais 2021,1
+"""Porto nÃÂ£o se Vende""",1
+VMER,1
+Nasrin Sotoudeh,1
+RTP Play,1
+#EstudoEmCasa,1
+F-16,1
+Rudolph Giuliani,1
+Duarte Lima,1
+CÃ¢mara do Funchal,1
+VulcÃÂ£o Merapi,1
+JoÃÂ£o Galamba,1
+Atenas,1
+AmÃÂ¡lia,1
+Hayabusa2,1
+Ovelha Saloia,1
+ARCOLSA,1
+Agenda SAPO24,1
+Caixa Geral de DepÃÂ³sitos,1
+Paulo Macedo,1
+SÃÂ© de Lisboa,1
+Melilla,1
+AnsiÃÂ£o,1
+Bolota,1
+Congresso da Bolota,1
+Linha Rosa,1
+JoÃÂ£o Paulino,1
+Procuradoria-Geral da RepÃÂºblica,1
+Terminal de contentores,1
+carros a gasÃÂ³leo,1
+risco sÃÂ­smico,1
+EleiÃÂ§ÃÂµes presidenciais 2020,1
+CiberseguranÃÂ§a,1
+TV Zimbo,1
+Alternativa DemocrÃ¡tica,1
+PrÃ©mio Nobel,1
+Crowdfunding,1
+FNE,1
+QuÃ©nia,1
+LeÃµes,1
+PatrÃ­monio da Humanidade,1
+5 de dezembro,1
+Robert Castel,1
+MÃ¡rio Nogueira,1
+Nikol Pashinyan,1
+OrganizaÃ§Ã£o de LibertaÃ§Ã£o da Palestina,1
+Geert Wilders,1
+Museu Virtual da Lusofonia,1
+AT,1
+autocarro,1
+Lisboa Transportes,1
+associaÃ§Ã£o Zero,1
+Liga das NaÃ§Ãµes,1
+Ãngel Marcos de Dios,1
+Eduardo LourenÃ§o 2020,1
+VerÃ£o,1
+Cerveja,1
+Festival F,1
+Vanuatu,1
+IMT,1
+5 de agosto,1
+Worten,1
+Wang Wenbin,1
+Walter LÃ¼bcke,1
+Stephan Ernst,1
+Manchester City,1
+Bournemouth,1
+CÃ¢mara Municipal de Oeiras,1
+BebÃ©s prematuros,1
+Pedro Camacho,1
+JoÃÂ£o Pedro Matos Fernandes,1
+Nicolas Schmit,1
+Tarrafal,1
+MarquÃªs do Pombal,1
+Vasco Barata,1
+PanamÃ¡,1
+Monte Branco,1
+Tedros Ghebreyesus,1
+RepÃºblica DemocrÃ¡tica do Congo,1
+Ãbola,1
+coelho-bravo,1
+MoldÃÂ¡via,1
+Breaking Bad,1
+6 de dezembro,1
+SÃÂ­ndrome de Havana,1
+Pedro Costa Pereira,1
+MÃÂºsica,1
+Semba,1
+FenÃÂ³menos do Semba,1
+Jerusalema,1
+LibÃÂ©ria,1
+Francico,1
+Montemor-o-Velho,1
+TentÃÂºgal,1
+Uruguai,1
+TabarÃÂ© VÃÂ¡zquez,1
+Cristina Branco,1
+Manuel Sequeira Nobre,1
+Nobre,1
+SLB,1
+JoÃÂ£o Pina,1
+Museu Nacional de Arte ContemporÃÂ¢nea,1
+Luciana Fina,1
+InundaÃ§Ãµes,1
+PetrÃ³leo,1
+Primeiro-Ministro,1
+Glasgow,1
+Paulo Patinha AntÃ£o,1
+Manteigas,1
+Drone,1
+doutoramentos,1
+Alain Cocq,1
+Ricardo AraÃºjo Pereira,1
+Zagreb,1
+El Chapo,1
+Covid-19. Faixa de Gaza,1
+Covid-19. China,1
+Aeronave,1
+Tampico,1
+6 de agosto,1
+Centrossauro,1
+FBI,1
+Jake Paul,1
+NRA,1
+Airbus 380,1
+Bernardo Sassetti,1
+IncÃªndois,1
+armadilhas de lobos,1
+Apoio ao Fado,1
+FÃ©rias,1
+Sabrosa,1
+Lar de Reguengos,1
+FormaÃ§Ã£o Profissional,1
+Tiananmen,1
+Estrada Nacional 1,1
+Mercado Municipal,1
+Monte,1
+JoÃÂ£o Almeida,1
+Pedro Henriques,1
+DireÃÂ§ÃÂ£o-Geral das Artes,1
+Zeinal Bava,1
+Henrique Granadeiro,1
+AmÃÂ­lcar Morais Pires,1
+LuÃÂ­s Pacheco de Melo,1
+AgÃÂªncia Europeia do Ambiente,1
+Mar europeu,1
+The Guardian,1
+PatrÃÂ­cia de Melo Moreira,1
+Curry Cabral,1
+SÃÂ£o JosÃÂ©,1
+Costa e Silva,1
+ÃÂleo de palma,1
+FuncionÃÂ¡rios Judiciais,1
+CartÃÂµes,1
+AntÃÂ³nio Marto,1
+Bruno Tavares,1
+UMAR,1
+UniÃÂ£o de Mulheres Alternativa e Resposta,1
+PrÃÂ³toiro,1
+MinistÃÂ©rio dos NegÃÂ³cios Estrangeiros,1
+1.ÃÂºDireito,1
+MÃÂ¡rio Centeno,1
+Hospital Central do Alentejo,1
+Literacia mediÃÂ¡tica,1
+RTP ÃÂfrica,1
+Carlos SÃÂ£o Vicente,1
+pistolas,1
+Feminismo,1
+RevÃÂ³lveres,1
+SÃÂ£o TomÃÂ© e PrÃÂ­ncipe,1
+Duarte Marques,1
+Liga dos CampeÃÂµes,1
+Istambul Basaksehir,1
+desperdÃÂ­cio tÃÂªxtil,1
+Plano de AÃÂ§ÃÂ£o Conjunto Global,1
+Sindicato dos Trabalhadores da AviaÃÂ§ÃÂ£o e Aeroportos,1
+Terrugem,1
+Michelle Bachelet,1
+PatrimÃÂ³nio,1
+Esqui,1
+EstratÃÂ©gia Nacional de Combate ÃÂ  CorrupÃÂ§ÃÂ£o,1
+Hunter Biden,1
+Conselho Permanente da ConferÃÂªncia Episcopal Portuguesa,1
+Salas de consumo assistido,1
+Continente,1
+Beiersdorf,1
+UniÃÂ£o Africana,1
+IDEA Internacional,1
+Fraude digital,1
+Filipe Pinto-Ribeiro,1
+Ludwig van Beethoven,1
+DSCH Ensemble,1
+cimeira,1
+Mercado de arroios,1
+Zoom,1
+Pedro Lima,1
+Hillary Clinton,1
+McDonald,1
+Conselho Nacional do CDS-PP,1
+ForÃ§as de SeguranÃ§a,1
+ComissÃ£o Nacional do PS,1
+Direitos Laborais,1
+Trabalho por turnos,1
+Trabalho noturno,1
+Caetano Veloso,1
+Casa da Arquitetura,1
+Paulo Mendes da Rocha,1
+Tsz Lun Kok,1
+Asma,1
+doenÃ§as respiratÃ³rias,1
+Rinite,1
+Carros elÃ©tricos,1
+Talaud,1
+Apostas,1
+9 setembro,1
+pilhas,1
+ElectrÃ£o,1
+Dia Europeu da Reciclagem de Pilhas,1
+SalomÃ© Pinto,1
+Isabel Capeloa Gil,1
+Farol da Guia,1
+SeguranÃ§a,1
+ASPP,1
+Dublin,1
+Kim Wall,1
+Peter Madsen,1
+Praia da Rocha,1
+Caixa de PrevidÃªncia dos Advogados e Solicitadores,1
+ContrataÃ§Ã£o pÃºblica,1
+Vegetarianismo,1
+Grupo PrÃ³-Ãvora,1
+Gretchen Whitmer,1
+Cecil ThirÃ©,1
+JosÃ© Couto,1
+Subdiretora-geral do PatrimÃ³nio,1
+Livros para entender a AmÃ©rica,1
+JoÃ£o Paulino,1
+Monica Roberts,1
+Che Guevara,1
+Domingos Xavier Viegas,1
+FiladÃ©lfia,1
+MPLA,1
+Luther Rescova,1
+UÃ­je,1
+Serviral,1
+Faculdade de Psicologia e de CiÃªncias da EducaÃ§Ã£o da Universidade de Coimbra,1
+UN,1
+MoldÃ¡via,1
+Trabalhador TransfronteiriÃ§o,1
+Miguel Xavier,1
+Programa Nacional para a SaÃºde Mental,1
+9 de outubro,1
+CCDR-N,1
+ComissÃ£o de CoordenaÃ§Ã£o e Desenvolvimento Regional do Norte,1
+Joaquim Pinto Moreira,1
+AdministraÃ§Ã£o local,1
+AdministraÃ§Ã£o central,1
+JoÃ£o Soares,1
+SalÃÂ¡rio MÃÂ­nimo Nacional,1
+ciberataque,1
+Ãrvore,1
+Trends in International Mathematics and Science Study,1
+secretÃÂ¡rio de estado da EducaÃÂ§ÃÂ£o,1
+LuÃÂ­sa Sobral,1
+Moonspell,1
+festival Montepio ÃÂs Vezes O Amor,1
+Conselho para um Capitalismo Inclusivo,1
+IvÃÂ¡n Duque,1
+PrÃÂ©mio Nobel,1
+Jean-Luc MÃÂ©lenchon,1
+Bagdad,1
+Alex Trebek,1
+Congresso Ibero-Americano de Cultura,1
+Costa de Caparica,1
+egionella,1
+castanha,1
+Museu Bordalo Pinheiro,1
+Eduardo Salavisa,1
+Nick Hallidie,1
+Isabell II,1
+Willa,1
+Fumihito,1
+Adriano Nuvunga,1
+Centro para Democracia e Desenvolvimento,1
+CÃ¢mara Municipal de Loures,1
+UrgÃªncia PediÃ¡trica,1
+Capital Verde da Europa,1
+Planetiers World Gathering,1
+MÃ©dicos de famÃ­lia,1
+Nuno Crato,1
+JoÃÂ£o Costa,1
+Santa Casa da MisericÃ³rdia de Portalegre,1
+Fumar,1
+7 setembro,1
+Maysak,1
+Birmingham,1
+Passaporte portuguÃªs,1
+Novichok,1
+Nord Stream 2,1
+CinfÃ£es,1
+ilha MaurÃ­cia,1
+VerÃ£o Seguro 2020,1
+Lama,1
+Sofia,1
+Atum,1
+The House of Neptuno,1
+Poiares Maduro,1
+Praia da Vieira,1
+Pedacinho de CÃ©u,1
+8 de agosto,1
+CaÃÂ§a,1
+FC Porto,1
+SÃÂ©rgio ConceiÃÂ§ÃÂ£o,1
+Douro Intencional,1
+MatemÃÂ¡tica,1
+Paulo Rodrigues,1
+Paulo Santos,1
+AssociaÃÂ§ÃÂ£o Sindical dos Profissionais da PolÃÂ­cia,1
+Monte Everest,1
+Mark David Chapman,1
+PrecÃ¡rios da RTP,1
+TransiÃ§Ã£o EnergÃ©tica,1
+ComissÃÂ£o Parlamentar de Cultura,1
+Francisco Monteiro,1
+8 setembro,1
+Tribunal Criminal de Lisboa.,1
+Mohmand,1
+Ivo Rosa,1
+Olga Mariano,1
+AssociaÃ§Ã£o Letras NÃ³madas,1
+CIGLEI,1
+Dinis Abreu,1
+Imprensa Nacional,1
+G7,1
+Mulan,1
+revistas,1
+Cidadania,1
+LigaÃ§Ãµes ferroviÃ¡rias,1
+Orquestra Metropolitana de Lisboa,1
+Maestro Pedro Amaral,1
+Diogo GonÃ§alves,1
+NÃ­ger,1
+Nagasaki,1
+FindRayShark,1
+Raias,1
+Vias de extinÃ§Ã£o,1
+ValenÃ§a do Minho,1
+Ribeira de Pena,1
+Juan GuaidÃÂ³,1
+OrÃÂ§amento Retificativo,1
+Obesidade Infantil,1
+vacinaÃ§Ã£o da gripe,1
+Obra Nacional da Pastoral dos Ciganos,1
+Capital Verde Europeia 2022,1
+disciplina de cidadania e desenvolvimento,1
+Grenoble,1
+Baby Shark,1
+MisericÃ³rdias,1
+Namibe,1
+SalÃ¡rio MÃ­nimo,1
+Sindicato da ConstruÃ§Ã£o,1
+Mario Molina,1
+Telescola,1
+ComÃ©rcio online,1
+Tribunal de Leiria,1
+reitor,1
+debate,1
+CÃ³digo de ContrataÃ§Ã£o PÃºblica,1
+inspeÃ§Ã£o automÃ³vel,1
+Distico,1
+Cor verde,1
+Tribunal de Aveiro,1
+Diogo Gaspar,1
+Ervededo,1
+Oeste,1
+FÃ¡tima Marques Pereira,1
+PE,1
+Cabanas de Tavira,1
+Parque Natural das Serras de Aire e Candeeiros,1
+Plataforma de Media Privados,1
+Degelo,1
+EN 328,1
+Recivalongo,1
+Julgamento,1
+Festa da Avante!,1
+koala,1
+Santa Comba DÃÂ£o,1
+Museu Salazar,1
+AntÃÂ³nio Oliveira Salazar,1
+RosÃÂ¡rio Gamboa,1
+CÃÂ³digo Penal,1
+Natalidade,1
+Mastercard,1
+Discurso de ÃÂ³dio,1
+Ana Sofia Antunes,1
+Pessoas com deficiÃÂªncia,1
+Torre dos ClÃÂ©rigos,1
+TÃÂ³quio,1
+Correios,1
+AgÃÂªncia Espacial Europeia,1
+LuÃÂ­s Capoulas Santos,1
+IrmÃÂ£os Maristas,1
+AndrÃÂ© Macedo Fernandes,1
+Dia Internacional das Pessoas com DeficiÃÂªncia,1
+CoraÃÂ§ÃÂ£o,1
+Bristol,1
+Partidos polÃÂ­ticos,1
+Paulo CafÃÂ´fo,1
+ResÃÂ­duos radioativos,1
+NOWO,1
+Meo,1
+Elefantes,1
+NamÃÂ­bia,1
+AssociaÃÂ§ÃÂ£o AcadÃÂ©mica de Coimbra,1
+SÃÂ£o Cosme,1
+NicarÃÂ¡gua,1
+Valbom,1
+Maquinistas,1
+CONVEL,1
+ContrataÃ§Ã£o de MÃ©dicos aposentados,1
+Juan Carlos I,1
+LPFP,1
+Monumentos,1
+GÃ©nova San Giorgio,1
+Bento XVI,1
+ColÃ³nia AgrÃ­cola de ChÃ£ de Lamas,1
+Boalhosa,1
+Instituto de CiÃªncias BiomÃ©dicas Abel Salazar,1
+ICBAS,1
+Discinesia Ciliar PrimÃ¡ria,1
+Curitiba,1
+SÃ£o JosÃ© dos Pinhais,1
+Leon Fleisher,1
+Rui Marqueiro,1
+Onyx Lorenzoni,1
+Ministro Brasileiro,1
+John Hume,1
+ConfederaÃ§Ã£o do Desporto de Portugal,1
+DieudonnÃ© M'Bala M'Bala,1
+Bissau,1
+crocodilos,1
+AÃÂ§aÃÂ­,1
+PAN AÃÂ§ores,1
+LoulÃÂ©,1
+Pacto Europeu para o Clima,1
+SIRESP,1
+Minas,1
+JoÃ£o Afonso,1
+Metropolitano de Lisboa,1
+ViolÃªncia policial,1
+abertura do ano escolar,1
+EducaÃ§Ã£o para a Cidadania e o Desenvolvimento,1
+Tribunal dos Direitos do Homem,1
+Francisco da ConceiÃ§Ã£o Espadinha,1
+Jardim ZoolÃ³gico,1
+Cangurus-vermelhos,1
+Carlos Valente,1
+Rede Europeia Contra o Racismo,1
+Universidade CatÃ³lica,1
+BCE,1
+Conselho Europeu de InvestigaÃ§Ã£o,1
+Starting Grants,1
+Pirataria,1
+FÃ³rum Euro-Ãfrica,1
+Montenegro,1
+Arganil,1
+30 de agosto,1
+Huelva,1
+League of Legends,1
+Steve Jobs,1
+Pixar,1
+Autoridade de aviaÃ§Ã£o civil,1
+Tauromaquia,1
+Madeleine McCann,1
+Armada,1
+Bruno Costa Carvalho,1
+Casa de Papel,1
+Brisa,1
+Jorge Costa,1
+Pires de Lima,1
+Azores Airlines,1
+Air Lease Corporation,1
+AfluÃÂªncia,1
 Nuno Garoupa,1
-Entrevistas SAPO24,1
-Rui Rio,1
-Justiça,1
-Ordem dos Advogados,1
-crimes de corrupção,1
-Bordalo II,1
-Big Trash Animals,1
-Palma,1
-Espinho,1
-ouriços-cacheiros,1
-DMX,1
-Igreja,1
-Jornada Mundial da Juventude,1
-JMJ,1
-JMJ2023,1
-Baviera,1
+IGAI,1
+NAV Portugal,1
+Estabelecimento Prisional do Porto,1
+CortiÃÂ§a,1
+Frontiers in Oncology,1
+PaÃÂ­s de Gales,1
+Ryan Giggs,1
+ColÃÂ©gio Rainha Santa Isabel,1
+Luigi Di Maio,1
+Patriot Act,1
+PaÃÂ­ses Baixos,1
+Fitas & EssÃÂªncias,1
+AdÃÂ£o Silva,1
+cyberbullying,1
+Burger King,1
+cobertura media,1
+OnÃÂ©simo TeotÃÂ³nio Almeida,1
+Lei,1
+Instituto Nacional de SaÃºde Dr. Ricardo Jorge,1
+Programa Nacional de VigilÃ¢ncia da Gripe,1
+Partido Conservador,1
+ForÃ§ar Armadas,1
+Miguel Alves,1
+3 de agosto,1
+Torrde dos ClÃ©rigos,1
+cosmÃ©ticos,1
+Almeirim,1
+Bansky,1
+Louise Michel,1
+Isabel Frade,1
+MÃ©ry-sur-Marne,1
+CiberseguranÃ§a,1
+Guinness World Records,1
+Julio e Waldramina,1
+29 de agosto,1
+Rali Alto TÃ¢mega,1
+Ruari Bell,1
+DireÃ§Ã£o-Geral do PatrimÃ³nio Cultural,1
+Global Witness,1
+Carlos Costa,1
+Tribunal Administrativo de Coimbra,1
+LuÃ­s Pedro Martins,1
+Entidade do Turismo do Norte,1
+Barroso,1
+PatrimÃ³nio AgrÃ­cola Mundial,1
+secretÃ¡ria de Estado da ValorizaÃ§Ã£o do Interior,1
+Aristides de Sousa Mendes,1
+Sobral de S. Miguel,1
+Internaiconal,1
+Nuno Teixeira,1
+"""Vila Faia""",1
+"""O Tal Canal""",1
+Golfo PÃ©rsico,1
+Bienal de Veneza,1
+SÃ£o Paio da Pousada,1
+Arrendamento AcessÃ­vel,1
+Bombeiros de Arouca,1
+Dominic Thiem,1
+Grand Slam,1
+ComÃ©rcio eletrÃ³nico,1
+UniÃ£o Aduaneira,1
+Plataformas digitais,1
+Quinta do Ferro,1
+ValÃªncia,1
+Linha de Apoio a Migrantes,1
+JosÃ© Veiga,1
+INESC TEC,1
+GÃ¡s RÃ¡don,1
+Radon,1
+TÃ©cnicos Superiores,1
+Comunidade Vida e Paz,1
+PenÃ­nsula IbÃ©rica,1
+LuÃ­s Gomes,1
+PME,1
+Base das Lajes,1
+Primeira liga,1
+Ali Alipour,1
+Clube Desportivo Nacional,1
+Washington Post,1
+Lactogal,1
+Derrame de leite,1
+Rio Ul,1
+Chadwick Boseman,1
+Fonte da Telha,1
+Metro de superfÃ­cie,1
+Abandono Escolar,1
+Mar do Sul da China,1
+Aeroporto de Beja,1
+PolitÃ©cnico de Leiria,1
+Dia Mundial do CoraÃ§Ã£o,1
+enfarte agudo do miocÃ¡rdio,1
+Silvestre de Almeida Lacerda,1
+Tribunal de Peniche,1
+AssociaÃ§Ã£o de Combate Ã  Precariedade,1
+ResidÃªncia Alternada,1
+Direito da FamÃ­lia,1
+Grupo de risco,1
+discriminaÃ§Ã£o de gÃ©nero,1
+GÃ©rald Marie,1
+Elite Models,1
+FundaÃ§Ã£o Champalimaud,1
+PrÃ³teses,1
+DeficiÃªncias,1
+Paulo Coelho,1
+PatrimÃ³nio Cultural,1
+Mesquita,1
+AlianÃ§a Gavi,1
+CerimÃ³nias fÃºnebres,1
+Nacional 2,1
+SÃ£o TomÃ© e PrÃ­ncipe,1
+Calais,1
+El Marro,1
+Jorge Jesus,1
+Big Brother,1
+Big Brother 2020,1
+aeronaÃºtica,1
+Lampreia,1
+JosÃ© Maria Costa,1
+ComissÃÂµes de CoordenaÃÂ§ÃÂ£o e Desenvolvimento Regional,1
+Comunidade Intermunicipal do Alto Minho,1
+Departamento de SeguranÃ§a Interna,1
+Bruno Covas,1
+ÃÂrvore de Natal,1
+Sindicato dos Trabalhadores dos Transportes da ÃÂrea Metropolitana do Porto,1
+Jorge Cordeiro,1
+NigÃÂ©ria,1
+Eritreia,1
+Literacia polÃÂ­tica,1
+Os 230,1
+Guerra das Estrelas,1
+Darth Vader,1
+David Prowse,1
+AndrÃÂ© Jordan,1
+Parque das NaÃÂ§ÃÂµes,1
+Manuel Chang,1
+Marinha portuguesa,1
+Boletim de voto,1
+Grupo LusÃÂ­adas,1
+PLMJ,1
+FranÃÂ§a Covid-19,1
+Igualdade de GÃÂ©nero,1
+Eurest,1
+alga vermelha,1
+ResidÃÂªncias universitÃÂ¡rias,1
+Tony Chung,1
+MÃÂ­ssil,1
+ClÃ©rigos,1
+ConfederaÃ§Ã£o Nacional da Agricultura,1
+livrarias,1
+Alan Parker,1
+JerusalÃÂ©m,1
+Ordem dos Nutricionistas,1
+Centro Hospitalar UniversitÃÂ¡rio do Porto,1
+Sean Connery,1
+The Comey Rule,1
+O Poder do Voto,1
+HBO Portugal,1
+John Oliver,1
+SÃÂ©ries,1
+Agents of Chaos,1
+poupanÃÂ§a,1
+Coimvra,1
+HÃÂ¡bitos alimentares,1
+eficiÃÂªncia energÃÂ©tica,1
+Samos,1
+PensilvÃÂ¢nia,1
+Ondas,1
+PacÃ­fico,1
+MicronÃ©sia,1
+FAA,1
+ReputaÃ§Ã£o,1
+Marcas,1
+George Floyd,1
+ExplosÃ£o,1
+PerdigÃµes,1
+Harry Potter,1
+Lesados do BES,1
+FRancisco Rodrigues dis Santos,1
+Festa do SacrifÃ­cio,1
+Comida,1
+Mesquita de Lisboa,1
+Think Tank,1
+Malaysia Airlines,1
+Escola AlemÃ£,1
+Hospital dos CovÃµes,1
+Pulmonale,1
+Cancro do PulmÃ£o,1
+Istambul,1
+Hagia Sofia,1
+Deputados,1
+Universidade da Beira Interior,1
+Alexandra LeitÃ£o,1
+loja do cidadÃ£o,1
+ministra da ModernizaÃ§Ã£o do Estado e da AdministraÃ§Ã£o PÃºblica,1
+IMPA,1
+Geraldo Alckmin,1
+Maria Manuela Faria,1
+Bolsas de CriaÃ§Ã£o,1
+MÃ¡rio Castrim,1
+Conselho de LideranÃ§a Luso-americano,1
+Comando Distrital de OperaÃ§Ãµes,1
+SMAQ,1
+Volt,1
+AdministraÃ§Ã£o Regional de SaÃºde do Centro,1
+animais domÃ©sticos,1
+ICNF,1
+Nepal,1
+Everest,1
+4 de agosto,1
+Dumpster Diving,1
+GonÃ§alo Lopes,1
+Porto Moniz,1
+cruz,1
+AntÃÂ³nio de Sousa Pereira,1
+Praia dos Arrifes,1
+ChÃÂ¡vez,1
+ViolÃÂªncia de GÃÂ©nero,1
+Recorde,1
+Diamantes,1
+anel,1
+livro do Guinness,1
+Teresa Ribeiro,1
+SEDES,1
+Centro Hospitalar de Vila Nova de Gaia/Espinho,1
+Biblioteca e Arquivo da Santa SÃÂ©,1
+Enxaqueca,1
+ValÃÂ©ry Giscard d'Estaing,1
+Fraser,1
+ComissÃÂ¡ria europeia dos Assuntos Internos,1
+VÃÂ­tor CÃÂ³ias,1
+4 de novembro,1
+Diego Maradona,1
+Esfaqueamento,1
+ÃÂguas de Portugal,1
+Teatro Maria VitÃÂ³ria,1
+Guadalajara,1
+AmÃ¡lia,1
+Estrela Carvas,1
+Programa de RecuperaÃ§Ã£o e ResiliÃªncia,1
+SÃÂ¡ Carneiro,1
+Dora,1
+Juvenal GarcÃªs,1
+Programa de RevitalizaÃÂ§ÃÂ£o do Pinhal Interior,1
+Vinduero-Vindouro,1
+Carolina do Norte,1
+Globos de Ouro,1
+Cervejaria Galiza,1
+ZimbabuÃ©,1
+peras,1
+maÃ§Ã£s,1
+Convento da Cartuxa,1
+FederaÃ§Ã£o Nacional dos MÃ©dicos,1
+FNAM,1
+MÃ©dicos especialistas,1
+Fertilidade,1
+CÃÂ¢mara de Aveiro,1
+Ana Gabriela Cabilhas,1
+Linha de Cascais,1
+Linha de Sintra,1
+Linha da Azambuja,1
+CÃÂ¢mara de Vila Verde,1
+Creches gratuitas,1
+Ativismo,1
+Reforma do sistema prisional,1
+injustiÃÂ§a sistÃÂ©mica,1
+REN,1
+JoÃÂ£o ConceiÃÂ§ÃÂ£o,1
+Minas Gerais,1
+Digital,1
+Margrethe Vestager,1
+Fundos Europeus,1
+Base AÃ©rea de Monte Real,1
+HidrogÃ©nio,1
+CorrupÃÂ§ÃÂ£o,1
+Tribunal dos Direitos Humanos,1
+DepressÃÂ£o Clement,1
+PrÃÂ©mio Norte-Sul do Conselho da Europa 2019,1
+Nabila Hamza,1
+Leoluca Orlando,1
+ComunicaÃÂ§ÃÂµes,1
+FundaÃÂ§ÃÂ£o La Caixa,1
+Bolsas de investigaÃÂ§ÃÂ£o,1
+Movimento Cultural Terra de Miranda,1
+audi,1
+Dakar,1
+Parque de Campismo da Caparica,1
+Scott Morrison,1
+Greve de Fome,1
+Ovelhas,1
+Queen Hind,1
+Navio Gil Eannes,1
+Lewotolo,1
+BPP,1
+Rendeiro,1
+ErupÃÂ§ÃÂ£o,1
+White Island,1
+desaparecimento,1
+blogger,1
+PirenÃÂ©us,1
+Esther Dingley,1
+elefante,1
+Covid-19. FranÃÂ§a,1
+OrganizaÃ§Ã£o das NaÃ§Ãµes Unidas,1
+Duarte Pio,1
+Termas do Centro,1
+ComissÃ£o EconÃ³mica das NaÃ§Ãµes Unidas para a Europa,1
+EDP DistribuiÃ§Ã£o,1
+Ilha da Berlenga,1
+painÃ©is fotovoltaicos,1
+Stonehenge,1
+Ashley Judd,1
+MinistÃ©rio da JustiÃ§a,1
+Denunciantes,1
+Lei laboral,1
+Exames,1
+DireÃ§Ã£o geral da alimentaÃ§Ã£o e veterinÃ¡ria,1
+VeterinÃ¡rios,1
+Ordem dos MÃ©dicos VeterinÃ¡rios,1
+Terra Pura,1
+Chumbo,1
+Vila Nova de Foz CÃ´a,1
+The Roots,1
+Malik B,1
+Compromisso Pagamento Pontual,1
+Sociedade de Porcelanas de AlcobaÃ§a,1
+CrÃ©dito,1
+MBWay,1
+AdministraÃ§Ã£o de SaÃºde do Centro,1
+Covid-10,1
+Malangatana,1
+OperaÃ§Ã£o Azimute,1
+Impresa,1
+Kaavan,1
+Pinturas Rupestres,1
+Ano letivo,1
+energia renovÃ¡vel,1
+Sindicato dos Oficiais de JustiÃ§a,1
+Ferro,1
+Convento de Jesus,1
+Festival Mental,1
+Trabalhadores Independentes,1
+SÃ³cios-gerentes,1
+Centro Hospitalar UniversitÃ¡rio Lisboa Norte,1
+Unidade de HospitalizaÃ§Ã£o DomiciliÃ¡ria,1
+VentilaÃ§Ã£o NÃ£o Invasiva,1
+Fungos,1
+MenstruaÃ§Ã£o,1
+Pantone,1
+Partido Socialista,1
+ComissÃ£o de OrÃ§amento e FinanÃ§as,1
+BÃ¡rbara GuimarÃ£es,1
+Rio Vizela,1
+13 de outubro,1
+Leitura,1
+PAIGC,1
+inspetores,1
+IlustraÃ§Ã£o,1
+Banda desenhada,1
+BD,1
+Castelo de Palmela,1
+ConferÃªncia PS,1
+TGV,1
+Reichstag,1
+Foz CÃ´a,1
+GÃ©nova,1
+AssociaÃÂ§ÃÂ£o AbraÃÂ§o,1
+Desabamento,1
+ÃÂlvaro Siza,1
+JosÃÂ© Eduardo dos Santos,1
+JoÃÂ£o LourenÃÂ§o,1
+Programa de RecolocaÃÂ§ÃÂ£o VoluntÃÂ¡ria,1
+ÃÂbidos,1
+FÃÂ³rmula 1,1
+Acreditar,1
+ISCTE,1
+Universidade CatÃÂ³lica de Lisboa,1
+LuÃÂ­s Pina,1
+KalidÃÂ¡s Barreto,1
+Sinistralidade,1
+Motociclistas,1
+OrÃÂ§amento de Estado,1
+EstÃÂ¡dio da Luz,1
+Global Teacher Prize Portugal,1
+Monforte,1
+Penalva do Castelo,1
+Alvito,1
+MÃÂªda,1
+PSD/AÃÂ§ores,1
+Acidentes rodoviÃÂ¡rios,1
+Teatro Nacional S. JoÃÂ£o,1
+PÃÂ£o por Deus,1
+PraÃ§a de Espanha,1
+selos,1
+These Times,1
+Partido Africano para a IndependÃªncia da GuinÃ© e Cabo Verde,1
+Conseslus Kipruto,1
+Kanye West,1
+Hans Kluge,1
+AntÃ³nio Costa Silva,1
+AssociaÃ§Ã£o de Bares da Zona HistÃ³rica do Porto,1
+Pedro Costa,1
+Coimbra Business School,1
+Feira do Livro,1
+CoornavÃ­rus,1
+Regulamento SanitÃ¡rio Internacional,1
+Sean Conley,1
+Porto Santos,1
+SecÃ§Ã£o Regional dos AÃ§ores da Ordem dos Enfermeiros,1
+Santa Casa da MisericÃ³rdia do Nordeste,1
+AntÃ³nio Lobo Xavier,1
+Comunidade Intermunicipal da RegiÃ£o de Leiria,1
+vindimas,1
+Kenzo Takada,1
+Seixas,1
+Kayleigh McEnany,1
+Cloroquina,1
+Soumya Swaminathan,1
+Centros de SaÃºde,1
+JN,1
+Porta a porta,1
+Bali,1
+Missa,1
+FederaÃ§Ã£o AcadÃ©mica do Porto,1
+Ministra da SaÃºde,1
+Centro de SaÃºde de Montalegre,1
+TÃ¡xi,1
+SantuÃ¡rio do FÃ¡tima,1
+AssociaÃ§Ã£o de Bares do Porto,1
+Vila Nova de FamalicÃ£o,1
+Academia Russa de CiÃªncias,1
+Comunidade Intermunicipal do Algarve,1
+Casa de Repouso Fonte SerrÃ£,1
+Cancro pediÃ¡trico,1
+Margem sul,1
+Feira Internacional de Arte ContemporÃ¢nea de Paris,1
+Transporte Escolar,1
+"""A Lisboa que Teria Sido""",1
+MinistÃ©rio da ModernizaÃ§Ã£o do Estado e da AdministraÃ§Ã£o PÃºblica,1
+Jogos Santa Casa,1
+Gro Harlem Brundtland,1
+Bruno Le Maire,1
+Gabinete de Crise,1
+Arancha GonzÃ¡lez Laya,1
+Teatro D. Maria II,1
+Tiago Rodrigues,1
+Stephen Donnelly,1
+Portugal - Espanha,1
+Plasma sanguÃ­neo,1
+AssociaÃ§Ã£o Europacolon Portugal,1
+cancro colorretal,1
+Hospital de BraganÃ§a,1
+Sao TomÃ©,1
+Fernando de Noronha,1
+ConvenÃ§Ã£o Nacional de SaÃºde,1
+Guias SAPO24,1
+coroanvÃ­rus,1
+Melania,1
+II Liga,1
+Walter Reed,1
+Brigadas de IntervenÃ§Ã£o RÃ¡pida,1
+Maria JoÃ£o Quintela,1
+Hope Hicks,1
+horÃ¡rios,1
+hidroxicloroquina,1
+MÃ©rtola,1
+Santo AndrÃ©,1
+AssociaÃ§Ã£o Portuguesa pelos Direitos da Mulher na Gravidez e no Parto,1
+Samuel Ãria,1
+CarlÃ£o,1
+31 de agosto,1
+Freixo de Espada Ã  Cinta,1
+Poiares,1
+Brigadas de intervenÃ§Ã£o,1
+LaurÃ­cio Monteiro Cruz,1
+Karin BÃ¤ckstrand,1
+Clube de Lisboa,1
+ConferÃªncia de Lisboa,1
+AntÃ³nio Vitorino,1
+Lar dos FerroviÃ¡rios,1
+DireÃ§Ã£o-Geral da SaÃºde,1
+ManifestaMente,1
+Livrarias independentes,1
+Manica,1
+FlÃ¡vio Bolsonaro,1
+Santa Casa da MisericÃ³rdia da Maia,1
+Qualitavida,1
+EstÃ¡dio do Bessa,1
+Micaela Sousa,1
+CÃ¢mara de Vila Real,1
+Mark Meadows,1
+Pneumonia,1
+2 de setembro,1
+AndrÃ© Pestana,1
+RELI,1
+Reid's,1
+Cannes,1
+Festival de Cinema,1
+Research4Covid,1
+AssociaÃ§Ã£o Portuguesa de Cuidados Paliativos,1
+Sindicato Nacional dos Professores Licenciados pelos PolitÃ©cnicos e Universidades,1
+Vale de Cambra,1
+AlianÃ§a Global para as Vacinas,1
+PavilhÃ£o Rosa Mota,1
+Roche,1
+Hospital Beja,1
+Linha SNS24,1
+SecÃ§Ã£o Regional do Centro da Ordem dos MÃ©dicos,1
+Joana MortÃ¡gua,1
+Missas,1
+Fisioterapia,1
+Hospital da Prelada,1
+RegiÃ£o de Turismo do Algarve,1
+Feira,1
+hÃ³teis,1
+Inverno,1
+Hospital de GuimarÃ£es,1
+Dentistas,1
+RepatriaÃ§Ã£o,1
+CaÃ§a,1
+caÃ§adores,1
+AntibiÃ³ticos,1
+AssociaÃ§Ã£o da Hotelaria,1
+Ãguas do Porto,1
+RestauraÃ§Ã£o e Similares de Portugal,1
+Daltonismo,1
+Centro de testes,1
+LuÃ­s SimÃ£o,1
+FederaÃ§Ã£o dos MÃ©dicos,1
+Clean & Safe,1
+Ana Jorge,1
+ConfederaÃ§Ã£o dos EmpresÃ¡rios do Algarve,1
+RÃ£-verde,1
+LuÃ­s Filipe Pereira,1
+Turismo do Porto e Norte,1
+Arolde de Oliveira,1
+Nuno Fonseca,1
+Festa do Livro,1
+Maria Van Kerkhove,1
+VÃ¡rzea de Sintra,1
+Padre,1
+Meadela,1
+The Crown and Anchor,1
+AssociaÃ§Ã£o de HotÃ©is e Empreendimentos TurÃ­sticos do Algarve,1
+JoÃ£o Paulo Rebelo,1
+RegiÃ£o Centro,1
+secretÃ¡rio de Estado da Juventude e do Desporto,1
+Maria de BelÃ©m,1
+ANAFRE,1
+IGAC,1
+Selo Corona,1
+RegiÃ£o Norte,1
+PolitÃ©cnico de Beja,1
+Dia dos finados,1
+Carlos Carreiras,1
+UniÃ£o das MisericÃ³rdias Portuguesas,1
+Idanha-a-Nova,1
+coronavÃ­rus covid-19,1
+FiÃ©is Defuntos,1
+Ordem dos MÃ©dicos Dentistas,1
+FarmacÃªutica Moderna,1
+Fernando Nobre,1
+Conselho Nacional SaÃºde,1
+Santa Casa da MisericÃ³rdia de Vila ViÃ§osa,1
+Conselho Empresarial do TÃ¢mega e Sousa,1
+Geberit,1
+Andrew Lloyd Webber,1
+Eurocontrol,1
+Escola BÃ¡sica das Laranjeiras,1
+LÃ¢mpada,1
+Navio,1
+BioNTech-Pfizer,1
+OrbitPlatform,1
+26 de setembro,1
+Boletim DGS,1
+Areias da Telha,1
+Faculdade de Medicina da Universidade do Porto,1
+Boris Johonson,1
+Carachi,1
+Civitavecchia,1
+Bodies,1
+Carnaval Rio de Janeiro,1
+Luiz Henrique Mandetta,1
+Cedofeita,1
+Zhong Nanshan,1
+Ensino profissional,1
+JosÃ© Cebola,1
+ConfederaÃ§Ã£o do Turismo,1
+Francisco Calheiros,1
+Teste serolÃ³gico,1
+Estoril,1
+Feira Internacional do Norte,1
+Lar de CarÃ§Ã£o,1
+Igreja CristÃ£ EvangÃ©lica de Torres Vedras,1
+Teams,1
+Christian Drosten,1
+Marco Martins,1
+Dengue,1
+CoronavÃ­ris,1
+Fox News,1
+Novo CoronavÃ­rus,1
+Teorias de ConspiraÃ§Ã£o,1
+Annenberg Public Policy Center,1
+AMI,1
+SubsÃ­dio,1
+ECDC,1
+Tribunal da Amadora,1
+Cantina,1
+ISV,1
+SinoVac,1
+Unilabs Portugal,1
+UTAD,1
+Google Maps,1
+Taj Mahal,1
+Chris Whitty,1
+Patrick Vallance,1
+Plano da SaÃºde,1
+Microsoft,1
+OIM,1
+Tribunais,1
+PÃÂ©ter SzijjÃÂ¡rtÃÂ³,1
+Alta gastronomia,1
+PrÃÂ©mio em BioÃÂ©tica JoÃÂ£o Lobo Antunes,1
+plano de vacinaÃÂ§ÃÂ£o,1
+Task force,1
+Rabo Peixe,1
+ComitÃÂ© EconÃÂ³mico e Social Europeu,1
+Christa Schweng,1
+Ribeira Grande,1
+CoronavÃÂ­us,1
+OMS Europa,1
+NBA,1
+Hospital de Chaves,1
+ANEM,1
+Michael Gove,1
+Centro Hospitalar UniversitÃÂ¡rio SÃÂ£o JoÃÂ£o,1
+CHUSJ,1
+Nelson Pereira,1
+Hospital SÃÂ£o JoÃÂ£o,1
+Cristina Marujo,1
+Plataforma Cidadania XXI,1
+LaboratÃÂ³rios,1
+ValpaÃÂ§os,1
+AntigÃÂ©nio,1
+Vacina Coronavac,1
+CUF,1
+Coruche,1
+Centro de Apoio do ExÃÂ©rcito em BelÃÂ©m,1
+Pessoas-Animais-Natureza,1
+AssociaÃÂ§ÃÂ£o HumanitÃÂ¡ria dos Bombeiros de Lamego,1
+ÃÂlhavo,1
+JÃÂ³zsef SzÃÂ¡jer,1
+FDA,1
+Centro de Congressos do Estoril,1
+Vila Nova de Poiares,1
+IACOBUS,1
+Hospital das Caldas da Rainha,1
+Conselho Superior da Magistratura,1
+Pirotecnia,1
+Vacina Sanofi-GSK,1
+Gouveia,1
+Bombeiros VoluntÃÂ¡rios de ÃÂvora,1
+BelÃÂ©m,1
+Concelho,1
+VOST,1
+VOST Portugal,1
+Estamos ON,1
+Pai Natal,1
+Hospital Fernando Fonseca,1
+Hospital de SantarÃÂ©m,1
+Autocarros,1
+Tribunal Constitucional,1
+AssociaÃÂ§ÃÂ£o Portuguesa de Centros Comerciais,1
+Trabalhadores seniores,1
+Carlos Peixoto,1
+MalÃÂ¡sia,1
+American Airlines,1
+Hospital das ForÃÂ§as Armadas,1
+Mariana Silva,1
+Rede de Expressos,1
+MinistÃÂ©rio da SaÃÂºde,1
+Psicologia,1
+GaviÃÂ£o,1
+Redes Expresso,1
+Conselho Nacional da Ordem dos MÃÂ©dicos,1
+Hospital de PÃÂ³voa de Varzim/Vila do Conde,1
+Vacina Pfizer,1
+AndrÃÂ© MendonÃÂ§a,1
+CÃÂ¢mara Municipal da Trofa,1
+12 de novembro,1
+ConfederaÃÂ§ÃÂ£o de Agricultores de Portugal,1
+191 concelhos,1
+Centro Hospitalar da PÃÂ³voa de Varzim/Vila do Conde,1
+Tribunal de FamÃÂ­lia de Braga,1
+Centro Hospitalar do Oeste,1
+CÃÂ¢mara Municipal de Penela,1
+Hospital da Feira,1
+Johnson&Johnson,1
+Cova da Piedade,1
+cadeia de CustÃÂ³ias,1
+Agrupamento de Escolas de MurÃÂ§a,1
+Ilhas Marshall,1
+IPO do Porto,1
+ConfederaÃÂ§ÃÂ£o do Turismo de Portugal,1
+Crioestaminal,1
+MoisÃÂ©s Ferreira,1
+Escola BÃÂ¡sica Jorge Barradas,1
+Centro de SaÃÂºde de Sines,1
+Jorge Silva Melo,1
+Fiocruz,1
+Plateia - AssociaÃÂ§ÃÂ£o de Profissionais das Artes CÃÂ©nicas,1
+Penela,1
+Penela PresÃÂ©pio,1
+Sobral de Monte AgraÃÂ§o,1
+AntÃÂ³nio Carlos Monteiro,1
+InÃÂªs Sousa Real,1
+Jorge Pires,1
+Ricardo Baptista Leite,1
+ConfederaÃÂ§ÃÂ£o do ComÃÂ©rcio e ServiÃÂ§os de Portugal,1
+Vacina de Oxford,1
+Johnson & Johnson,1
+Autoridade TributÃÂ¡ria a Aduaneira,1
+Tribunal da RelaÃÂ§ÃÂ£o de GuimarÃÂ£es,1
+Centro de Apoio a Deficientes Profundos JoÃÂ£o Paulo II,1
+Barak Obama,1
+JosÃÂ© LuÃÂ­s Ferreira,1
+ANTRAL,1
+Especialista,1
+GinÃÂ¡sios,1
+ServiÃÂ§os Prisionais,1
+mercado,1
+Procuradora-Geral da RepÃÂºblica,1
+AdministraÃÂ§ÃÂ£o Interna,1
+MisericÃÂ³rdia da Trofa,1
+Alcanede,1
+Hospital Francisco Zagalo,1
+Alcains,1
+MinistÃÂ©rio da Defesa Nacional,1
+Festas Nicolinas,1
+Centro europeu de doenÃÂ§as,1
+Faculdade de CiÃÂªncias da Universidade do Porto,1
+ÃÂscar Felgueiras,1
+Ligares,1
+Salvador Malheiro,1
+Universidade CatÃÂ³lica Portuguesa do Porto,1
+Pousadas da juventude,1
+MelgaÃÂ§o,1
+FederaÃÂ§ÃÂ£o Nacional da EducaÃÂ§ÃÂ£o,1
+ConfederaÃÂ§ÃÂ£o do ComÃÂ©rcio e ServiÃÂ§os,1
+Comunidade Luso-Brasileira,1
+Alberto FernÃÂ¡ndez,1
+SeminÃÂ¡rio de Leiria,1
+AntÃÂ³nio MendonÃÂ§a Mendes,1
+AntÃÂ³nio Saraiva,1
+MinistÃÂ©rio da JustiÃÂ§a,1
+ÃÂfrica do Sul,1
+John Nkengasong,1
+Pedro Filipe Soares,1
+Margaret Keenan,1
+Escola Nacional de SaÃÂºde PÃÂºblica,1
+Oxford/AstraZeneca,1
+co,1
+AgÃªncia Europeia do Medicamento,1
+Hospital Beatriz Ãngelo,1
+SNS 24,1
+Hospital S. JoÃÂ£o,1
+Feira de Carcavelos,1
+Universidade de ÃÂvora,1
+Carlos Sinogas,1
+PURP,1
+Vila Real de Santo AntÃÂ³nio,1
+Ayamonte,1
+UcrÃÂ¢nia,1
+FederaÃÂ§ÃÂ£o dos MÃÂ©dicos,1
+Santa Casa da MisericÃÂ³rdia,1
+Trabalhadores da SaÃÂºde,1
+Sociedade Portuguesa de Medicina Interna,1
+CÃÂ¢mara de FamalicÃÂ£o,1
+Cinemas,1
+Oliveira do Bairro,1
+APED,1
+JoÃÂ£o Cotrim de Figueiredo,1
+PRO.VAR,1
+Inatel,1
+Novas medidas,1
+Santa Casa da MisericÃÂ³rdia de Chaves,1
+Plano Municipal de EmergÃÂªncia,1
+Hospital de SÃÂ£o TeotÃÂ³nio,1
+diabÃÂ©ticos,1
+Centro Social do Pego,1
+Nelson Souza,1
+Ricardo Pinheiro,1
+AlijÃÂ³,1
+Vilar de MaÃÂ§ada,1
+Crise,1
+Lar de Outeiro,1
+Doentes crÃÂ³nicos,1
+AssociaÃÂ§ÃÂµes de Doentes,1
+comerciantes,1
+Baixa,1
+Hoteleiros,1
+Sichuan,1
+Passagem de Ano,1
+Sinopharm,1
+TSD/AÃÂ§ores,1
+Hospital de Viana do Castelo,1
+SalvarOturismo,1
+Lar de Ligares,1
+Retalho,1
+atividades artÃÂ­sticas,1
+Vimioso,1
+Argoselo,1
+AssociaÃÂ§ÃÂ£o de Promotores de EspetÃÂ¡culos,1
+Lewis Hamilton,1
+AerÃÂ³dromo de Cascais,1
+Europastry,1
+Pfizer-BioNtech,1
+Santa Maria,1
+Investigadores da Escola Nacional de SaÃÂºde PÃÂºblica,1
+Jean-Pierre Lacroix,1
+ParquÃÂ­metros,1
+Santa Casa da MisericÃÂ³rdia de GrÃÂ¢ndola,1
+CUF Porto,1
+Cuidadores Informais,1
+seguradoras,1
+Planos de saÃÂºde,1
+Seguros,1
+InteligÃÂªncia artificial,1
+ConvergÃÂªncia pela Cultura,1
+Centro de Retaguarda do Porto,1
+UrgÃÂªncia,1
+Fisioeterapeutas,1
+Lar da MisericÃÂ³rdia de Amares,1
+ProenÃÂ§a-a-Nova,1
+Lagoa,1
+SARS-CoV-2,1
+Manuel Barbosa,1
+Largo de SÃÂ£o Domingos,1
+Palavra do ano,1
+Porto Editora,1
+A Palavra do Ano,1
+publicidade institucional,1
+Baarle-Nassau,1
+Baarle-Hertog,1
+o negativo,1
+Theta,1
+AssociaÃÂ§ÃÂ£o de MunicÃÂ­pios,1
+CÃÂ£es,1
+REGN-COV2,1
+Schleifer,1
+Yancopoulos,1
+Walk Free,1
+"Walk Free disse que esta organizaÃ§Ã£o e o programa das NaÃ§Ãµes Unidas ""Every Woman Every Child""",1
+10 de outubro,1
+APAVT,1
+Carlos Alexandre,1
+Octapharma,1
+GonÃÂ§alo Reis,1
+lalanda de Castro,1
+Nagorno-Karabahk,1
+10 de dezembro,1
+FundaÃ§Ã£o Sandra Ibarra,1
+NÃ£o hÃ¡ lugar como a casa,1
+Rali do Vidreiro,1
+CÃ£es-chacais,1
+Aeroflot,1
+CearÃ¡,1
+Chipre,1
+Med-7,1
+Valentina,1
+OrganizaÃÂ§ÃÂ£o para a LibertaÃÂ§ÃÂ£o da Palestina,1
+Vila Franca do Camp,1
+Bem-estar,1
+Gebalis,1
+Dia Nacional da Igualdade Salarial,1
+ToxicodependÃÂªncia,1
+Rede Tramontana III,1
+Grande PrÃÂ©mio Europeu do PatrimÃÂ³nio Cultural/Europa Nostra 2020,1
+MinistÃÂ©rio das Infraestruturas e HabitaÃÂ§ÃÂ£o,1
+Sebastian Kurz,1
+Museu da FarmÃÂ¡cia,1
+Ivan GonÃÂ§alves,1
+Amadou Toumani TourÃÂ©,1
+Agricultura biolÃÂ³gica,1
+Theodore McCarrick,1
+Chega/AÃÂ§ores,1
+ErgovisÃÂ£o,1
+MinistÃÂ©rio da CoesÃÂ£o Territorial,1
+ÃÂlvaro Cunhal,1
+imigraÃÂ§ÃÂ£o ilegal,1
+Propriedade Intelectual,1
+JoÃÂ£o NegrÃÂ£o,1
+deficientes,1
+Modelo de Apoio ÃÂ  Vida Independente,1
+Artur Portela Filho,1
+RevisÃÂ£o constitucional,1
+Pedro Catarino,1
+PovoaÃ§Ã£o,1
+ConstruÃ§Ã£o,1
+DarÃ­o Vivas,1
+pobreza infantil,1
+Simplex,1
+AdministraÃ§Ã£o PÃºblica,1
+Maria de FÃ¡tima Fonseca,1
+GNB Vida,1
+Praia de Carcavelos,1
+Medusa Velella,1
+Praia de SÃ£o Pedro do Estoril,1
+PolÃ­cia de SeguranÃ§a PÃºblica,1
+CalendÃÂ¡rio 2021,1
+pequenas e mÃÂ©dias empresas,1
+Micro,1
+Boavista,1
+MansÃ£o de Santa Maria de Marvila,1
+EstaÃÂ§ÃÂ£o,1
+Rosine Sori-Coulibaly,1
+Revista Time,1
+DiÃÂ³xido de Carbono,1
+Educadores de infÃÂ¢ncia,1
+Sindicato Zona Sul,1
+TomÃÂ¡s Correia,1
+Khalifa bin Salman al-Khalifa,1
+Lojas do CidadÃÂ£o,1
+AssociaÃÂ§ÃÂ£o dos Armadores das Pescas Industriais,1
+CTT da Madeira,1
+Alexandre Loukachenko,1
+FundaÃ§Ã£o D. Pedro IV,1
+AntÃ³nio Marto,1
+Chiara Manfletti,1
+CIIMAR,1
+glifosato,1
+Cimeira dos PaÃ­ses do Sul da UniÃ£o Europeia,1
+10 setembro,1
+Adriano Moreira,1
+Comuna,1
+As Artimanhas de Scapin,1
+JoÃ£o Mota,1
+MoliÃ©re,1
+Orlando Cruz,1
+Turismo Algarve,1
+DiCaprio,1
+Instituto de SeguranÃ§a Social,1
+jardins-de-infÃ¢ncia,1
+Beatas,1
+AÃ§Ã£o Cooperativista,1
+LetÃ³nia,1
+EstÃ³nia,1
+Unidade de HospitalizaÃ§Ã£o DomiciliÃ¡ria do Centro Hospitalar do TÃ¢mega e Sousa,1
+Ana MagalhÃ£es,1
+11 Agosto,1
+Apple Daily,1
+Rota Vicentina,1
+SudÃ£o do Sul,1
+"""A minha ida ÃÂ  Guerra de 1908""",1
+Ding Dong,1
+Ordem dos MÃÂ©dicos VeterinÃÂ¡rios,1
+Alberto II,1
+SAPO24,1
+PrÃ©mio de jornalismo,1
+Era uma vez na Casa Acreditar,1
+John Legend,1
+Chrissy Teigen,1
+Programa Nacional de VacinaÃ§Ã£o,1
+JuÃ­zes,1
+Keith Krach,1
+Pacto Global das MigraÃ§Ãµes,1
+CMTV,1
+Correio da ManhÃ£,1
+Honduras,1
+SergiÃ±o Dest,1
+Faculdade de Letras da Universidade de Coimbra,1
+Humberto Pedrosa,1
+David Pedrosa,1
+APAV,1
+AssociaÃ§Ã£o Portuguesa de Apoio Ã  VÃ­tima,1
+Portugal Mais Velho,1
+Sementes,1
+SÃ£o Bento,1
+Eixo Norte-Sul,1
+Los Angeles,1
+Erick Morillo,1
+ConstanÃ§a Urbano de Sousa,1
+Ajax,1
+VeterinÃÂ¡rios,1
+Ex Aequo,1
+Aterro sanitÃ¡rio,1
+Ana Rita Bessa,1
+GÃ©rard Depardieu,1
+Rita Rato,1
+Museu do Aljube,1
+linha do douro,1
+importunaÃ§Ã£o sexual,1
+JosÃ© Afonso,1
+AssÃ©dio,1
+Brasileiras nÃ£o se calam,1
+Web Summit 2020,1
+GDA,1
+Provedoria de JustiÃ§a,1
+PCP Madeira,1
+MÃÂºrcia,1
+Quebec,1
+Ibiza,1
+TÃÂ¡xis,1
+Isabel Lucas,1
+ÃÂ Desta Que Leio Isto,1
+"""Viagem ao Sonho Americano""",1
+Dubai,1
+GrÃ£-Bretanha,1
+Ambientalistas,1
+VolfrÃ¢mio,1
+2Âª Circular,1
+JosÃ© AbraÃ£o,1
+Paolo Rossi,1
+BP Target Neutral,1
+IÃÂ©men,1
+Ivan Valente,1
+Joseph Safra,1
+FederaÃÂ§ÃÂ£o Internacional de Jornalista,1
+CombustÃÂ­veis fÃÂ³sseis,1
+Sociedade HistÃÂ³rica da IndependÃÂªncia de Portugal,1
+Amnistia,1
+AssociaÃÂ§ÃÂ£o Nacional de Professores de InformÃÂ¡tica,1
+Harold Budd,1
+Zona Franca,1
+vespa asiÃÂ¡tica,1
+IC19,1
+Iniciativa legislativa,1
+JÃÂºlio Isidro,1
+FinlÃÂ¢ndia,1
+fibrose quÃÂ­stica,1
+AssociaÃÂ§ÃÂ£o Nacional de Fibrose QuÃÂ­stica,1
+Kaftrio,1
+Maria de BelÃÂ©m Roseira,1
+ArrÃÂ¡bida,1
+Pedro Baganha,1
+Alverca,1
+Almeida Henriques,1
+VitÃÂ³ria de SetÃÂºbal,1
+Conselho de SeguranÃ§a da ONU,1
+MLS,1
+Ana Paula Vitorino,1
+Pedro Passos Coelho,1
+Centro Hospitalar de Entre Douro e Vouga,1
+Castro Marim,1
+Salinas,1
+Ponte SÃ£o JoÃ£o,1
+Olaf Scholz,1
+Pedacinho do CÃ©u,1
+Canil,1
+Centros de Recolha Oficial de Animais,1
+ObservatÃ³rio TÃ©cnico Independente,1
+Joaquim Sande Silva,1
+estupefacientes,1
+Parque das NaÃ§Ãµes,1
+Just a Change,1
+Parque Nacional Peneda-GerÃªs,1
+Sinabung,1
+Combate a IncÃªndios,1
+Law Wai-kwong,1
+Next Media,1
+FNAPF,1
+Mar,1
+Oceano,1
+10 agosto,1
+Popa langur,1
+Portway,1
+pinhas,1
+Cardeal AntÃ³nio Marto,1
+NazarÃ©,1
+Walter Chicharro,1
+AssociaÃ§Ã£o Portuguesa de Administradores Hospitalares,1
+Alexandre LourenÃ§o,1
+Centro Social do Manigoto,1
+Reuni Unido,1
+14 de outubro,1
+Turim,1
+Imunidade,1
+AssociaÃ§Ã£o Nacional dos MÃ©dicos de SaÃºde PÃºblica,1
+Presidenciais 2020,1
+Liverpool,1
+Bailarino,1
+Beatles,1
+Cavern Bar,1
+Dia de Todos os FiÃ©is Defuntos,1
+recÃ©m-nascido,1
+Giuseppe Conte,1
+Alexander de Croo,1
+Ãbidos,1
+Hospital da Figueira da Foz,1
+Caramulo,1
+LuÃ­s Pisco,1
+ManifestaÃ§Ã£o,1
+Escola BÃ¡sica da Quinta da Granja,1
+CSIRO,1
+CÃ¢mara da CovilhÃ£,1
+Alunos de enfermagem,1
+Diana Ferreira,1
+MisericÃ³rdia de BraganÃ§a,1
+Malveira,1
+Pedro Simas,1
+Agrupamento de Escolas de Mogadouro,1
+Clube Desportivo de Alcains,1
+BelÃ©m,1
+Centro de Apoio Militar Covid-19,1
+Antonino Sousa,1
+CÃ¢mara de Penafiel,1
+AssociaÃ§Ã£o Portuguesa dos Administradores Hospitalares,1
+Tribunal de Chaves,1
+EspaÃ§o comunitÃ¡rio,1
+Darque,1
+Jaime Filipe Ramos,1
+Centro de SaÃºde de Estremoz,1
+Francisco George,1
+educaÃ§Ã£o especial,1
+colÃ©gios privados de educaÃ§Ã£o especial,1
+Ciberbullying,1
+samba,1
+CatÃ³lica do Porto,1
+ForÃ§a AÃ©rea da Ota,1
+CirculaÃ§Ã£o,1
+EslovÃ¡quia,1
+Afreximbank,1
+Imunidade de Grupo,1
+Hipertensos,1
+ColÃ©gios,1
+Vigo,1
+Zomato,1
+Vincitables,1
+Lota Digital,1
+AgÃªncias de turismo,1
+Copacabana,1
+Preh,1
+Rui Nunes,1
+Cigarros EletrÃ³nicos,1
+diabÃ©ticos,1
+Caminhos de Santiago,1
+ATARP,1
+MinistÃ©rio da Economia,1
+EPI,1
+Lares de Idosos,1
+Bundesliga,1
+Azibo,1
+Prais Fluviais,1
+TrÃ¡s-os-Montes,1
+saÃºde oral,1
+SaÃºde DentÃ¡ria,1
+JosÃ© Tolentino MendonÃ§a,1
+O que Ã© amar um paÃ­s,1
+Piotr Fic,1
+Biomed,1
+Lar de SÃ£o JosÃ©,1
+Airbnb,1
+Barron Trump,1
+ComissÃ£o Nacional de ProteÃ§Ã£o de Dados,1
+estado de calamidade,1
+colonoscopias,1
+Lancet,1
+MisericÃ³rdia de Vila ViÃ§osa,1
+Rainha,1
+Isabel II,1
+App Stayaway,1
+AntigÃ©nio,1
+Ordem dos PsicÃ³logos,1
+Jorge Miranda,1
+AssociaÃ§Ã£o PrÃ³ Maior SeguranÃ§a dos Homens do Mar,1
+Sporting CP,1
+Sharon Stone,1
+Nuno BrÃ¡s,1
+Nossa Senhora do Monte,1
+Opus Dei,1
+BarÃ³metro Covid-19,1
+Sorrento Therapeutics,1
+IGAS,1
+Restaurante,1
+Bar,1
+GonÃ§alo,1
+Sinisa Mihajlovic,1
+Christian de Oliveira,1
+Plataforma para o Cinema,1
+OrÃ§amento do Estado para 2021,1
+Francisca Guedes de Oliveira,1
+ICA,1
+Instituto do Cinema e Audiovisual,1
+Olsberg SPI,1
+Nuno Artur,1
+Ripple Effect Images,1
+Piplantri,1
+Dia internacional da rapariga,1
+Vale do CÃ´a,1
+Revista de imprensa - 11 de outubro,1
+GolegÃ£,1
+Daniel Chong,1
+SituaÃ§Ã£o de Alerta,1
+CRASSA,1
+Animais selvagens,1
+Zhuhai,1
+Mignonnes,1
+Centro Hospitalar Lisboa Norte,1
+11 setembro,1
+Escola BÃ¡sica e SecundÃ¡ria de Canelas,1
+Al-qaida,1
+mortos,1
+Greenpeace,1
+Cartoon Network Portugal,1
+"Os Ursos: O Filme""",1
+Bolonha,1
+David,1
+Gato,1
+A43,1
+SalÃÂ¡rios,1
+Oliveira de AzemÃÂ©is,1
+Joaquim Jorge Ferreira,1
+Cometlis,1
+Casal de Mira,1
+Azambuja,1
+Aterro,1
+Casino Espinho,1
+Porta dos Fundos,1
+PrÃÂ©-reforma,1
+JosÃÂ© Augusto Alves,1
+Solange Freitas,1
+lÃÂ­tio,1
+Morales,1
+EstaÃÂ§ÃÂ£o Espacial Internacional,1
+Space X,1
+Sindicato Independente dos MÃÂ©dicos,1
+Primeira Guerra Mundial,1
+Sociedade Portuguesa de Oncologia,1
+Abuso sexual de crianÃÂ§as,1
+PolÃÂ­tica JudiciÃÂ¡ria,1
+Bairro do Bonfim,1
+Romain Bardet,1
+Tour,1
+Bernal,1
+Elsa,1
+Azeite,1
+Sumol,1
+Compal,1
+Manila,1
+Maria Martins,1
+Plovdiv,1
+"""Comboio da Liberdade""",1
+Alfapendular,1
+ArÃÂ¡bia Saudita,1
+Mohammed bin Salman,1
+Ivanka Trump,1
+Fabien,1
+Venda do Pinheiro,1
+PetrÃÂ³leo,1
+Bataclan,1
+SecretÃÂ¡rio-Geral das NaÃÂ§ÃÂµes Unidas,1
+Saara Ocidental,1
+alcoÃÂ³l,1
+Plataforma P'la ReposiÃÂ§ÃÂ£o das Scut na A23 e na A25,1
+Lar de Reguengos de Monsaraz,1
+Centro Hospitalar de Lisboa Central,1
+Navarra,1
+Eduardo VÃ­tor Rodrigues,1
+Broadway,1
+PolitÃÂ©cnico de Beja,1
+Egipto,1
+Instituto Ricardo Jorge,1
+Derrama,1
+EN116,1
+Protetor Solar,1
+Jimmy Lay,1
+Lick,1
+Lar em Lisboa,1
+CÃ£es,1
+Estatuto do Antigo Combatente,1
+El Salvador,1
+diploma,1
+Lei das PetiÃ§Ãµes,1
+Miguel Torga,1
+12 agosto,1
+Centro Hospitalar de SetÃºbal,1
+Crohn,1
+InvestigaÃ§Ã£o e Desenvolvimento,1
+I&D,1
+Turismo do Algarve,1
+Pena de Morte,1
+atrofia muscular espinhal,1
+Zolgensma,1
+Mamadou Ba,1
+Beatriz Gomes Dias,1
+AmeaÃ§as,1
+Casamentos,1
+Bebidas Espirituosas,1
+Alassane Ouattara,1
+Albufeira de Castelo de Bode,1
+Vinhais,1
+Paulo Morais,1
+Fundos ComunitÃ¡rios,1
+ministra da CoesÃ£o Territoria,1
+PopulaÃ§Ã£o idosa,1
+Antifascista,1
+Centro CientÃ­fico e Cultural de Macau,1
+depressÃ£o Ellen,1
+JoÃ£o Claro,1
+Assimi Goita,1
+Chrystia Freeland,1
+Ibrahim Boubacar Keita,1
+Vila do GerÃªs,1
+Isaltino Morais,1
+John Kerry,1
+Bill Clinton,1
+TufÃ£o Higos,1
+Cuba Gooding Jr.,1
+19 de agosto,1
+Vendas Novas,1
+grupo de Visegrado,1
+Francisco Braz,1
+Karma is not a fest,1
+PARES,1
+Autoridade Nacional da ProteÃ§Ã£o Civil,1
+Ciclone Alpha,1
+AssociaÃ§Ã£o de Solidariedade e Apoio Social do Pessoal da TAP,1
+Odemira,1
+Vento,1
+Hospital S. JosÃ©,1
+18 de setembro,1
+BPI,1
+Caixabank,1
+Fernando Ulrich,1
+Bankia,1
+tornado,1
+Atletismo,1
+FederaÃ§Ã£o Portuguesa de Atletismo,1
+Jorge Vieira,1
+Dieselgate,1
+Centro Cultural Olga Cadaval,1
+Avenida JoÃ£o XXI,1
+Apple,1
+PorfÃ­rio Silva,1
+Revista Science,1
+Lisboa Capital Verde 2020,1
+CalÃ§ado,1
+MilÃ£o,1
+Siderurgia Nacional,1
+Forrest Gump,1
+Winston Groom,1
+Andante sub23,1
+Ilhas CanÃ¡rias,1
+ReentrÃ©,1
+Tempestade IsaÃ­as,1
+Confeitaria Nacional em Lisboa,1
+PCTP/MRPP,1
+Pedro Leite Pacheco,1
+Paulo Silva,1
+JosÃ© Azevedo,1
+Nuno Barata,1
+AntÃ³nio Lima,1
+Artur Lima,1
+JoÃ£o Paulo Catarino,1
+Enzo Mari,1
+IVAucher,1
+Liceu Maria AmÃ¡lia,1
+Secretaria de Estado do PatrimÃ³nio Cultural,1
+Paulo EstÃªvÃ£o,1
+Lagoa de Ãbidos,1
+Semana Verde Europeia,1
+Bolseiros,1
+Dia Internacional de Limpeza Costeira,1
+Revista de Imprensa 19 de setembro 2020,1
+MoratÃ³rias,1
+Diogo Feio,1
+FIFA,1
+Sanna Marin,1
+VitÃ³ria de SetÃºbal,1
+pornografia infantil,1
+Partido da Terra,1
+Marco Varela,1
+Gondufe,1
+FumaÃÂ§a,1
+BebÃÂ©s,1
+Padre Cruz,1
+Folha de Tabaco,1
+Covid,1
+RelaÃÂ§ÃÂ£o de Coimbra,1
+MigraÃÂ§ÃÂ£o,1
+Centro de ReabilitaÃÂ§ÃÂ£o do Norte,1
+Tivoli Ecoresort,1
+RogÃÂ©rio Alves,1
+Joacine Moreira,1
+Bernardo Santareno,1
+AÃÂ§ÃÂ£o Cooperativista,1
+Estudo em casa,1
+MacapÃÂ¡,1
+TrÃÂ¡s-os-Montes,1
+Rede Gira,1
+Bicicletas elÃÂ©tricas,1
+FuncionÃÂ¡rios,1
+Wojciech Pszoniak,1
+biberÃµes,1
+OperaÃ§Ã£o Aquiles,1
+Projeto-lei,1
+Samuel Paty,1
+Luis Arce,1
+aviso amarelo,1
+Newton,1
+Galileu,1
+CombustÃ­veis fÃ³sseis,1
+Hospital SÃ£o SebastiÃ£o,1
+Arnold Schwarzenegger,1
+17 de setembro,1
+Grupo de Contacto Internacional para a Venezuela,1
+AssociaÃ§Ã£o Sindical dos FuncionÃ¡rios de InvestigaÃ§Ã£o Criminal da PolÃ­cia JudiciÃ¡ria,1
+JosÃ© Miguel Amador,1
+Ana Pinho,1
+Lei de Bases da HabitaÃ§Ã£o,1
+Transdev,1
+Beira Baixa,1
+DepressÃ£o Paulette,1
+AssociaÃ§Ã£o de Utilizadores do Sistema de Tratamento de Ãguas Residuais de Alcanena,1
+Pedro Rolo Duarte,1
+Viking,1
+PontifÃ­cia Academia para a Vida,1
+PietÃ¡,1
+Barragens,1
+Carlos PaiÃ£o,1
+parques eÃ³licos,1
+Governo Regional do PrÃ­ncipe,1
+Filipe Nascimento,1
+ComÃ©rcio,1
+Oceano AtlÃ¢ntico,1
+Plan International,1
+AssociaÃ§Ã£o Sindical Portuguesa dos Enfermeiros,1
+Salas de Consumo,1
+Goya,1
+DireÃÂ§ÃÂ£o-Geral da AdministraÃÂ§ÃÂ£o e do Emprego PÃÂºblico,1
+Barbatanas de tubarÃÂ£o,1
+Dresden,1
+Luz,1
+ERSE,1
+Meteorito,1
+Unidade Local de SaÃÂºde,1
+Departamento de InvestigaÃÂ§ÃÂ£o e AÃÂ§ÃÂ£o Penal,1
+Escravatura,1
+Trabalho escravo,1
+Vila Praia de ÃÂncora,1
+FuncionÃÂ¡rios PÃÂºblicos,1
+Lei das Minas,1
+Lumiar,1
+Instituto da HabitaÃÂ§ÃÂ£o e ReabilitaÃÂ§ÃÂ£o Urbana,1
+Penha de FranÃÂ§a,1
+Moreirense,1
+Ricardo Soares,1
+"""resgatar o futuro",1
+"nÃ£o o lucro""",1
+Paulo Rangel,1
+Jacinda Arden,1
+Mar Negro,1
+JosÃ© Neves,1
+Farfetch,1
+Hariri,1
+Michel Aoun,1
+Jorge Roque da Cunha,1
+Derrocada,1
+Faculdade de Engenharia da Universidade do Porto,1
+Maria Helena Braga,1
+Vincent Reffet,1
+Cancro do PulmÃÂ£o,1
+Grupo Luz SaÃÂºde,1
+Tribunal CÃÂ­vel de Lisboa,1
+ObstetrÃÂ­cia,1
+EleiÃÂ§ÃÂµoes americanas,1
+Zurique,1
+PenÃÂ­nsula IbÃÂ©rica,1
+Capital Europeia da Cultura,1
+Mercado AutomÃÂ³vel,1
+Sindicato Independente dos MÃ©dicos (SIM),1
+Desemprego Juvenil,1
+Hospital SÃÂ£o SebastiÃÂ£o,1
+DiscriminaÃÂ§ÃÂ£o,1
+Ciganos,1
+Bairro Alto,1
+MUBi,1
+Carnaval,1
+Miguel Oliveira,1
+Moto GP,1
+ComitÃ© dos Direitos Humanos,1
+RomÃ©nia,1
+Fundo Revive Natureza,1
+Turismo Fundos,1
+FÃÂ¡tima Luz e Paz,1
+ResÃÂ­duos,1
+Ãvorahotel,1
+Laranja do Algarve,1
+Lar no Barreiro,1
+Lar SÃ£o JosÃ©,1
+Susan B. Anthony,1
+Bernie Sanders,1
+18 de agosto,1
+Bill Morneau,1
+Lei de Enquadramento OrÃ§amental,1
+Gorongosa,1
+Ellen DeGeneres,1
+JoÃ£o Dias da Silva,1
+CrianÃÂ§as em Perigo,1
+ComissÃÂµes de ProteÃÂ§ÃÂ£o das CrianÃÂ§as e Jovens,1
+Plano Municipal LGBTI+,1
+Alto TÃÂ¢mega,1
+Boticas,1
+Partido Trabalhista,1
+Talhos,1
+Ilha Terceira,1
+RepÃÂºblica DemocrÃÂ¡tica do Congo,1
+ÃÂbola,1
+Doentes OncolÃÂ³gicos,1
+Guarda Nacional Republicana,1
+FMI,1
+Bebidas AlcoÃÂ³licas,1
+Prio,1
+Supremo Tribunal,1
+World Press Cartoon,1
+Frank Hoppmann,1
+Conselho das Comunidades Portuguesas,1
+21 de agosto,1
+Vouchers,1
+Legislativas,1
+Legislativas 2019,1
+Manchester United,1
+AssociaÃ§Ã£o de ComÃ©rcio de Lisboa,1
+Michel Barnier,1
+DISA,1
+AntÃ³nio GraÃ§a de Abreu,1
+Centro Hospitalar UniversitÃ¡rio de SÃ£o JoÃ£o,1
+AntÃ³nio Madureira,1
+VitÃ³ria MÃ¡rio,1
+PÃ³voa do Varzim,1
+GEOTA,1
+o Plano de RecuperaÃ§Ã£o EconÃ³mica de Portugal 2020-2030,1
+FundaÃ§Ã£o Casa da MÃºsica,1
+AgÃªncia de SeguranÃ§a Nacional,1
+procurador-geral dos Estados Unidos,1
+Neowise,1
+telescÃ³pio Hubble,1
+Envelhecimento ativo,1
+com MagalhÃ£es e Covid-19â,1
+insetos,1
+ECOTROPHELIA Europe,1
+Jamal Khashoggi,1
+Ahmed Al-Tayeb,1
+Rockets,1
+Portugal Air Summit 2020,1
+Flying Digital,1
+BÃ¡rbara,1
+EstaÃ§Ã£o Espacial Internacional,1
+JuvÃ©derm Voluma,1
+Vincenzo Spadafora,1
+Protesto estudantil,1
+Finnair,1
+InovaÃ§Ã£o alimentar,1
+âOdisseia MagnÃ­fica â Uma Volta ao Mundo,1
+DJ,1
+JosÃ© Padilla,1
+LonuÅ£-Marian BÄdulescu,1
+ribunal Europeu dos Direitos Humanos,1
+Cadeia do Porto,1
+Santa Casa de MisericÃ³rdia de Lisboa,1
+Presidenciais americanas 2020,1
+Robinho,1
+Damares Alves,1
+Liga dos Bombeiros,1
+PS/Madeira,1
+Algar,1
+MinistÃ©rio da AdministraÃ§Ã£o Interna,1
+OperaÃÂ§ÃÂ£o ÃÂter,1
+Ensino DomÃ©stico,1
+Referendo,1
+Bispo de Viana,1
+Reciclagem,1
+Sociedade Ponto Verde,1
+Artur Trindade,1
+TasmÃ¢nia,1
+21 de setembro,1
+4.500 camas,1
+Alojamento Locais,1
+EstratÃ©gia Outono-Inverno,1
+jogo ilegal,1
+OrÃ§amento de Estado,1
+navio escola Sagres,1
+Aulas em tempos de pandemia,1
+Ilhas SalomÃ£o,1
+II Guerra,1
+SupertaÃ§a,1
+Novitchok,1
+Legislativas regionais dos AÃ§ores,1
+Ivan Zlobin,1
+Alexandr Lukashenko,1
+Red Hot Chili Peppers,1
+Fredie Blom,1
+Costa do Marfim,1
+luso-venezuelano,1
+SAPO,1
+insulina,1
+Smart Cities Tour 2020,1
+Granja,1
+Hospital de Santa Marta,1
+APPImagem,1
+Chelsea,1
+Newcastle,1
+PaquistÃÂ£o,1
+EstÃ¡dio Municipal de Leiria,1
+Idade do Bronze,1
+Purdue,1
+ATL-100,1
+Flaw4life,1
+Bispo do Porto,1
+Rosa Grilo,1
+Manuel Linda,1
+Instituto portuguÃªs do Desporto e da Juventude,1
+InteligÃªncia artificial,1
+ObservatÃ³rio AstronÃ³mico de Lisboa,1
+HorÃ¡rio de Inverno,1
+Recursos Humanos,1
+George Pell,1
+ANEPC,1
+Article 19,1
+Santa ApolÃ³nia,1
+PoluiÃ§Ã£o atmosfÃ©rica,1
+OSIRIS-REx,1
+Spencer Davis,1
+VulcÃ£o dos Capelinhos,1
+TÃ©cnicos Auxiliares de SaÃºde,1
+Hospital do Porto,1
+Abastecimento HÃ­drico,1
+DiÃ¡spora,1
+SportTV,1
+Sindicato dos Motoristas de MatÃ©rias Perigosas,1
+Andaluzia,1
+Mercado Halal,1
+Aneurismas,1
+Conselho Nacional de EducaÃ§Ã£o,1
+VacinaÃ§Ã£o,1
+Subway,1
+Partido Democrata,1
+Bacias hidrogrÃ¡ficas,1
+Vidago,1
+Desabamento Metro Lisboa,1
+PSD Madeira,1
+Sindicato de Motoristas de MatÃ©rias Perigosas,1
+Tribunal de Braga,1
+Exame de CÃ³digo,1
+Baixa de Lisboa,1
+poupanÃ§a,1
+Fundo de RecuperaÃ§Ã£o,1
+Guardia Civil,1
+Euro2020,1
+Sistema Nacional de InformaÃ§Ã£o de Recursos HÃ­dricos,1
+Margaret Ferrier,1
+Jeff Bridges,1
+Lech Poznan,1
+Praia da Luz,1
+VÃÂ­tor Oliveira,1
+praÃÂ§a de touros,1
+TalÃÂ­ria Petrone,1
+Qatar,1
+Economia oceÃÂ¢nica,1
+Pornografia,1
+Estrada,1
+Machico,1
+MOTA-ENGIL,1
+Fundopesca,1
+Alexandra LeitÃÂ£o,1
+bolsa de estudo,1
+Atropelamento,1
+Carne,1
+laboratÃÂ³rio,1
+Zonas de EmissÃÂµes Reduzidas,1
+Universidade de Cabul,1
+Johnny Depp,1
+The Sun,1
+2 de novembro,1
+Robert Fisk,1
+SÃÂ¡ Fernandes,1
+Santa Casa da MisericÃÂ³rdia de Lisboa,1
+Sport TV,1
+Bolsa de Lisboa,1
+Ciclone Kenneth,1
+Marcos Perestrello,1
+L214,1
+ratinhos de laboratÃ³rio,1
+20 de agosto,1
+canÃ¡bis,1
+Senhora d'Agonia,1
+Flightright,1
+Longa Vida,1
+ViolaÃÂ§ÃÂ£o,1
+adoÃÂ§ÃÂ£o,1
+Jornalismo de InvestigaÃÂ§ÃÂ£o,1
+Ministro da Defesa Nacional,1
+Elevate Leadership,1
+Centro HistÃ³rico,1
+Ambiente e AÃÂ§ÃÂ£o ClimÃÂ¡tica,1
+RuÃÂ­do,1
+Torres Novas,1
+Miranda do Corvo,1
+Angra do HeroÃÂ­smo,1
+Martin Bashir,1
+Evereste,1
+Instituto CamÃÂµes,1
+Rede Aga Khan,1
+"""Leaving Neverland""",1
+Supremo Tribunal de JustiÃ§a,1
+foie gras,1
+CartÃµes de cidadÃ£o,1
+CartÃ£o de CidadÃ£o,1
+AlcobaÃ§a,1
+Susana Constante Pereira,1
+LuÃ­s Ramalho,1
+CatÃ³lica,1
+Costa Silva,1
+plano de recuperaÃ§Ã£o econÃ³mica 2020/30,1
+Neymar,1
+PSG,1
+CanÃ¡bis medicinal,1
+QuÃ­mica,1
+Nobel de FÃ­sica,1
+CÃ¢mara Municipal de Coimbra,1
+AmÃ­lcar Morais Pires,1
+Grupo Ingka,1
+Sementes asiÃ¡ticas,1
+Daniel ProenÃ§a de Carvalho,1
+Miguel Silva Gouveia,1
+Ordem dos Dentistas,1
+Emprego Interior Mais,1
+Banco Mundial,1
+Azincon,1
+Lego,1
+infeÃ§Ãµes,1
+Feto,1
+Jackpot,1
+Vogue,1
+Harry Styles,1
+Autoridade Palestiniana,1
+Conselho EconÃ³mico e Social,1
+13 Agosto,1
+Renda AcessÃ­vel em Lisboa,1
+OperaÃ§Ã£o Vento Norte,1
+Vicente Alves do Ã,1
+Viajar sem pressa,1
+Binocrit,1
+Saint-Gall,1
+Vattis,1
+Pfafers,1
+Parlitobel,1
+Paulo GonÃ§alves,1
+fitossanidade,1
+Arizona,1
+Hospital S. JosÃÂ©,1
+Banco Privado PortuguÃÂªs,1
+Al-qaeda,1
+ComitÃÂ© Europeu para a PrevenÃÂ§ÃÂ£o da Tortura ou Tratamentos Desumanos e Degradantes,1
+EleiÃÂ§ÃÂµes Estados Unidos 2020,1
+InterRegionais,1
+Alfa,1
+ImÃÂ³veis,1
+Ana Rita Silva,1
+USF,1
+Calif,1
+Svetlana Alexievitch,1
+Mario Vargas Llosa,1
+CEP,1
+TajiquistÃ£o,1
+Terje Viken,1
+Britannic,1
+Segunda Guerra Mundial,1
+Tallboy,1
+DetenÃ§Ãµes,1
+CoesÃ£o e Reformas,1
+"""PeregrinaÃ§Ã£o""",1
+13 de Maio,1
+FÃ³rum Energia e Clima,1
+Rede Integrada de Apoio ao CidadÃ£o,1
+IPSS de Barcelos,1
+Santos & Pecadores,1
+Carlos Cabecinhas,1
+Unidade de Controlo Costeiro,1
+Maersk Etienne,1
+Dalai Lama,1
+Serra do Socorro,1
+Recep Erdogan,1
+radar meteorolÃ³gico,1
+Toots Hibbert,1
+Navid Afkari,1
+Coletes amarelos,1
+Olavo Bilac,1
+CDS-Madeira,1
+Aung San Suu Kyi,1
+Dia Mundial da Prematuridade,1
+Yale,1
+Contabilistas,1
+Ordem dos Contabilistas,1
+Lalim,1
+Solidariedade NÃ£o Tem Idade/2020,1
+ComunicaÃ§Ã£o Social,1
+PSD Guarda,1
+Imprensa Regional,1
+Aeroporto Francisco SÃ¡ Carneiro,1
+TchizÃ© dos Santos,1
+Belgrado,1
+Muja,1
+GuinÃ© Equatorial,1
+Vladimir MakeÃ¯,1
+Aeroporto do Porto,1
+Linhas AÃ©reas de MoÃ§ambique,1
+OurÃ©m,1
+Docentes,1
+Cartoon,1
+Nuno Saraiva,1
+LuÃ­s Pedro Nunes,1
+sistema nacional de gÃ¡s,1
+Banco Nacional de Angola,1
+500 milhÃµes,1
+Refrigerantes,1
+ARS do Alentejo,1
+Mosteiro da Batalha,1
+Partido de Aung San Suu Kyi ganha eleiÃÂ§ÃÂµes no Myanmar com maioria absoluta,1
+DesagregaÃ§Ã£o de freguesias,1
+AdministraÃÂ§ÃÂ£o PÃÂºblica,1
+Frente Comum,1
+FunÃÂ§ÃÂ£o PÃÂºblica,1
+Eduardo Batarda,1
+ConcertaÃ§Ã£o Social,1
+ColÃ©gio da Europa,1
+Cinema e audiovisual,1
+CINTESIS,1
+Doentes renais crÃ³nicos,1
+Fraude,1
+Farmaceutica,1
+II Guerra Mundial,1
+Forcados,1
+Bomba,1
+MÃ¡rio Soares,1
+MinistÃ©rio PÃºblica,1
+Filipe Melo,1
+"""Balada para Sophie""",1
+Juan Cavia,1
+Festival de Veneza,1
+Ana Rocha de Sousa,1
+Fernando Pimenta,1
+FunÃ§Ã£o PÃºblica,1
+Tourada,1
+cessar-fogo,1
+InvestigaÃ§Ã£o,1
+Parque de S. JoÃ£o da Ponte,1
+AssociaÃÂ§ÃÂ£o Feiras e Mercados da RegiÃÂ£o Norte,1
+Hospital de Santo AndrÃÂ©,1
+AssociaÃÂ§ÃÂ£o Nacional de Restaurantes,1
+Mar 2020,1
+Centro Escolar de Ourique,1
+Sociedade Portuguesa de Pneumologia,1
+Carne de porco,1
+DoenÃÂ§a Pulmonar Obstrutiva CrÃÂ³nica,1
+IPO de Coimbra,1
+Hospital Santo AntÃÂ³nio,1
+CureVac,1
+SÃÂ£o BrÃÂ¡s de Alportel,1
+Viseiras,1
+1 de novembro,1
+Apametal,1
+Magina da Silva,1
+Tribunal de Haia,1
+Alojamentos turÃ­sticos,1
+Kyriakos Mitsotakis,1
+Medicamento,1
+CaraÃ­bas,1
+AmÃ©rica do Sul,1
+pais e filhos,1
+aeroporto JoÃ£o Paulo II,1
+Jean Castex,1
+CemitÃÂ©rio de Benfica,1
+Dia de Finados,1
+AlfÃ¢ndega da FÃ©,1
+Aporfest,1
+ÃÂ´,1
+Sindicato DemocrÃÂ¡tico dos Enfermeiros de Portugal,1
+Sindicato dos Enfermeiros,1
+Teatro Rivoli,1
+IAVE,1
+Liberdade Religiosa,1
+ConvenÃÂ§ÃÂ£o Nacional da SaÃÂºde,1
+Praia do Norte,1
+Santa Casa da MisericÃÂ³rdia de Portalegre,1
+CÃÂ¢mara Municipal de Nisa,1
+Festivais,1
+MÃÂ¡rio Ruivo,1
+PalÃÂ¡cio da Ajuda,1
+ARS,1
+Luis SuÃÂ¡rez,1
+Centro Hospitalar e UniversitÃÂ¡rio de S. JoÃÂ£o,1
+ECMO,1
+Recolher obrigatÃÂ³rio,1
+LAPS Foundation,1
+CIP,1
+SÃÂ©rvia,1
+LÃÂ¡zio,1
+Serie A,1
+Santo AntÃÂ³nio,1
+Robert O'Brien,1
+Instituto Nacional de SaÃºde Doutor Ricardo Jorge,1
+InquÃ©rito SerolÃ³gico Nacional,1
+BaiÃ£o,1
+Autocaravanismo,1
+Sophie WilmÃ¨s,1
+Manta Rota,1
+equipamentos de proteÃ§Ã£o,1
+Isabel Aldir,1
+Grant Shapps,1
+Caminhos AÃ©reos,1
+TrÃ¡fego AÃ©reo,1
+IATA,1
+Pedro Ramos,1
+Taxa Social Ãnica,1
+Agrupamento de Escolas da PÃ³voa de Santa,1
+AssociaÃ§Ã£o Comercial e Industrial do Funchal,1
+Ecco,1
+AML,1
+Necessidades Educativas Especiais,1
+CÃ¢mara Municipal de Ãvora,1
+AdministraÃ§Ã£o Regional de SaÃºde do Alentejo,1
+Stella Kyriakides,1
+Universidade de CiÃªncia e Tecnologia de Macau,1
+Hanna,1
+Andrea Bocelli,1
+Metuge,1
+SubsÃ­dio de desemprego,1
+Rio Janeiro,1
+Atena,1
+secretÃ¡rio-geral da ONU,1
+Midas Filmes,1
+Vilar Formoso,1
+Afogamento,1
+BebÃ©s,1
+Hospital de S. JoÃ£o,1
+Adolescentes,1
+Hospital D. EstefÃ¢nia,1
+Pedro Caldeira da Silva,1
+FNSTFPS,1
+Ricardo SerrÃ£o Santos,1
+Ricardo Batista Leite,1
+Zoo Santo InÃ¡cio,1
+Vietnam,1
+MÃ©dicos Sem Fronteiras,1
+Psiquiatria,1
+ForÃ§a Operacional Corona,1
+Concursos,1
+CEiiA â Centro de Engenharia e Desenvolvimento,1
+SYSADVANCE,1
+SYSVent OM1,1
+Mercado da Ribeira,1
+Vimieiro,1
+Graciosa,1
+Aeroporto da Madeira,1
+Imposto,1
+JosÃ© Filomeno,1
+'Zenu' dos Santos,1
+Esperma,1
+Financiamento dos partidos,1
+Tamanho de letra,1
+Estabelecimento Prisional de PaÃ§os de Ferreira,1
+Festa do Fado,1
+Nisa,1
+Campanha Eleitoral,1
+Microio,1
+Rede de EmergÃªncia Alimentar,1
+SÃ©rgio Sousa Pinto,1
+Fukushima Daiichi,1
+ostracoda,1
+Maria LÃºcia Amaral,1
+Programa Bairros SaudÃ¡veis,1
+AssociaÃ§Ã£o das VÃ­timas do IncÃªndio de PedrÃ³gÃ£o Grande,1
+LuÃ­s Testa,1
+Universidade Nova de Lisboa,1
+FundaÃ§Ã£o Luso-Americana para o Desenvolvimento,1
+ISCTEâInstituto UniversitÃ¡rio de Lisboa,1
+ANAC,1
+pilotos,1
+Legislativas nos AÃ§ores,1
+ETAR de Espinho,1
+trabalhadores essenciais,1
+SubsÃ­dio de risco,1
+concessÃ£o de Ã¡gua,1
+Amadeo,1
+guardas prisionais,1
+Museu Nacional da ResistÃÂªncia e da Liberdade,1
+Boy Scouts of America,1
+Dominion,1
+Manuel Merino,1
+borderline,1
+Jorge Moreira da Silva,1
+eleiÃÂ§ÃÂµes municipais no Brasil,1
+Empresa de Mobilidade e Estacionamento de Lisboa,1
+Vinho,1
+Partido Popular Europeu,1
+MinistÃÂ©rio do Trabalho,1
+solidariedade e seguranÃÂ§a social,1
+EDP Comercial,1
+Ennio Morricone,1
+FundaÃÂ§ÃÂ£o Oceano Azul,1
+Jardim RomÃÂ¢ntico de Sintra,1
+LuÃÂ­s Garcia,1
+Columbofilia,1
+Programa Nacional para as DoenÃÂ§as OncolÃÂ³gicas,1
+JosÃÂ© Dinis,1
+RFI,1
+AmÃÂ©rica Central,1
+PedrÃÂ³gÃÂ£o Grande,1
+Savannah Guthrie,1
+Centro de SaÃºde de Torres Vedras,1
+Carnide,1
+VisÃ£o EstratÃ©gica para o Plano de RecuperaÃ§Ã£o 2020/2030,1
+Sindicato Nacional dos Motoristas,1
+Francisco Mota,1
+metoo,1
+Aeroporto,1
+JosÃ© Saramago,1
+Ensaio sobre a Cegueira,1
+PSOL,1
+Sara Winter,1
+Vitor EscÃ¡ria,1
+ObservatÃ³rio das Mulheres Assassinadas,1
+Oceanos,1
+Revista de imprens,1
+17 de agosto,1
+TubarÃÂ£o Branco,1
+JoÃ£o Medeiros,1
+Marielle Franco,1
+GÃÂ¢mbia,1
+Tribunal Europeu dos Direitos Humanos,1
+Cashball,1
+violÃÂªncia sexual,1
+Hospital Militar de Coimbra,1
+Cardeal D. AntÃÂ³nio Marto,1
+MÃÂ©dio Oriente,1
+JosÃÂ© Vieira de Andrade,1
+Stadler Rail,1
+Prematuridade,1
+Rose McGowan,1
+Alexander Payne,1
+Lisboa + Igualdade,1
+Mesquitas,1
+Ramiro Sequeira,1
+Terras do Bouro,1
+Ricardo Barros,1
+Antonoaldo Neves,1
+16 de setembro,1
+EstÃ¡tua,1
+PolÃ­tica de MigraÃ§Ã£o,1
+SÃ©rgio Godinho,1
+JosÃ© LuÃ­s Peixoto,1
+Jane Fonda,1
+Agrupamento de Escolas Padre AntÃ³nio de Andrade,1
+MÃ­ssil BalÃ­stico,1
+ROADPOL Safety Days,1
+Yoshihide Suga,1
+Aves migratÃ³rias,1
+Herman JosÃ©,1
+vacinaÃ§Ã£o antipneumocÃ³cica,1
+LÃ³bi,1
+Hienas,1
+EN 14,1
+Death Valley,1
+IslÃ£o,1
+Medina,1
+25 de Abril,1
+ÃÂgueda,1
+Liga das NaÃÂ§ÃÂµes,1
+secretÃ¡ria de Estado da AdministraÃ§Ã£o Interna,1
+Teatro Nacional D. Maria II,1
+TNDM,1
+MÃ¡rio ClÃ¡udio,1
+Grande PrÃ©mio de Romance e Novela,1
+Transtejo/Soflusa,1
+Grupo de Arraiolo,1
+Ordem dos PsicÃ³logos Portugueses,1
+Instituto de Apoio Ã  CrianÃ§a,1
+Miramar,1
+FundaÃ§Ã£o para a SaÃºde,1
+Jorge Arreaza,1
+Alexandre Fonseca,1
+FederaÃ§Ã£o Nacional de Professores,1
+RÃ¡dio,1
+RÃ¡dio Familiar,1
+Crewlink,1
+Benny Gantz,1
+Mina de lÃ­tio,1
+Netanyahu,1
+Presidente brasileiro,1
+15 agosto,1
+PentÃ¡gono,1
+OVNI,1
+Peso da RÃ©gua,1
+Mercadorias perigosas,1
+Pessoas com deficiÃªncia,1
+Centro Comercial Alegro,1
+Isabel Damasceno,1
+Dia Mundial da Diabetes,1
+ExÃÂ©rcito,1
+Paulo Sande,1
+Ubisoft,1
+Lance Stroll,1
+Prayut Chan-O-Cha,1
+Rastreio de cancro da mama,1
+D. JosÃ© Pedreira,1
+AntÃ³nio Ceia da Silva,1
+Centro,1
+CCDRC,1
+Ecossistemas,1
+AntÃ³nio Cunha,1
+AssociaÃ§Ã£o Americana de Livrarias,1
+Instituto Pedro Nunes,1
+OperaÃ§Ã£o IbÃ©ria,1
+vistos gold,1
+Nikos Michaloliakos,1
+Teatro-Cine,1
+Joe Berardo,1
+TÃ¡bua,1
+IncÃªndios 2017,1
+JosÃ© ApolinÃ¡rio,1
+RegionalizaÃ§Ã£o,1
+Jill Biden,1
+TÃÂ©nis,1
+ATP Finals,1
+AssociaÃ§Ã£o Sindical de Professores Licenciados,1
+AgÃªncia Europeia do Sistema Global de NavegaÃ§Ã£o por SatÃ©lite,1
+asterÃ³ides,1
+OrÃ§amento do Estado de 2021,1
+Vale e Azevedo,1
+Pinheiro da Cruz,1
+furacÃ£o Paulette,1
+Xinjiang,1
+Procuradora-Geral da RepÃºblica,1
+MinistÃ©rio do Ambiente e AÃ§Ã£o ClimÃ¡tica,1
+Miguel Bastos AraÃºjo,1
+FARC,1
+OrganizaÃ§Ã£o Mundial do Turismo,1
+Transportes Urbanos de Braga,1
+MÃ©dio Tejo,1
+Tempestade Elsa,1
+Entidade Reguladora para a ComunicaÃ§Ã£o Social,1
+16 de Agosto,1
+Robert Trump,1
+derrame,1
+Cincinnati,1
+Benito Mussolini,1
+AntÃ³nio Salgueiro,1
+CÃ¢mara Municipal,1
+Alfragide,1
+Rodrigo da Costa,1
+ComissÃµes de CoordenaÃ§Ã£o e Desenvolvimento Regional,1
+apoios comunitÃ¡rios,1
+Carlos Miguel,1
+Auditoria,1
+nÃ¡degas,1
+Moda,1
+Crime,1
+Liga dos Bombeiros Portugueses,1
+Jaime Marta Soares,1
+cibercrime,1
+Semana de Limpeza Costeira,1
+Batata,1
+Bruno de Carvalho,1
+Vestida de branco,1
+Forbes,1
+GMV,1
+Synopsis Planet,1
+JosÃ© Ribeiro e Castro,1
+Participar Mais,1
+Miguel Anacoreta Correia,1
+Cannabis,1
+Peste suÃ­na,1
+Alfarroba,1
+AviaÃ§Ã£o europeia,1
+VCI,1
+ComissÃ£o Nacional de EleiÃ§Ãµes,1
+George Bizos,1
