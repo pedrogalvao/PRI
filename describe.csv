@@ -1,12 +1,12 @@
 ,id,title,date,time,partner,excerpt,text,tags,url,TextLen,datetime
-count,11742,11742,11742,11742,11742,11522,11742,11742,11742,11742.0,11742
-unique,11741,11718,141,1155,9,11506,11731,6933,11741,,
-top,42c7670bb65543881d6f23be1c60f9ea,Covid-19: Açores sem novos casos nas últimas 24 horas,12 nov 2021,11:51,"['MadreMedia', 'Lusa']","O advogado e ativista dos direitos humanos George Bizos morreu aos 92 anos, anunciou hoje a Fundação Ahmed Kathrada.",Concelhos de Risco Moderado(240 a 480 casos por 100 mil habitates)Concelhos de Risco Elevado(>480 casos por 100 mil habitates)Concelhos de Risco Muito ElevadoConcelhos de Risco Extremamente ElevadoPlanear a Passagem de Ano: saiba quais as restrições,['Covid-19'],/atualidade/artigos/morreu-george-bizos-advogado-de-mandela-aos-92-anos,,
-freq,2,4,4277,4286,9979,2,3,443,2,,
-mean,,,,,,,,,,2743.859308465338,2021-02-27 21:28:02.227899392
+count,11741,11741,11741,11741,11741,11521,11741,11741,11741,11741.0,11741
+unique,11741,11718,141,1155,9,11506,11730,6933,11741,,
+top,829d5b90d9e7b4e648f5b00d421689cb,Covid-19: Açores sem novos casos nas últimas 24 horas,12 nov 2021,11:51,"['MadreMedia', 'Lusa']","Um pedido de aprovação de emergência da vacina contra a covid-19 desenvolvida pela Pfizer e a BioNTech deve ser hoje apresentado nos Estados Unidos, anunciou na quinta-feira o Governo americano.",Concelhos de Risco Moderado(240 a 480 casos por 100 mil habitates)Concelhos de Risco Elevado(>480 casos por 100 mil habitates)Concelhos de Risco Muito ElevadoConcelhos de Risco Extremamente ElevadoPlanear a Passagem de Ano: saiba quais as restrições,['Covid-19'],/atualidade/artigos/metro-de-lisboa-comecou-a-ser-construido-ha-65-anos-e-deixou-a-cidade-curiosa,,
+freq,1,4,4277,4286,9978,2,3,443,1,,
+mean,,,,,,,,,,2744.0922408653437,2021-02-27 21:49:00.817647616
 min,,,,,,,,,,9.0,2020-07-25 15:21:00
-25%,,,,,,,,,,1567.0,2020-09-17 19:49:00
-50%,,,,,,,,,,2344.0,2020-11-12 06:54:30
-75%,,,,,,,,,,3350.75,2021-11-12 11:51:00
+25%,,,,,,,,,,1567.0,2020-09-17 19:58:00
+50%,,,,,,,,,,2344.0,2020-11-12 07:09:00
+75%,,,,,,,,,,3351.0,2021-11-12 11:51:00
 max,,,,,,,,,,109330.0,2021-11-12 11:51:00
-std,,,,,,,,,,2604.508567808304,
+std,,,,,,,,,,2604.4971763915605,

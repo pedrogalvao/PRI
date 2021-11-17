@@ -24,6 +24,7 @@ df['words'].describe().to_csv("describe_word_count.csv")
 words = []
 for text in df["text"]:
     words += text.split()
+
 # words = [x.split() for x in df['text'].tolist()]
 wd = pd.DataFrame(Counter(words).most_common(200),
                   columns=['word', 'frequency'])
@@ -33,10 +34,10 @@ wd = pd.DataFrame(Counter(words).most_common(200),
 data = dict(zip(wd['word'].tolist(), wd['frequency'].tolist()))
 
 # Faz download das palavras que não interessam como pronomes
-stopwords1 = nltk.corpus.stopwords.words('portuguese')
+stopwords1 = nltk.corpus.stopwords.words(
+    'portuguese') + ['â', 'ainda', 'o', 'ââ â', 'â', 'â o', 'â não', 'â um']
 stop_words = set(stopwords1)
 
-print(stop_words)
 
 # Getting rid of the stopwords
 # This is just because including stopwords in the wordcloud argument was not working
@@ -50,6 +51,9 @@ text = ' '.join([str(elem) for elem in clean_text])
 # print(text)
 wc = WordCloud(background_color='black',
                max_words=200).generate(text)
+
+with open('wwords.txt', 'a') as f:
+    f.write(str(wc.words_))
 
 # print(wc)
 # wc = WordCloud(background_color='white',
