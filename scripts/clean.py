@@ -2,8 +2,8 @@ import pandas
 
 
 def join_csv(file1, file2, outfile):
-    df1 = pandas.read_csv(file1, delimiter=";", encoding="ISO-8859-1")
-    df2 = pandas.read_csv(file2, delimiter=";", encoding="ISO-8859-1")
+    df1 = pandas.read_csv(file1, delimiter=";", encoding="cp1252")
+    df2 = pandas.read_csv(file2, delimiter=";", encoding="cp1252")
     print(len(df1))
     print(len(df2))
     joined_df = df1.append(df2)

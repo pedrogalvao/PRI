@@ -76,9 +76,11 @@ def date_analysis(df):
 
 def text_len_statistics(df):
     df["TextLen"] = df["text"].map(len)
-    ax = df["TextLen"].plot.hist(bins=50)
-    ax.set_title("Text Length", size=14)
+    ax = df["TextLen"].plot.hist(bins=500)
+    ax.set_title("Histogram of Text Length", size=14)
     fig = ax.get_figure()
+    ax.set_xlim(0, 10000)
+    ax.set_xlabel("Number of characters")
     fig.savefig('text_length.png')
     with open('statistics.txt', 'w') as f:
         f.write("Text Length Statistics:")
