@@ -35,13 +35,13 @@ data = dict(zip(wd['word'].tolist(), wd['frequency'].tolist()))
 
 # Faz download das palavras que não interessam como pronomes
 stopwords1 = nltk.corpus.stopwords.words(
-    'portuguese') + ['â', 'ainda', 'o', 'ââ â', 'â', 'â o', 'â não', 'â um']
+    'portuguese') + ['â', 'ainda', 'o', 'ââ â', 'â', 'â o', 'â não', 'â um', 'âÂÂ', 'â']
 stop_words = set(stopwords1)
 
 
 # Getting rid of the stopwords
 # This is just because including stopwords in the wordcloud argument was not working
-clean_text = [word for word in words if word not in stop_words]
+clean_text = [word for word in words if word not in stop_words and 'â' not in word]
 
 # print(clean_text)
 
