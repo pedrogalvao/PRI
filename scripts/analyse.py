@@ -8,7 +8,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
 import sys
-from datetime import datetime
+from datetime import date, datetime
 
 
 def to_1D(series):
@@ -29,21 +29,49 @@ def boolean_df(item_lists, unique_items):
     return pandas.DataFrame(bool_dict)
 
 
-def parse_date(date_string, months):
-    date_string = date_string.split()
-    date_string[1] = months[date_string[1]]
-    date_string = ' '.join(str(e) for e in date_string)
+def parse_date(value):
+    months = {"jan": 1, "fev": 2, "mar": 3, "abr": 4, "mai": 5, "jun": 6,
+              "jul": 7, "ago": 8, "set": 9, "out": 10, "nov": 11, "dez": 12}
+    value = value.split()
+    value[1] = months[value[1]]
+    value = ' '.join(str(e) for e in value)
+    # print(date_string)
+    date_time = datetime.strptime(value, '%d %m %Y')
+    return date_time
 
-    print(date_string)
-    #date_time = datetime.strptime(date_string, '%d %m %y')
+
+def parse_datetime(value):
+    months = {"jan": 1, "fev": 2, "mar": 3, "abr": 4, "mai": 5, "jun": 6,
+              "jul": 7, "ago": 8, "set": 9, "out": 10, "nov": 11, "dez": 12}
+    value = value.split()
+    value[1] = months[value[1]]
+    value = ' '.join(str(e) for e in value)
+    return datetime.strptime(value, '%d %m %Y %H:%M')
 
 
 def date_analysis(df):
-    months = {"jan": 1, "fev": 2, "mar": 3, "abr": 4, "mai": 5,
-              "jun": 6, "jul": 7, "ago": 8, "set": 9, "out": 10, "nov": 11, "dez": 12}
-    #df['date'] = pandas.to_datetime(df['date'])
-    dates = [parse_date(date_string, months)
-             for date_string in df['date'].tolist()]
+
+    # df['date'] = pandas.to_datetime(df['date'])
+    df['datetime'] = df['date'] + " " + df['time']
+    df['datetime'] = df['datetime'].apply(parse_datetime)
+
+    #df['date'] = df['date'].apply()
+    # print(df['datetime'])
+    # dates = [parse_date(date_string, months)
+    #          for date_string in df['date'].tolist()]
+    # print(df['date'])
+    with open('statistics.txt', 'a') as f:
+        f.write("\nDate  Statistics:")
+        f.write("\n\tMean: ")
+        f.write(str(df["datetime"].mean()))
+        f.write("\n\tMedian:")
+        f.write(str(df["datetime"].median()))
+        f.write("\n\tMax:")
+        f.write(str(df["datetime"].max()))
+        f.write("\n\tMin:")
+        f.write(str(df["datetime"].min()))
+        f.write("\n\tMode:")
+        # f.write(str(df["date"].mode()))
 
 
 def text_len_statistics(df):
@@ -52,7 +80,7 @@ def text_len_statistics(df):
     ax.set_title("Text Length", size=14)
     fig = ax.get_figure()
     fig.savefig('text_length.png')
-    with open('statistics.txt', 'a') as f:
+    with open('statistics.txt', 'w') as f:
         f.write("Text Length Statistics:")
         f.write("\n\tMean: ")
         f.write(str(df["TextLen"].mean()))
@@ -73,7 +101,7 @@ if csv_data_file == "" or csv_data_file == None:
 df = pandas.read_csv(csv_data_file, delimiter=";", encoding="UTF-8")
 
 text_len_statistics(df)
-# date_analysis(df)
+date_analysis(df)
 
 ###########################
 #          TAGS           #
@@ -172,4 +200,4 @@ if(advanced_analysys_partners):
 # plt.xlabel(u"\u2736", fontproperties=prop)
 
 # General description of the data
-df.describe(include="all").to_csv("describe.csv")
+df.describe(include="all", datetime_is_numeric=True).to_csv("describe.csv")

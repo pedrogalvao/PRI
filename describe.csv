@@ -1,12 +1,12 @@
-,id,title,date,time,partner,excerpt,text,tags,url,TextLen
-count,11741,11741,11741,11741,11741,11521,11741,11741,11741,11741.0
-unique,11741,11720,141,1155,9,11507,11730,7092,11741,
-top,829d5b90d9e7b4e648f5b00d421689cb,Covid-19: AÃ§ores sem novos casos nas Ãºltimas 24 horas,12 nov 2021,11:51,"['MadreMedia', 'Lusa']","Um pedido de aprovaÃÂ§ÃÂ£o de emergÃÂªncia da vacina contra a covid-19 desenvolvida pela Pfizer e a BioNTech deve ser hoje apresentado nos Estados Unidos, anunciou na quinta-feira o Governo americano.",Concelhos de Risco Moderado(240 a 480 casos por 100 mil habitates)Concelhos de Risco Elevado(>480 casos por 100 mil habitates)Concelhos de Risco Muito ElevadoConcelhos de Risco Extremamente ElevadoPlanear a Passagem de Ano: saiba quais as restriÃÂ§ÃÂµes,['Covid-19'],/atualidade/artigos/metro-de-lisboa-comecou-a-ser-construido-ha-65-anos-e-deixou-a-cidade-curiosa,
-freq,1,4,4277,4286,9978,2,3,443,1,
-mean,,,,,,,,,,2907.9114215143513
-std,,,,,,,,,,2750.3925594348802
-min,,,,,,,,,,9.0
-25%,,,,,,,,,,1644.0
-50%,,,,,,,,,,2474.0
-75%,,,,,,,,,,3562.0
-max,,,,,,,,,,112608.0
+,id,title,date,time,partner,excerpt,text,tags,url,TextLen,datetime
+count,11741,11741,11741,11741,11741,11521,11741,11741,11741,11741.0,11741
+unique,11741,11720,141,1155,9,11507,11730,7092,11741,,
+top,829d5b90d9e7b4e648f5b00d421689cb,Covid-19: AÃ§ores sem novos casos nas Ãºltimas 24 horas,12 nov 2021,11:51,"['MadreMedia', 'Lusa']","Um pedido de aprovaÃÂ§ÃÂ£o de emergÃÂªncia da vacina contra a covid-19 desenvolvida pela Pfizer e a BioNTech deve ser hoje apresentado nos Estados Unidos, anunciou na quinta-feira o Governo americano.",Concelhos de Risco Moderado(240 a 480 casos por 100 mil habitates)Concelhos de Risco Elevado(>480 casos por 100 mil habitates)Concelhos de Risco Muito ElevadoConcelhos de Risco Extremamente ElevadoPlanear a Passagem de Ano: saiba quais as restriÃÂ§ÃÂµes,['Covid-19'],/atualidade/artigos/metro-de-lisboa-comecou-a-ser-construido-ha-65-anos-e-deixou-a-cidade-curiosa,,
+freq,1,4,4277,4286,9978,2,3,443,1,,
+mean,,,,,,,,,,2907.9114215143513,2021-02-27 21:49:00.817647616
+min,,,,,,,,,,9.0,2020-07-25 15:21:00
+25%,,,,,,,,,,1644.0,2020-09-17 19:58:00
+50%,,,,,,,,,,2474.0,2020-11-12 07:09:00
+75%,,,,,,,,,,3562.0,2021-11-12 11:51:00
+max,,,,,,,,,,112608.0,2021-11-12 11:51:00
+std,,,,,,,,,,2750.3925594348802,
