@@ -1,11 +1,5 @@
 Text Length Statistics:
-	Mean: 2744.0922408653437
-	Median:2344.0
-	Max:109330
-	Min:9
-Date  Statistics:
-	Mean: 2021-02-27 21:49:00.817647616
-	Median:2020-11-12 07:09:00
-	Max:2021-11-12 11:51:00
-	Min:2020-07-25 15:21:00
-	Mode:
+	Mean: 2671.1311737484225
+	Median:2309.0
+	Max:54071
+	Min:23

@@ -60,6 +60,11 @@ def date_analysis(df):
     # dates = [parse_date(date_string, months)
     #          for date_string in df['date'].tolist()]
     # print(df['date'])
+    ax = df["datetime"].plot.hist(bins=500)
+    ax.set_title("Histogram of Date", size=14)
+    fig = ax.get_figure()
+    ax.set_xlabel("Date")
+    fig.savefig('date.png')
     with open('statistics.txt', 'a') as f:
         f.write("\nDate  Statistics:")
         f.write("\n\tMean: ")
@@ -70,7 +75,7 @@ def date_analysis(df):
         f.write(str(df["datetime"].max()))
         f.write("\n\tMin:")
         f.write(str(df["datetime"].min()))
-        f.write("\n\tMode:")
+        # f.write("\n\tMode:")
         # f.write(str(df["date"].mode()))
 
 
@@ -123,13 +128,15 @@ ax.bar(to_1D(df["tags"]).value_counts()[:10].index,
        to_1D(df["tags"]).value_counts()[:10].values)
 ax.set_ylabel("Frequency", size=12)
 ax.set_title("Tags distribution", size=14)
+plt.savefig("tags_distribution.png", dpi=300)
 
 # Grafico a mostrar o plot sem contar com o covid
 fig2, ax2 = plt.subplots(figsize=(14, 4))
 ax2.bar(to_1D(df["tags"]).value_counts()[1:10].index,
         to_1D(df["tags"]).value_counts()[1:10].values)
 ax2.set_ylabel("Frequency", size=12)
-ax2.set_title("Tags distribution", size=14)
+ax2.set_title("Tags distribution without Covid-19", size=14)
+plt.savefig("tags_without_covid.png", dpi=300)
 
 
 # Advanced analysis
@@ -172,6 +179,8 @@ ax3.bar(to_1D(df["partner"]).value_counts()[:10].index,
 ax3.set_ylabel("Frequency", size=12)
 ax3.set_title("Partners distribution", size=14)
 
+plt.savefig("partners.png", dpi=300)
+
 
 # Advanced analysis
 # Por alguma razao isto não está a dar coorelação nenhuma
@@ -193,7 +202,7 @@ if(advanced_analysys_partners):
 
 
 # Mostrar gráficos
-# plt.show()
+plt.show()
 
 
 # Por os graficos com UTF8
