@@ -14,6 +14,9 @@ def join_csv(file1, file2, outfile):
 
 def remove_null_values(file, outfile):
     df = pandas.read_csv(file, delimiter=";")
+    df.describe(include="all", datetime_is_numeric=True).to_csv(
+        "describe_before_clean.csv")
+
     df = df[df['text'].notnull()]
     df = df[df.text != ""]
     df = df[df.title != None]
