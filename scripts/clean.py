@@ -24,7 +24,7 @@ def remove_null_values(file, outfile):
     df.to_csv(outfile, sep=";", index=False)
 
 
-remove_null_values("1000_1500.csv", "data_clean.csv")
+remove_null_values("data.csv", "data_clean.csv")
 #join_csv("data1-5.csv", "data5-29.csv", "data1-29.csv")
 #join_csv("data1000_1150.csv", "1154_1172.csv", "data1000_1172.csv")
 #join_csv("data1000_1172.csv", "data1150_1500.csv", "data.csv")

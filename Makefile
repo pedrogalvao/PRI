@@ -1,19 +1,24 @@
 # Makefile
 SHELL := bash
 
-all: analyse nlp
+all: scrap clean_data analyse nlp clean
 
-# Create .pngs with some graphic visualiztion of the clean data
-analyse: clean_data
-	python3 scripts/analyse.py
 
-# Create Word cloud and other nlp functions
-nlp: clean_data
-	python3 scripts/nlp.py
+# Scrap web pages
+scrap:
+	python3 scripts/scrap.py
 
+# Refine data
 clean_data:
 	python3 scripts/clean.py
 
+# Create .pngs with some graphic visualiztion of the clean data
+analyse: 
+	python3 scripts/analyse.py
+
+# Create Word cloud and other nlp functions
+nlp: 
+	python3 scripts/nlp.py
 
 
 # Delete all created files

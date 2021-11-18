@@ -236,7 +236,7 @@ if(advanced_analysys_partners):
 
 
 # Mostrar gráficos
-# plt.show()
+plt.show()
 
 
 # Por os graficos com UTF8
