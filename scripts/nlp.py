@@ -50,7 +50,7 @@ text = ' '.join([str(elem) for elem in clean_text])
 
 # print(text)
 wc = WordCloud(background_color='black',
-               max_words=200).generate(text)
+               max_words=200, width=3000, height=1800).generate(text)
 
 with open('wwords.txt', 'a') as f:
     f.write(str(wc.words_))
