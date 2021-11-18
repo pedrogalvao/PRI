@@ -1,12 +1,12 @@
 ,id,title,date,time,partner,excerpt,text,tags,url,TextLen,datetime
-count,11885,11885,11885,11885,11885,11885,11885,11885,11885,11885.0,11885
-unique,11885,11870,195,1169,6,11876,11843,7043,11885,,
-top,ea32eaeb8194ddade347536630b38e0e,Euromilhões: Veja aqui a chave,12 nov 2021,19:48,"['MadreMedia', 'Lusa']",Já são conhecidos os resultados do sorteio desta terça-feira.,"A nível nacional, Portugal está com uma incidência a 14 dias de 134,2 casos por 100 mil habitantes e um índice de transmissibilidade R(t) sobe para 1,15.No continente, a incidência está nos 133,3 casos de infeção e o índice de transmissibilidade R(t) sobe para 1,15.* Dados atualizados 12/11/2021 (a matriz de risco é atualizada todas as segundas, quartas e sextas pela DGS).",[],/atualidade/artigos/a-primeira-fase-do-novo-desconfinamento-chegou-saiba-o-que-muda-a-partir-deste-domingo,,
-freq,1,5,206,191,10196,3,3,839,1,,
-mean,,,,,,,,,,2671.1311737484225,2021-08-19 14:24:34.051325184
-min,,,,,,,,,,23.0,2021-04-07 16:57:00
-25%,,,,,,,,,,1557.0,2021-07-01 14:05:00
-50%,,,,,,,,,,2309.0,2021-08-24 11:46:00
-75%,,,,,,,,,,3250.0,2021-10-06 17:32:00
-max,,,,,,,,,,54071.0,2021-11-16 19:48:00
-std,,,,,,,,,,2237.6404589813983,
+count,11741,11741,11741,11741,11741,11521,11741,11741,11741,11741.0,11741
+unique,11741,11718,141,1155,9,11506,11730,6933,11741,,
+top,829d5b90d9e7b4e648f5b00d421689cb,Covid-19: Açores sem novos casos nas últimas 24 horas,12 nov 2021,11:51,"['MadreMedia', 'Lusa']","Um pedido de aprovação de emergência da vacina contra a covid-19 desenvolvida pela Pfizer e a BioNTech deve ser hoje apresentado nos Estados Unidos, anunciou na quinta-feira o Governo americano.",Concelhos de Risco Moderado(240 a 480 casos por 100 mil habitates)Concelhos de Risco Elevado(>480 casos por 100 mil habitates)Concelhos de Risco Muito ElevadoConcelhos de Risco Extremamente ElevadoPlanear a Passagem de Ano: saiba quais as restrições,['Covid-19'],/atualidade/artigos/metro-de-lisboa-comecou-a-ser-construido-ha-65-anos-e-deixou-a-cidade-curiosa,,
+freq,1,4,4277,4286,9978,2,3,443,1,,
+mean,,,,,,,,,,2744.0922408653437,2021-02-27 21:49:00.817647616
+min,,,,,,,,,,9.0,2020-07-25 15:21:00
+25%,,,,,,,,,,1567.0,2020-09-17 19:58:00
+50%,,,,,,,,,,2344.0,2020-11-12 07:09:00
+75%,,,,,,,,,,3351.0,2021-11-12 11:51:00
+max,,,,,,,,,,109330.0,2021-11-12 11:51:00
+std,,,,,,,,,,2604.4971763915605,

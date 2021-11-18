@@ -49,22 +49,56 @@ def parse_datetime(value):
     return datetime.strptime(value, '%d %m %Y %H:%M')
 
 
+def create_monthly_analysis(df):
+    weekly_series = df.groupby(pandas.Grouper(
+        key='datetime', freq='M'))['title'].count()
+    weekly_series.index = weekly_series.index.month
+    print(weekly_series[weekly_series != 0])
+    fig2, ax2 = plt.subplots(figsize=(14, 4))
+    ax2.bar(weekly_series.index,
+            weekly_series.values)
+    ax2.set_ylabel("Frequency", size=12)
+    ax2.set_xlim(6, 12)
+    ax2.set_title("News Frequency by month", size=14)
+    plt.savefig("news_monthly.png", dpi=300)
+
+
+def create_weekly_analysis(df):
+    weekly_series = df.groupby(pandas.Grouper(
+        key='datetime', freq='W'))['title'].count()
+    weekly_series.index = weekly_series.index.week
+    fig2, ax2 = plt.subplots(figsize=(14, 4))
+    ax2.bar(weekly_series.index,
+            weekly_series.values)
+    ax2.set_xlim(30, 50)
+    ax2.set_ylabel("Frequency", size=12)
+    ax2.set_title("News Frequency by week", size=14)
+    plt.savefig("news_weekly.png", dpi=300)
+
+
 def date_analysis(df):
 
     # df['date'] = pandas.to_datetime(df['date'])
     df['datetime'] = df['date'] + " " + df['time']
     df['datetime'] = df['datetime'].apply(parse_datetime)
 
+    create_monthly_analysis(df)
+    create_weekly_analysis(df)
+
     #df['date'] = df['date'].apply()
     # print(df['datetime'])
     # dates = [parse_date(date_string, months)
     #          for date_string in df['date'].tolist()]
     # print(df['date'])
-    ax = df["datetime"].plot.hist(bins=500)
-    ax.set_title("Histogram of Date", size=14)
-    fig = ax.get_figure()
-    ax.set_xlabel("Date")
-    fig.savefig('date.png')
+
+    # Grafico a mostrar o plot sem contar com o covid
+    # fig2, ax2 = plt.subplots(figsize=(14, 4))
+    # ax2.bar(weekly_series.index,
+    #         to_1D(df["tags"]).value_counts().values)
+    # ax2.set_ylabel("Frequency", size=12)
+    # ax2.set_title("News Frequency by week", size=14)
+    # plt.savefig("news_weekly.png", dpi=300)
+
     with open('statistics.txt', 'a') as f:
         f.write("\nDate  Statistics:")
         f.write("\n\tMean: ")
@@ -202,7 +236,7 @@ if(advanced_analysys_partners):
 
 
 # Mostrar gráficos
-plt.show()
+# plt.show()
 
 
 # Por os graficos com UTF8
