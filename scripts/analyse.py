@@ -162,7 +162,8 @@ ax.bar(to_1D(df["tags"]).value_counts()[:10].index,
        to_1D(df["tags"]).value_counts()[:10].values)
 ax.set_ylabel("Frequency", size=12)
 ax.set_title("Tags distribution", size=14)
-plt.savefig("tags_distribution.png", dpi=300)
+plt.xticks(fontsize=18, rotation=45)
+plt.savefig("tags_distribution.png", dpi=300, bbox_inches='tight')
 
 # Grafico a mostrar o plot sem contar com o covid
 fig2, ax2 = plt.subplots(figsize=(14, 4))
@@ -170,7 +171,8 @@ ax2.bar(to_1D(df["tags"]).value_counts()[1:10].index,
         to_1D(df["tags"]).value_counts()[1:10].values)
 ax2.set_ylabel("Frequency", size=12)
 ax2.set_title("Tags distribution without Covid-19", size=14)
-plt.savefig("tags_without_covid.png", dpi=300)
+plt.xticks(fontsize=18, rotation=45)
+plt.savefig("tags_without_covid.png", dpi=300, bbox_inches='tight')
 
 
 # Advanced analysis
@@ -212,8 +214,8 @@ ax3.bar(to_1D(df["partner"]).value_counts()[:10].index,
         to_1D(df["partner"]).value_counts()[:10].values)
 ax3.set_ylabel("Frequency", size=12)
 ax3.set_title("Partners distribution", size=14)
-
-plt.savefig("partners.png", dpi=300)
+plt.xticks(fontsize=18, rotation=45)
+plt.savefig("partners.png", dpi=300, bbox_inches='tight')
 
 
 # Advanced analysis
