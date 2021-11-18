@@ -58,7 +58,7 @@ def create_monthly_analysis(df):
     ax2.bar(weekly_series.index,
             weekly_series.values)
     ax2.set_ylabel("Frequency", size=12)
-    ax2.set_xlim(6, 12)
+    ax2.set_xlim(0, 12)
     ax2.set_title("News Frequency by month", size=14)
     plt.savefig("news_monthly.png", dpi=300)
 
@@ -70,7 +70,7 @@ def create_weekly_analysis(df):
     fig2, ax2 = plt.subplots(figsize=(14, 4))
     ax2.bar(weekly_series.index,
             weekly_series.values)
-    ax2.set_xlim(30, 50)
+    ax2.set_xlim(0, 50)
     ax2.set_ylabel("Frequency", size=12)
     ax2.set_title("News Frequency by week", size=14)
     plt.savefig("news_weekly.png", dpi=300)
