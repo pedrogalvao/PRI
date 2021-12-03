@@ -1,0 +1,43 @@
+{
+	"add-field-type": [
+        {
+            "name":"articleText",
+            "class":"solr.TextField",
+            "indexAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
+                    {"class":"solr.LowerCaseFilterFactory"}
+                ]
+            },
+            "queryAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
+                    {"class":"solr.LowerCaseFilterFactory"}
+                ]
+            }
+        }
+    ],
+    "add-field": [
+        {
+            "name": "title",
+            "type": "articleText",
+            "indexed": true
+        },
+        {
+            "name": "text",
+            "type": "articleText",
+            "indexed": true
+        },
+        {
+            "name": "excerpt",
+            "type": "articleText",
+            "indexed": true
+        }
+    ]
+}
