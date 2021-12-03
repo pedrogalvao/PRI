@@ -7,8 +7,13 @@ solr start
 
 sleep 3
 
+# Schema definition via API
+curl -X POST -H 'Content-type:application/json' \
+    --data-binary @/data/simple_schema.json \
+    http://localhost:8983/solr/news/schema 
+
 # Populate collection
-bin/post -c news /data/1000_1500.csv
+bin/post -c news /data/data.json
 
 # Restart in foreground mode so we can access the interface
 solr restart -f
