@@ -1,0 +1,43 @@
+
+- Which news are related to Politicain the last month
+     - Palavras relacionadas
+     - Procurar no texto palavras parecidas, nas tags etc
+
+(
+    (title:"política" OR title:"governo" OR title:"partido")^2 OR (text:"política" OR text:"governo" OR text:"partido")
+    OR (tags:"Autárquicas2021" OR tags:"PSD")
+) AND date:["2021-11-10" TO NOW]
+
+
+- Which news are related to Marcelo and Antonio Costa in the last wek
+(
+    (
+        title:"Marcelo Rebelo de Sousa"
+        OR text:"Marcelo Rebelo de Sousa"
+        OR tags:"Marcelo Rebelo de Sousa"^2
+        OR title:"presidente"
+        OR text:"presidente"
+    )
+    AND
+    (
+        title:"Antonio Costa"
+        OR text:"Antonio Costa"
+        OR tags:"Antonio Costa"^2
+        OR title:"primeiro-ministro"
+        OR text:"primeiro-ministro"
+    )
+) AND date:["2021-12-3" TO NOW]
+
+
+- What small news can i read related to COVID
+   - Incluir sinonimos
+
+tags:"Covid-19" AND length:[0 TO 1000]
+
+- Combinar Tema com local, como eleições e portugal
+
+
+(text:"furacão" OR text:"sismo" OR text:"enchente" OR text:"alagamento") AND (text:"Peru" OR tag:"Peru")
+
+
+- Mais qual? Perguntar ao stor se tem que retornar noticias
