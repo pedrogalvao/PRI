@@ -6,7 +6,7 @@
 (
     (title:"política" OR title:"governo" OR title:"partido")^2 OR (text:"política" OR text:"governo" OR text:"partido")
     OR (tags:"Autárquicas2021" OR tags:"PSD")
-) AND date:["2021-11-10" TO NOW]
+) AND datetime:[ NOW-1MONTHS TO NOW]
 
 
 - Which news are related to Marcelo and Antonio Costa in the last wek
@@ -26,7 +26,7 @@
         OR title:"primeiro-ministro"
         OR text:"primeiro-ministro"
     )
-) AND date:["2021-12-3" TO NOW]
+) AND datetime:[NOW-30DAYS TO NOW]
 
 
 - What small news can i read related to COVID

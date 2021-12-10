@@ -23,8 +23,9 @@ def to_list(x):
 
 csv_file['datetime'] = csv_file['date'] + " " + csv_file['time']
 csv_file['datetime'] = csv_file['datetime'].apply(parse_datetime)
-print(csv_file['datetime'])
-csv_file.to_csv("tags.csv")
+csv_file['text_length'] = csv_file['text'].str.len()
+csv_file = csv_file.drop('date', axis=1)
+csv_file = csv_file.drop('time', axis=1)
 csv_file["partner"] = csv_file["partner"].apply(to_list)
 csv_file["tags"] = csv_file["tags"].apply(to_list)
 
