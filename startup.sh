@@ -7,6 +7,8 @@ solr start
 
 sleep 3
 
+cp /Milestone_2/synonyms.txt /var/solr/data/news/conf
+
 # Schema definition via API
 curl -X POST -H 'Content-type:application/json' \
     --data-binary @/data/simple_schema.json \
