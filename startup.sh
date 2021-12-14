@@ -7,7 +7,8 @@ solr start
 
 sleep 3
 
-cp /Milestone_2/synonyms.txt /var/solr/data/news/conf
+# cp /Milestone_2/synonyms.txt /var/solr/data/news/conf
+cp /Milestone_2/synonyms.txt /example/files/conf
 
 # Schema definition via API
 curl -X POST -H 'Content-type:application/json' \
