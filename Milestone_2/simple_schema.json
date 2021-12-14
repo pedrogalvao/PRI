@@ -121,6 +121,12 @@
             "type": "pint",
             "indexed": true,
             "stored": true
+        },
+        {
+            "name": "datetime",
+            "type": "pdate",
+            "indexed": true,
+            "stored": true
         }
     ]
 }
