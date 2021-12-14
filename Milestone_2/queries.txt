@@ -32,7 +32,10 @@
 - What small news can i read related to COVID
    - Incluir sinonimos
 
-tags:"Covid-19" AND length:[0 TO 1000]
+     tags:"Covid-19" AND length:[0 TO 1000]
+
+   2ª opção - Boost inversamente proporcional ao tamanho do texto:
+     {!boost b=recip(text_length,1,1,1)}tags:"Covid-19"
 
 - Combinar Tema com local, como eleições e portugal
 
