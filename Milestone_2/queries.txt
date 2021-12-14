@@ -3,10 +3,25 @@
      - Palavras relacionadas
      - Procurar no texto palavras parecidas, nas tags etc
 
+# Por os sinonimos no synonyms.txt
+# Punhamos as tags mais importantes que o texto tipo 1.5
+# Ver mais sinonimos tambem
+# Como é que o user pesquisa que so quer no ultimo mes 
+# Analisar relevancia manualmente, dos 10 primeiros, para calcular o p10 e isso(Ver prints discord e prof)
+# Para cada necessidade de informaçao precisa de haver uma query (tipo [Marcelo Antonio costa encontro])
+# Escrever no relatorio (guiar pelo do prof)
+
 (
     (title:"política" OR title:"governo" OR title:"partido")^2 OR (text:"política" OR text:"governo" OR text:"partido")
     OR (tags:"Autárquicas2021" OR tags:"PSD")
 ) AND datetime:[ NOW-1MONTHS TO NOW]
+
+
+# por titulo maior que tags, 
+# tags maior que exerto (Talvez tags maior que titulo ate)
+# exerto maior que texto
+# mesmas coisas que query anterior 
+# Se atribuirmos bem os pesos, talvez ele consiga dar mais relevancia aos que aparece os dois nomes no titulo por exemplo
 
 
 - Which news are related to Marcelo and Antonio Costa in the last wek
@@ -29,6 +44,10 @@
 ) AND datetime:[NOW-30DAYS TO NOW]
 
 
+#Pesquisar sem ser nas tags tambem, acho que podemos por length ate determinado tamanho
+#Mas dpeois tambem usar o boost inversamente proporcional
+
+
 - What small news can i read related to COVID
    - Incluir sinonimos
 
@@ -36,6 +55,9 @@
 
    2ª opção - Boost inversamente proporcional ao tamanho do texto:
      {!boost b=recip(text_length,1,1,1)}tags:"Covid-19"
+
+# Por muito mais complexo
+# Autarquicas lisboa
 
 - Combinar Tema com local, como eleições e portugal
 
