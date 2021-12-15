@@ -88,6 +88,12 @@ BOOSTED
     )
 ) AND datetime:[NOW-30DAYS TO NOW]
 
+2ª opção (com eDisMax):
+
+    q = Presidente Primeiro-Ministro "Antonio Costa" "Marcelo Rebelo de Sousa"
+    q.op = AND
+    qf = title^2 tags^1.5 excerpt^1.2 text^0.8
+
 
 #Pesquisar sem ser nas tags tambem, acho que podemos por length ate determinado tamanho
 #Mas dpeois tambem usar o boost inversamente proporcional
