@@ -119,12 +119,14 @@
         {
             "name": "text_length",
             "type": "pint",
+            "multiValued": false,
             "indexed": true,
             "stored": true
         },
         {
             "name": "datetime",
             "type": "pdate",
+            "multiValued": false,
             "indexed": true,
             "stored": true
         }
