@@ -52,7 +52,7 @@ def metrics_table(results, relevant):
     return df
 
 
-def precision_call_curve(results, relevant):
+def precision_call_curve(results, relevant, filename):
 
     # PRECISION-RECALL CURVE
     # Calculate precision and recall values as we move down the ranked list
@@ -92,26 +92,35 @@ def precision_call_curve(results, relevant):
     disp = PrecisionRecallDisplay(
         [precision_recall_match.get(r) for r in recall_values], recall_values)
     disp.plot()
-    plt.savefig('precision_recall.pdf')
+    plt.savefig(filename)
 
 
-def qrelFiles():
+def qrelFiles(num_queries):
     qrels = []
-    for index in range(1, 2):
+    for index in range(1, num_queries + 1):
         qrels.append(f'Qrels/query_{index}.txt')
     return qrels
 
 
-QRELS_FILE = 'Qrels/query_1.txt'
-QUERY_URL = 'http://localhost:8983/solr/news/query?q=(%0A%20%20%20%20(title:%22pol%C3%ADtica%22%20OR%20title:%22governo%22%20OR%20title:%22partido%22)%5E2%20OR%20(text:%22pol%C3%ADtica%22%20OR%20text:%22governo%22%20OR%20text:%22partido%22)%0A%20%20%20%20OR%20(tags:%22Aut%C3%A1rquicas2021%22%20OR%20tags:%22PSD%22)%0A)%20AND%20datetime:%5B%20NOW-1MONTHS%20TO%20NOW%5D&q.op=OR&indent=true&wt=json'
+QUERY_URL = [
+    'http://localhost:8983/solr/news/query?q=(%0A%20%20%20%20(title:%22pol%C3%ADtica%22%20OR%20title:%22governo%22%20OR%20title:%22partido%22)%5E2%20OR%20(text:%22pol%C3%ADtica%22%20OR%20text:%22governo%22%20OR%20text:%22partido%22)%0A%20%20%20%20OR%20(tags:%22Aut%C3%A1rquicas2021%22%20OR%20tags:%22PSD%22)%0A)%20AND%20datetime:%5B%20NOW-1MONTHS%20TO%20NOW%5D&q.op=OR&indent=true&wt=json',
+    'http://localhost:8983/solr/news/query?q=(%0A%20%20%20%20(%0A%20%20%20%20%20%20%20%20title:%22Marcelo%20Rebelo%20de%20Sousa%22%0A%20%20%20%20%20%20%20%20OR%20text:%22Marcelo%20Rebelo%20de%20Sousa%22%0A%20%20%20%20%20%20%20%20OR%20tags:%22Marcelo%20Rebelo%20de%20Sousa%22%5E2%0A%20%20%20%20%20%20%20%20OR%20title:%22presidente%22%0A%20%20%20%20%20%20%20%20OR%20text:%22presidente%22%0A%20%20%20%20)%0A%20%20%20%20AND%0A%20%20%20%20(%0A%20%20%20%20%20%20%20%20title:%22Antonio%20Costa%22%0A%20%20%20%20%20%20%20%20OR%20text:%22Antonio%20Costa%22%0A%20%20%20%20%20%20%20%20OR%20tags:%22Antonio%20Costa%22%5E2%0A%20%20%20%20%20%20%20%20OR%20title:%22primeiro-ministro%22%0A%20%20%20%20%20%20%20%20OR%20text:%22primeiro-ministro%22%0A%20%20%20%20)%0A)%20AND%20datetime:%5BNOW-30DAYS%20TO%20NOW%5D&q.op=OR&indent=true&wt=json&qt='
+]
 
+QRELS_FILES = qrelFiles(len(QUERY_URL))
 
-# Read qrels to extract relevant documents
-relevant = list(map(lambda el: el.strip(), open(QRELS_FILE).readlines()))
-# Get query results from Solr instance
-results = requests.get(QUERY_URL).json()['response']['docs']
+for idx in range(len(QUERY_URL)):
 
-with open('results.tex', 'w') as tf:
-    tf.write(metrics_table(results, relevant).to_latex())
+    # Read qrels to extract relevant documents
+    relevant = list(map(lambda el: el.strip(),
+                    open(QRELS_FILES[idx]).readlines()))
+    # Get query results from Solr instance
+    results = requests.get(QUERY_URL[idx]).json()['response']['docs']
 
-precision_call_curve(results, relevant)
+    latex_name = f'Results/results_{idx+1}.tex'
+    file_name = f'Results/precision_recall_{idx+1}.pdf'
+
+    with open(latex_name, 'w') as tf:
+        tf.write(metrics_table(results, relevant).to_latex())
+
+    precision_call_curve(results, relevant, file_name)
