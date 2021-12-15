@@ -140,6 +140,16 @@ AND (text:"México" OR tags:"México")
 
 sort = datetime desc
 
+    2ª opção - funciona melhor procurar no título e adicionar pesos:
+
+(title:"ciclone" OR title:"furacão" OR title:"tornado"
+title:"sismo" OR title:"terramoto" OR 
+title:"enchente" OR title:"alagamento" OR title:"inundação"
+OR title:"tornado") 
+AND (title:"México"^3 OR text:"México" OR tags:"México"^2)
+
+sort = datetime desc
+
 
 - Mais qual? Perguntar ao stor se tem que retornar noticias
 {!boost b=recip(ms(NOW, datetime),1,1,1)}tags:"Covid-19"
