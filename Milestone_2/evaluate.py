@@ -111,13 +111,13 @@ def qrelFilesBoosted(num_queries):
 
 QUERY_URL = [
     'http://localhost:8983/solr/news/query?q=(%0A%20%20%20%20(title:%22pol%C3%ADtica%22%20OR%20title:%22governo%22%20OR%20title:%22partido%22)%5E2%20OR%20(text:%22pol%C3%ADtica%22%20OR%20text:%22governo%22%20OR%20text:%22partido%22)%0A%20%20%20%20OR%20(tags:%22Aut%C3%A1rquicas2021%22%20OR%20tags:%22PSD%22)%0A)%20AND%20datetime:%5B%20NOW-1MONTHS%20TO%20NOW%5D&q.op=OR&indent=true&wt=json',
-    'http://localhost:8983/solr/news/query?q=(%0A%20%20%20%20(%0A%20%20%20%20%20%20%20%20title:%22Marcelo%20Rebelo%20de%20Sousa%22%0A%20%20%20%20%20%20%20%20OR%20text:%22Marcelo%20Rebelo%20de%20Sousa%22%0A%20%20%20%20%20%20%20%20OR%20tags:%22Marcelo%20Rebelo%20de%20Sousa%22%5E2%0A%20%20%20%20%20%20%20%20OR%20title:%22presidente%22%0A%20%20%20%20%20%20%20%20OR%20text:%22presidente%22%0A%20%20%20%20)%0A%20%20%20%20AND%0A%20%20%20%20(%0A%20%20%20%20%20%20%20%20title:%22Antonio%20Costa%22%0A%20%20%20%20%20%20%20%20OR%20text:%22Antonio%20Costa%22%0A%20%20%20%20%20%20%20%20OR%20tags:%22Antonio%20Costa%22%5E2%0A%20%20%20%20%20%20%20%20OR%20title:%22primeiro-ministro%22%0A%20%20%20%20%20%20%20%20OR%20text:%22primeiro-ministro%22%0A%20%20%20%20)%0A)%20AND%20datetime:%5BNOW-30DAYS%20TO%20NOW%5D&q.op=OR&indent=true&wt=json&qt=',
+    'http://localhost:8983/solr/news/query?q=%22Antonio%20Costa%22%20%20%22Marcelo%20Rebelo%20de%20Sousa%22&q.op=AND&defType=dismax&indent=true&wt=json&qf=title%20tags%20excerpt%20text&qt=',
     'http://localhost:8983/solr/news/query?q=Covid-19&q.op=OR&defType=dismax&indent=true&qf=title%20tags%20excerpt%20text&fq=text_length:%5B0%20TO%201000%5D'
 ]
 
 QUERY_URL_BOOSTED = [
     'http://localhost:8983/solr/news/query?q=(%0A%20%20%20%20(title:%22pol%C3%ADtica%22%20OR%20title:%22governo%22%20OR%20title:%22partido%22)%5E2%20OR%20(text:%22pol%C3%ADtica%22%20OR%20text:%22governo%22%20OR%20text:%22partido%22)%0A%20%20%20%20OR%20(tags:%22Aut%C3%A1rquicas2021%22%20OR%20tags:%22PSD%22)%0A)%20AND%20datetime:%5B%20NOW-1MONTHS%20TO%20NOW%5D&q.op=OR&indent=true&wt=json',
-    'http://localhost:8983/solr/news/query?q=(%0A%20%20%20%20(%0A%20%20%20%20%20%20%20%20title:%22Marcelo%20Rebelo%20de%20Sousa%22%0A%20%20%20%20%20%20%20%20OR%20text:%22Marcelo%20Rebelo%20de%20Sousa%22%0A%20%20%20%20%20%20%20%20OR%20tags:%22Marcelo%20Rebelo%20de%20Sousa%22%5E2%0A%20%20%20%20%20%20%20%20OR%20title:%22presidente%22%0A%20%20%20%20%20%20%20%20OR%20text:%22presidente%22%0A%20%20%20%20)%0A%20%20%20%20AND%0A%20%20%20%20(%0A%20%20%20%20%20%20%20%20title:%22Antonio%20Costa%22%0A%20%20%20%20%20%20%20%20OR%20text:%22Antonio%20Costa%22%0A%20%20%20%20%20%20%20%20OR%20tags:%22Antonio%20Costa%22%5E2%0A%20%20%20%20%20%20%20%20OR%20title:%22primeiro-ministro%22%0A%20%20%20%20%20%20%20%20OR%20text:%22primeiro-ministro%22%0A%20%20%20%20)%0A)%20AND%20datetime:%5BNOW-30DAYS%20TO%20NOW%5D&q.op=OR&indent=true&wt=json&qt=',
+    'http://localhost:8983/solr/news/query?q=%22Antonio%20Costa%22%20%20%22Marcelo%20Rebelo%20de%20Sousa%22&q.op=AND&defType=dismax&indent=true&wt=json&fl=*,score&qf=title%5E5%20tags%5E4%20excerpt%5E3%20text&qs=10&qt=',
     'http://localhost:8983/solr/news/query?q=Covid-19&q.op=OR&defType=dismax&indent=true&qf=title%5E10%20tags%5E5%20excerpt%5E1.2%20text%5E0.8&bf=product(recip(ms(NOW,datetime),1,1,1),recip(text_length,1,1,1))%5E1e15'
 ]
 
@@ -146,7 +146,7 @@ for idx in range(len(QUERY_URL_BOOSTED)):
     relevant = list(map(lambda el: el.strip(),
                     open(QRELS_FILES_BOOSTED[idx]).readlines()))
     # Get query results from Solr instance
-    results = requests.get(QUERY_URL[idx]).json()['response']['docs']
+    results = requests.get(QUERY_URL_BOOSTED[idx]).json()['response']['docs']
 
     latex_name = f'Results/Boosted/results_{idx+1}.tex'
     file_name = f'Results/Boosted/precision_recall_{idx+1}.pdf'
