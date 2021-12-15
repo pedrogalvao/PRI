@@ -160,10 +160,18 @@ excerpt:"sismo" OR excerpt:"terramoto" OR
 excerpt:"enchente" OR excerpt:"alagamento" OR excerpt:"inundação" OR 
 excerpt:"maremoto" OR excerpt:"tsunami" OR "tempestade")
 
-AND (title:"México"^3 OR text:"México" OR tags:"México"^2)
-
 sort = datetime desc
 
+2ª opção - usar boost em datetime ao invés de usar o parâmetro sort:
+
+{!boost b=recip(ms(NOW,datetime),1,1,1)}(title:"ciclone" OR title:"furacão" OR title:"tornado" OR
+title:"sismo" OR title:"terramoto" OR 
+title:"enchente" OR title:"alagamento" OR title:"inundação" OR 
+title:"maremoto" OR title:"tsunami" OR "tempestade")^4 OR
+(excerpt:"ciclone" OR excerpt:"furacão" OR excerpt:"tornado" OR
+excerpt:"sismo" OR excerpt:"terramoto" OR 
+excerpt:"enchente" OR excerpt:"alagamento" OR excerpt:"inundação" OR 
+excerpt:"maremoto" OR excerpt:"tsunami" OR "tempestade")
 
 
 
