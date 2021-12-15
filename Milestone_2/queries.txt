@@ -62,6 +62,14 @@ NORMAL
     )
 ) AND datetime:[NOW-30DAYS TO NOW]
 
+http://localhost:8983/solr/#/news/query?q=Marcelo%20Ant%C3%B3nio%20Costa&q.op=OR&defType=edismax&indent=true&wt=json&rows=100&qf=title%5E4%20tags%5E3%20excerpt%5E2%20text&fl=*,score&qs=10&stopwords=false&fq=datetime:%5BNOW-1MONTH%2FDAY%20TO%20NOW%5D&qt=
+
+Marcelo Antonio costa
+deftype dismax
+qf title^4 tags^3 excerpt^2 text
+qs = 10
+datetime:[NOW-1MONTH/DAY TO NOW]
+
 BOOSTED 
 
 (
@@ -113,3 +121,4 @@ BOOSTED
 
 - Mais qual? Perguntar ao stor se tem que retornar noticias
 {!boost b=recip(ms(NOW, datetime),1,1,1)}tags:"Covid-19"
+
