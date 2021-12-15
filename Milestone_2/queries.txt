@@ -93,13 +93,14 @@ BOOSTED
     q = Presidente Primeiro-Ministro "Antonio Costa" "Marcelo Rebelo de Sousa"
     q.op = AND
     qf = title^2 tags^1.5 excerpt^1.2 text^0.8
+    bq = datetime:[NOW-30DAYS TO NOW]
 
 
 #Pesquisar sem ser nas tags tambem, acho que podemos por length ate determinado tamanho
 #Mas dpeois tambem usar o boost inversamente proporcional
 
 
-- What small news can i read related to COVID
+- What recent small news can i read related to COVID
    - Incluir sinonimos
 
      tags:"Covid-19" AND length:[0 TO 1000]
@@ -109,6 +110,11 @@ BOOSTED
     
     3ª opção - Boost baseado em data e tamanho do texto:
     {!boost b=product(recip(ms(NOW,datetime),1,1,1),recip(text_length,1,1,1))}tags:"Covid-19"
+
+    4ª opção
+    q  = Covid-19
+    qf = title^10 tags^5 excerpt^1.2 text^0.8
+    bf = product(recip(ms(NOW,datetime),1,1,1),recip(text_length,1,1,1))
 
 # Por muito mais complexo
 # Autarquicas lisboa
