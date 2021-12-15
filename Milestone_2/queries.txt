@@ -138,6 +138,8 @@ text:"enchente" OR text:"alagamento" OR text:"inundação"
 OR "tornado") 
 AND (text:"México" OR tags:"México")
 
+sort = datetime desc
+
 
 - Mais qual? Perguntar ao stor se tem que retornar noticias
 {!boost b=recip(ms(NOW, datetime),1,1,1)}tags:"Covid-19"
