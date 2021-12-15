@@ -10,6 +10,12 @@
 # Analisar relevancia manualmente, dos 10 primeiros, para calcular o p10 e isso(Ver prints discord e prof)
 # Para cada necessidade de informaçao precisa de haver uma query (tipo [Marcelo Antonio costa encontro])
 # Escrever no relatorio (guiar pelo do prof)
+# Podemos por os partidos
+
+###################################################
+QUERY 1
+###################################################
+
 
 NORMAL
 (
@@ -29,6 +35,19 @@ BOOSTED
     
 ) AND datetime:[ NOW-1MONTHS TO NOW]
 
+(
+    (title:"política" OR title:"governo" OR title:"partido")^4 OR 
+    (tags:"Autárquicas2021" OR tags:"PSD")^3 OR 
+    (excerpt:"política" OR excerpt:"governo" OR excerpt:"partido")^2 OR 
+    (text:"política" OR text:"governo" OR text:"partido")
+    
+) AND datetime:[ NOW-1MONTHS TO NOW]
+
+
+###################################################
+QUERY 2
+###################################################
+
 
 # por titulo maior que tags, 
 # tags maior que exerto (Talvez tags maior que titulo ate)
@@ -40,7 +59,6 @@ BOOSTED
 - Which news are related to Marcelo and Antonio Costa in the last wek
 
 NORMAL
-
 (
     (
         title:"Marcelo Rebelo de Sousa"
@@ -107,6 +125,11 @@ qf title^4 tags^3 excerpt^2 text
 qs = 10
 fq datetime:[NOW-1MONTH/DAY TO NOW]
 
+
+###################################################
+QUERY 3
+###################################################
+
 #Pesquisar sem ser nas tags tambem, acho que podemos por length ate determinado tamanho
 #Mas dpeois tambem usar o boost inversamente proporcional
 
@@ -125,7 +148,13 @@ fq datetime:[NOW-1MONTH/DAY TO NOW]
     4ª opção
     q  = Covid-19
     qf = title^10 tags^5 excerpt^1.2 text^0.8
-    bf = product(recip(ms(NOW,datetime),1,1,1),recip(text_length,1,1,1))^100000000000000000
+    bf = product(recip(ms(NOW,datetime),1,1,1),recip(text_length,1,1,1))^1e15
+
+
+###################################################
+QUERY 4
+###################################################
+
 
 # Por muito mais complexo
 # Autarquicas lisboa

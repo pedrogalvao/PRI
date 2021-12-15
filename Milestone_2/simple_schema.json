@@ -76,7 +76,14 @@
                         "expand": "true",
                         "ignoreCase": "true",
                         "synonyms": "synonyms.txt"
+                    },
+                    {
+                        "class": "solr.StopFilterFactory",
+                        "format": "snowball",
+                        "words": "lang/stopwords_pt.txt",
+                        "ignoreCase": "true"
                     }
+
                 ]
             },
             "queryAnalyzer": {
