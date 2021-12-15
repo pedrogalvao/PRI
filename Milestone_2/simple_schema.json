@@ -1,52 +1,29 @@
 {
-    "add-field-type": [{
-            "name": "reportField",
+    "schema": {
+        "name": "news-schema",
+        "version": 1.6,
+        "uniqueKey": "id",
+        "add-field-type": [{
+            "name": "text_pt",
             "class": "solr.TextField",
-            "indexAnalyzer": {
-                "tokenizer": {
-                    "class": "solr.ClassicTokenizerFactory"
-                },
-                "filters": [{
-                        "class": "solr.StopFilterFactory",
-                        "words": "stopwords.txt",
-                        "ignoreCase": "true"
-                    },
-                    {
-                        "class": "solr.EnglishPossessiveFilterFactory"
-                    },
-                    {
-                        "class": "solr.PorterStemFilterFactory"
-                    },
-                    {
-                        "class": "solr.LowerCaseFilterFactory"
-                    },
-                    {
-                        "class": "solr.ASCIIFoldingFilterFactory",
-                        "preserveOriginal": "true"
-                    }
-                ]
-            },
-            "queryAnalyzer": {
+            "positionIncrementGap": "100",
+            "analyzer": {
                 "tokenizer": {
                     "class": "solr.StandardTokenizerFactory"
                 },
-                "filters": [{
-                        "class": "solr.StopFilterFactory",
-                        "words": "stopwords.txt",
-                        "ignoreCase": "true"
-                    },
-                    {
-                        "class": "solr.EnglishPossessiveFilterFactory"
-                    },
-                    {
-                        "class": "solr.PorterStemFilterFactory"
-                    },
+                "filters": [
+                    { "class": "solr.ASCIIFoldingFilterFactory", "preserveOriginal": true },
                     {
                         "class": "solr.LowerCaseFilterFactory"
                     },
                     {
-                        "class": "solr.ASCIIFoldingFilterFactory",
-                        "preserveOriginal": "true"
+                        "class": "solr.StopFilterFactory",
+                        "format": "snowball",
+                        "words": "lang/stopwords_pt.txt",
+                        "ignoreCase": "true"
+                    },
+                    {
+                        "class": "solr.PortugueseLightStemFilterFactory"
                     },
                     {
                         "class": "solr.SynonymGraphFilterFactory",
@@ -56,79 +33,37 @@
                     }
                 ]
             }
-        },
-        {
-            "name": "articleText",
-            "class": "solr.TextField",
-            "indexAnalyzer": {
-                "tokenizer": {
-                    "class": "solr.StandardTokenizerFactory"
-                },
-                "filters": [{
-                        "class": "solr.ASCIIFoldingFilterFactory",
-                        "preserveOriginal": true
-                    },
-                    {
-                        "class": "solr.LowerCaseFilterFactory"
-                    },
-                    {
-                        "class": "solr.SynonymGraphFilterFactory",
-                        "expand": "true",
-                        "ignoreCase": "true",
-                        "synonyms": "synonyms.txt"
-                    }
-                ]
+        }],
+        "add-field": [{
+                "name": "title",
+                "type": "text_pt",
+                "indexed": true
             },
-            "queryAnalyzer": {
-                "tokenizer": {
-                    "class": "solr.StandardTokenizerFactory"
-                },
-                "filters": [{
-                        "class": "solr.ASCIIFoldingFilterFactory",
-                        "preserveOriginal": true
-                    },
-                    {
-                        "class": "solr.LowerCaseFilterFactory"
-                    },
-                    {
-                        "class": "solr.SynonymGraphFilterFactory",
-                        "expand": "true",
-                        "ignoreCase": "true",
-                        "synonyms": "synonyms.txt"
-                    }
-
-                ]
+            {
+                "name": "text",
+                "type": "text_pt",
+                "indexed": true
+            },
+            {
+                "name": "excerpt",
+                "type": "text_pt",
+                "indexed": true
+            },
+            {
+                "name": "tags",
+                "type": "text_pt",
+                "indexed": true
+            },
+            {
+                "name": "datetime",
+                "type": "pdate",
+                "indexed": true
+            },
+            {
+                "name": "text_length",
+                "type": "pint",
+                "indexed": false
             }
-        }
-    ],
-    "add-field": [{
-            "name": "title",
-            "type": "articleText",
-            "indexed": true
-        },
-        {
-            "name": "text",
-            "type": "articleText",
-            "indexed": true
-        },
-        {
-            "name": "excerpt",
-            "type": "articleText",
-            "indexed": true
-        },
-        {
-            "name": "text_length",
-            "type": "pint",
-            "multiValued": false,
-            "indexed": true,
-            "stored": true
-        },
-        {
-            "name": "datetime",
-            "type": "pdate",
-            "multiValued": false,
-            "indexed": true,
-            "stored": true
-        }
-    ]
+        ]
+    }
 }
