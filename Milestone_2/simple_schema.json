@@ -120,12 +120,14 @@
             "name": "text_length",
             "type": "pint",
             "indexed": true,
+            "multiValued": false,
             "stored": true
         },
         {
             "name": "datetime",
             "type": "pdate",
             "indexed": true,
+            "multiValued": false,
             "stored": true
         }
     ]

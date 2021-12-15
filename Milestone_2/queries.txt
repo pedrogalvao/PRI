@@ -130,11 +130,15 @@ fq datetime:[NOW-1MONTH/DAY TO NOW]
 # Por muito mais complexo
 # Autarquicas lisboa
 
-- Combinar Tema com local, como eleições e portugal
+- What were the last natural disasters that happened in Mexico?
 
+(text:"ciclone" OR text:"furacão" OR text:"tornado"
+text:"sismo" OR text:"terramoto" OR 
+text:"enchente" OR text:"alagamento" OR text:"inundação"
+OR "tornado") 
+AND (text:"México" OR tags:"México")
 
-(text:"furacão" OR text:"sismo" OR text:"enchente" OR text:"alagamento") AND (text:"Peru" OR tag:"Peru")
-
+sort = datetime desc
 
 
 - Mais qual? Perguntar ao stor se tem que retornar noticias
