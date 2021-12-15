@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 csv_file = pd.DataFrame(pd.read_csv(
-    "data_clean_1-608.csv", sep=";", header=0, index_col=False, encoding="UTF-8"))
+    "data.csv", sep=";", header=0, index_col=False, encoding="UTF-8"))
 
 
 def parse_datetime(value):
