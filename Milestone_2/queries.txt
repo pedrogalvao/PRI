@@ -11,9 +11,22 @@
 # Para cada necessidade de informaçao precisa de haver uma query (tipo [Marcelo Antonio costa encontro])
 # Escrever no relatorio (guiar pelo do prof)
 
+NORMAL
 (
-    (title:"política" OR title:"governo" OR title:"partido")^2 OR (text:"política" OR text:"governo" OR text:"partido")
-    OR (tags:"Autárquicas2021" OR tags:"PSD")
+    (title:"política" OR title:"governo" OR title:"partido") OR 
+    (tags:"Autárquicas2021" OR tags:"PSD") OR 
+    (excerpt:"política" OR excerpt:"governo" OR excerpt:"partido") OR 
+    (text:"política" OR text:"governo" OR text:"partido")
+    
+) AND datetime:[ NOW-1MONTHS TO NOW]
+
+BOOSTED
+(
+    (title:"política" OR title:"governo" OR title:"partido")^4 OR 
+    (tags:"Autárquicas2021" OR tags:"PSD")^3 OR 
+    (excerpt:"política" OR excerpt:"governo" OR excerpt:"partido")^2 OR 
+    (text:"política" OR text:"governo" OR text:"partido")
+    
 ) AND datetime:[ NOW-1MONTHS TO NOW]
 
 
@@ -25,6 +38,9 @@
 
 
 - Which news are related to Marcelo and Antonio Costa in the last wek
+
+NORMAL
+
 (
     (
         title:"Marcelo Rebelo de Sousa"
@@ -36,9 +52,38 @@
     AND
     (
         title:"Antonio Costa"
+        OR tags:"Antonio Costa"
+        OR excerpt:"Antonio Costa"
         OR text:"Antonio Costa"
-        OR tags:"Antonio Costa"^2
         OR title:"primeiro-ministro"
+        OR tags:"primeiro-ministro"
+        OR excerpt:"primeiro-ministro"
+        OR text:"primeiro-ministro"
+    )
+) AND datetime:[NOW-30DAYS TO NOW]
+
+BOOSTED 
+
+(
+    (
+        title:"Marcelo Rebelo de Sousa"^4
+        OR tags:"Marcelo Rebelo de Sousa"^3
+        OR excerpt:"Marcelo Rebelo de Sousa"^2
+        OR text:"Marcelo Rebelo de Sousa"
+        OR title:"presidente"^4
+        OR tags:"presidente"^3
+        OR excerpt:"presidente"^2
+        OR text:"presidente"
+    )
+    AND
+    (
+        title:"Antonio Costa"^4
+        OR tags:"Antonio Costa"^3
+        OR excerpt:"Antonio Costa"^2
+        OR text:"Antonio Costa"
+        OR title:"primeiro-ministro"^4
+        OR tags:"primeiro-ministro"^3
+        OR excerpt:"primeiro-ministro"^2
         OR text:"primeiro-ministro"
     )
 ) AND datetime:[NOW-30DAYS TO NOW]
@@ -65,4 +110,6 @@
 (text:"furacão" OR text:"sismo" OR text:"enchente" OR text:"alagamento") AND (text:"Peru" OR tag:"Peru")
 
 
+
 - Mais qual? Perguntar ao stor se tem que retornar noticias
+{!boost b=recip(ms(NOW, datetime),1,1,1)}tags:"Covid-19"
