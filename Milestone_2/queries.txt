@@ -161,13 +161,48 @@ QUERY 4
 
 - What were the last natural disasters that happened in Mexico?
 
-(text:"ciclone" OR text:"furacão" OR text:"tornado"
+(text:"ciclone" OR text:"furacão" OR text:"tornado" OR text:"tufão" OR
 text:"sismo" OR text:"terramoto" OR 
-text:"enchente" OR text:"alagamento" OR text:"inundação"
-OR "tornado") 
+text:"enchente" OR text:"alagamento" OR text:"inundação") 
 AND (text:"México" OR tags:"México")
 
 sort = datetime desc
+
+    2ª opção - funciona melhor procurar no título e adicionar pesos:
+
+(title:"ciclone" OR title:"furacão" OR title:"tornado" OR text:"tufão" OR
+title:"sismo" OR title:"terramoto" OR 
+title:"enchente" OR title:"alagamento" OR title:"inundação" OR title:"maremoto" OR title:"tsunami") 
+AND (title:"México"^3 OR text:"México" OR tags:"México"^2)
+
+sort = datetime desc
+
+    3ª opção - título + excerpt
+
+
+(title:"ciclone" OR title:"furacão" OR title:"tornado" OR
+title:"sismo" OR title:"terramoto" OR 
+title:"enchente" OR title:"alagamento" OR title:"inundação" OR 
+title:"maremoto" OR title:"tsunami" OR "tempestade") OR
+(excerpt:"ciclone" OR excerpt:"furacão" OR excerpt:"tornado" OR
+excerpt:"sismo" OR excerpt:"terramoto" OR 
+excerpt:"enchente" OR excerpt:"alagamento" OR excerpt:"inundação" OR 
+excerpt:"maremoto" OR excerpt:"tsunami" OR "tempestade")
+
+sort = datetime desc
+
+2ª opção - usar boost em datetime ao invés de usar o parâmetro sort:
+
+{!boost b=recip(ms(NOW,datetime),1,1,1)}(title:"ciclone" OR title:"furacão" OR title:"tornado" OR
+title:"sismo" OR title:"terramoto" OR 
+title:"enchente" OR title:"alagamento" OR title:"inundação" OR 
+title:"maremoto" OR title:"tsunami" OR "tempestade")^4 OR
+(excerpt:"ciclone" OR excerpt:"furacão" OR excerpt:"tornado" OR
+excerpt:"sismo" OR excerpt:"terramoto" OR 
+excerpt:"enchente" OR excerpt:"alagamento" OR excerpt:"inundação" OR 
+excerpt:"maremoto" OR excerpt:"tsunami" OR "tempestade")
+
+
 
 
 - Mais qual? Perguntar ao stor se tem que retornar noticias
