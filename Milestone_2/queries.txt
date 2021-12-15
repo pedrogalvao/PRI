@@ -125,7 +125,7 @@ fq datetime:[NOW-1MONTH/DAY TO NOW]
     4ª opção
     q  = Covid-19
     qf = title^10 tags^5 excerpt^1.2 text^0.8
-    bf = product(recip(ms(NOW,datetime),1,1,1),recip(text_length,1,1,1))
+    bf = product(recip(ms(NOW,datetime),1,1,1),recip(text_length,1,1,1))^100000000000000000
 
 # Por muito mais complexo
 # Autarquicas lisboa
