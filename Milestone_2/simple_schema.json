@@ -52,11 +52,13 @@
             {
                 "name": "tags",
                 "type": "text_pt",
+                "multiValued": false,
                 "indexed": true
             },
             {
                 "name": "datetime",
                 "type": "pdate",
+                "multiValued": false,
                 "indexed": true
             },
             {
