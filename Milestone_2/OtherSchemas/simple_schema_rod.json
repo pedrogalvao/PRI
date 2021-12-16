@@ -1,0 +1,71 @@
+{
+    "schema": {
+        "name": "news-schema",
+        "version": 1.6,
+        "uniqueKey": "id",
+        "add-field-type": [{
+            "name": "articleText",
+            "class": "solr.TextField",
+            "positionIncrementGap": "100",
+            "analyzer": {
+                "tokenizer": {
+                    "class": "solr.StandardTokenizerFactory"
+                },
+                "filters": [{
+                        "class": "solr.ASCIIFoldingFilterFactory",
+                        "preserveOriginal": true
+                    },
+                    {
+                        "class": "solr.LowerCaseFilterFactory"
+                    },
+                    {
+                        "class": "solr.StopFilterFactory",
+                        "format": "snowball",
+                        "words": "lang/stopwords_pt.txt",
+                        "ignoreCase": "true"
+                    },
+                    {
+                        "class": "solr.PortugueseLightStemFilterFactory"
+                    },
+                    {
+                        "class": "solr.SynonymGraphFilterFactory",
+                        "expand": "true",
+                        "ignoreCase": "true",
+                        "synonyms": "synonyms.txt"
+                    }
+                ]
+            }
+        }],
+        "add-field": [{
+                "name": "title",
+                "type": "articleText",
+                "indexed": true
+            },
+            {
+                "name": "text",
+                "type": "articleText",
+                "indexed": true
+            },
+            {
+                "name": "excerpt",
+                "type": "articleText",
+                "indexed": true
+            },
+            {
+                "name": "tags",
+                "type": "articleText",
+                "indexed": true
+            },
+            {
+                "name": "datetime",
+                "type": "pdate",
+                "indexed": true
+            },
+            {
+                "name": "text_length",
+                "type": "pint",
+                "indexed": false
+            }
+        ]
+    }
+}

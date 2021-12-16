@@ -1,6 +1,6 @@
 {
     "add-field-type": [{
-        "name": "articleText",
+        "name": "text_pt",
         "class": "solr.TextField",
         "indexAnalyzer": {
             "tokenizer": {
@@ -14,18 +14,20 @@
                     "class": "solr.LowerCaseFilterFactory"
                 },
                 {
-                    "class": "solr.SynonymGraphFilterFactory",
-                    "expand": "true",
-                    "ignoreCase": "true",
-                    "synonyms": "synonyms.txt"
-                },
-                {
                     "class": "solr.StopFilterFactory",
                     "format": "snowball",
                     "words": "lang/stopwords_pt.txt",
                     "ignoreCase": "true"
+                },
+                {
+                    "class": "solr.PortugueseLightStemFilterFactory"
+                },
+                {
+                    "class": "solr.SynonymGraphFilterFactory",
+                    "expand": "true",
+                    "ignoreCase": "true",
+                    "synonyms": "synonyms.txt"
                 }
-
             ]
         },
         "queryAnalyzer": {
@@ -40,63 +42,49 @@
                     "class": "solr.LowerCaseFilterFactory"
                 },
                 {
+                    "class": "solr.StopFilterFactory",
+                    "format": "snowball",
+                    "words": "lang/stopwords_pt.txt",
+                    "ignoreCase": "true"
+                },
+                {
+                    "class": "solr.PortugueseLightStemFilterFactory"
+                },
+                {
                     "class": "solr.SynonymGraphFilterFactory",
                     "expand": "true",
                     "ignoreCase": "true",
                     "synonyms": "synonyms.txt"
                 }
-
             ]
         }
     }],
     "add-field": [{
             "name": "title",
-            "type": "articleText",
+            "type": "text_pt",
             "indexed": true
         },
         {
             "name": "text",
-            "type": "articleText",
+            "type": "text_pt",
             "indexed": true
         },
         {
             "name": "excerpt",
-            "type": "articleText",
+            "type": "text_pt",
             "indexed": true
         },
         {
             "name": "text_length",
             "type": "pint",
-            "indexed": false,
-            "multiValued": false,
+            "indexed": true,
             "stored": true
         },
         {
             "name": "datetime",
             "type": "pdate",
             "indexed": true,
-            "multiValued": false,
             "stored": true
-        },
-        {
-            "name": "url",
-            "type": "string",
-            "indexed": false,
-            "stored": true
-        },
-        {
-            "name": "tags",
-            "type": "string",
-            "indexed": true,
-            "stored": true,
-            "multiValued": true
-        },
-        {
-            "name": "partner",
-            "type": "string",
-            "indexed": true,
-            "stored": true,
-            "multiValued": true
         }
     ]
 }

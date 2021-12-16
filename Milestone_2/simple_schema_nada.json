@@ -14,18 +14,20 @@
                     "class": "solr.LowerCaseFilterFactory"
                 },
                 {
+                    "class": "solr.StopFilterFactory",
+                    "format": "snowball",
+                    "words": "lang/stopwords_pt.txt",
+                    "ignoreCase": "true"
+                },
+                {
                     "class": "solr.SynonymGraphFilterFactory",
                     "expand": "true",
                     "ignoreCase": "true",
                     "synonyms": "synonyms.txt"
                 },
                 {
-                    "class": "solr.StopFilterFactory",
-                    "format": "snowball",
-                    "words": "lang/stopwords_pt.txt",
-                    "ignoreCase": "true"
+                    "class": "solr.PortugueseLightStemFilterFactory"
                 }
-
             ]
         },
         "queryAnalyzer": {
@@ -68,14 +70,12 @@
             "name": "text_length",
             "type": "pint",
             "indexed": false,
-            "multiValued": false,
             "stored": true
         },
         {
             "name": "datetime",
             "type": "pdate",
             "indexed": true,
-            "multiValued": false,
             "stored": true
         },
         {
