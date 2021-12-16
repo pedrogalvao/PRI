@@ -159,26 +159,25 @@ QUERY 4
 # Por muito mais complexo
 # Autarquicas lisboa
 
-- What were the last natural disasters that happened in Mexico?
+- What were the last natural disasters that happened in the world?
 
-(text:"ciclone" OR text:"furacão" OR text:"tornado" OR text:"tufão" OR
-text:"sismo" OR text:"terramoto" OR 
-text:"enchente" OR text:"alagamento" OR text:"inundação") 
-AND (text:"México" OR tags:"México")
-
+q=ciclone furacão tornado tufão sismo terramoto enchente alagamento inundação
+qf=title tags excerpt text
 sort = datetime desc
 
     2ª opção - funciona melhor procurar no título e adicionar pesos:
 
-(title:"ciclone" OR title:"furacão" OR title:"tornado" OR text:"tufão" OR
+(title:"ciclone" OR title:"furacão" OR title:"tornado" OR title:"tufão" OR
 title:"sismo" OR title:"terramoto" OR 
-title:"enchente" OR title:"alagamento" OR title:"inundação" OR title:"maremoto" OR title:"tsunami") 
-AND (title:"México"^3 OR text:"México" OR tags:"México"^2)
+title:"enchente" OR title:"alagamento" OR title:"inundação" OR title:"maremoto" OR title:"tsunami")
 
 sort = datetime desc
 
-    3ª opção - título + excerpt
+    3ª opção 
 
+q=ciclone furacão tornado tufão sismo terramoto enchente alagamento inundação
+qf=title^50 tags^20 excerpt^10 text^0.1
+bf=recip(ms(NOW,datetime),1,1,1)^1e12
 
 (title:"ciclone" OR title:"furacão" OR title:"tornado" OR
 title:"sismo" OR title:"terramoto" OR 
