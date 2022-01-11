@@ -17,15 +17,43 @@ def metrics_table(results, relevant):
     @metric
     def ap(results, relevant):
         """Average Precision"""
+        relevant_index = []
+        index = 0
+        for res in results:
+            if (res['id'] in relevant):
+                relevant_index.append(index)
+            index = index + 1
+
+        if len(relevant_index) == 0:
+            return 0
+
         precision_values = [
             len([
                 doc
                 for doc in results[:idx]
-                if doc['id'] in relevant
+                if (doc['id'] in relevant)
             ]) / idx
-            for idx in range(1, len(results))
+            for idx in range(1, len(results) + 1)
         ]
-        return sum(precision_values)/len(precision_values)
+
+        precision_sum = 0
+        for ind in relevant_index:
+            precision_sum = precision_sum + precision_values[ind]
+
+        return precision_sum/len(relevant_index)
+    # @metric
+    # def ap(results, relevant):
+    #     """Average Precision"""
+    #     precision_values = [
+    #         len([
+    #             doc
+    #             for doc in results[:idx]
+    #             if doc['id'] in relevant
+    #         ]) / idx
+    #         for idx in range(1, len(results))
+    #     ]
+    #     print(precision_values)
+    #     return sum(precision_values)/len(precision_values)
 
     @metric
     def p10(results, relevant, n=10):
@@ -73,6 +101,11 @@ def precision_call_curve(results, relevant, filename):
         for idx, _ in enumerate(results, start=1)
     ]
 
+    # If could not find any value
+    if not precision_values and not recall_values:
+        precision_values = [0]
+        recall_values = [0]
+
     precision_recall_match = {k: v for k,
                               v in zip(recall_values, precision_values)}
 
@@ -83,10 +116,13 @@ def precision_call_curve(results, relevant, filename):
 
     # Extend matching dict to include these new intermediate steps
     for idx, step in enumerate(recall_values):
-        if step not in precision_recall_match:
+        if idx > 0 and step not in precision_recall_match:
             if recall_values[idx-1] in precision_recall_match:
                 precision_recall_match[step] = precision_recall_match[recall_values[idx-1]]
             else:
+                print("Zas")
+                print(precision_recall_match)
+                print(precision_recall_match[step])
                 precision_recall_match[step] = precision_recall_match[recall_values[idx+1]]
 
     disp = PrecisionRecallDisplay(
@@ -110,17 +146,17 @@ def qrelFilesBoosted(num_queries):
 
 
 QUERY_URL = [
-    # 'http://localhost:8983/solr/news/query?q=(%0A%20%20%20%20(title:%22pol%C3%ADtica%22%20OR%20title:%22governo%22%20OR%20title:%22partido%22)%5E2%20OR%20(text:%22pol%C3%ADtica%22%20OR%20text:%22governo%22%20OR%20text:%22partido%22)%0A%20%20%20%20OR%20(tags:%22Aut%C3%A1rquicas2021%22%20OR%20tags:%22PSD%22)%0A)%20AND%20datetime:%5B%20NOW-1MONTHS%20TO%20NOW%5D&q.op=OR&indent=true&wt=json',
+    'http://localhost:8983/solr/news/query?q=(%0A%20%20%20%20(title:%22pol%C3%ADtica%22%20OR%20title:%22governo%22%20OR%20title:%22partido%22)%5E2%20OR%20(text:%22pol%C3%ADtica%22%20OR%20text:%22governo%22%20OR%20text:%22partido%22)%0A%20%20%20%20OR%20(tags:%22Aut%C3%A1rquicas2021%22%20OR%20tags:%22PSD%22)%0A)%20AND%20datetime:%5B%20NOW-1MONTHS%20TO%20NOW%5D&q.op=OR&indent=true&wt=json',
     'http://localhost:8983/solr/news/query?q=%22Antonio%20Costa%22%20%20%22Marcelo%20Rebelo%20de%20Sousa%22&q.op=AND&defType=dismax&indent=true&wt=json&qf=title%20tags%20excerpt%20text&qt=',
-    # 'http://localhost:8983/solr/news/query?q=Covid-19&q.op=OR&defType=dismax&indent=true&qf=title%20tags%20excerpt%20text&fq=text_length:%5B0%20TO%201000%5D',
-    # 'http://localhost:8983/solr/news/query?q=ciclone%20furac%C3%A3o%20tornado%20tuf%C3%A3o%20sismo%20terramoto%20enchente%20alagamento%20inunda%C3%A7%C3%A3o&q.op=OR&defType=edismax&indent=true&qf=title%20tags%20excerpt%20text&sort=datetime%20desc'
+    'http://localhost:8983/solr/news/query?q=Covid-19&q.op=OR&defType=dismax&indent=true&qf=title%20tags%20excerpt%20text&fq=text_length:%5B0%20TO%201000%5D',
+    'http://localhost:8983/solr/news/query?q=ciclone%20furac%C3%A3o%20tornado%20tuf%C3%A3o%20sismo%20terramoto%20enchente%20alagamento%20inunda%C3%A7%C3%A3o&q.op=OR&defType=edismax&indent=true&qf=title%20tags%20excerpt%20text&sort=datetime%20desc'
 ]
 
 QUERY_URL_BOOSTED = [
-    # 'http://localhost:8983/solr/news/query?q=(%0A%20%20%20%20(title:%22pol%C3%ADtica%22%20OR%20title:%22governo%22%20OR%20title:%22partido%22)%5E2%20OR%20(text:%22pol%C3%ADtica%22%20OR%20text:%22governo%22%20OR%20text:%22partido%22)%0A%20%20%20%20OR%20(tags:%22Aut%C3%A1rquicas2021%22%20OR%20tags:%22PSD%22)%0A)%20AND%20datetime:%5B%20NOW-1MONTHS%20TO%20NOW%5D&q.op=OR&indent=true&wt=json',
+    'http://localhost:8983/solr/news/query?q=(%0A%20%20%20%20(title:%22pol%C3%ADtica%22%20OR%20title:%22governo%22%20OR%20title:%22partido%22)%5E2%20OR%20(text:%22pol%C3%ADtica%22%20OR%20text:%22governo%22%20OR%20text:%22partido%22)%0A%20%20%20%20OR%20(tags:%22Aut%C3%A1rquicas2021%22%20OR%20tags:%22PSD%22)%0A)%20AND%20datetime:%5B%20NOW-1MONTHS%20TO%20NOW%5D&q.op=OR&indent=true&wt=json',
     'http://localhost:8983/solr/news/query?q=%22Antonio%20Costa%22%20%20%22Marcelo%20Rebelo%20de%20Sousa%22&q.op=AND&defType=dismax&indent=true&wt=json&fl=*,score&qf=title%5E5%20tags%5E4%20excerpt%5E3%20text&qs=10&qt=',
-    # 'http://localhost:8983/solr/news/query?q=Covid-19&q.op=OR&defType=dismax&indent=true&qf=title%5E10%20tags%5E5%20excerpt%5E1.2%20text%5E0.8&bf=product(recip(ms(NOW,datetime),1,1,1),recip(text_length,1,1,1))%5E1e15',
-    # 'http://localhost:8983/solr/news/query?q=ciclone%20furac%C3%A3o%20tornado%20tuf%C3%A3o%20sismo%20terramoto%20enchente%20alagamento%20inunda%C3%A7%C3%A3o&q.op=OR&defType=edismax&indent=true&qf=title%5E50%20tags%5E20%20excerpt%5E10%20text%5E0.1&bf=recip(ms(NOW,datetime),1,1,1)%5E1e12'
+    'http://localhost:8983/solr/news/query?q=Covid-19&q.op=OR&defType=dismax&indent=true&qf=title%5E10%20tags%5E5%20excerpt%5E1.2%20text%5E0.8&bf=product(recip(ms(NOW,datetime),1,1,1),recip(text_length,1,1,1))%5E1e15',
+    'http://localhost:8983/solr/news/query?q=ciclone%20furac%C3%A3o%20tornado%20tuf%C3%A3o%20sismo%20terramoto%20enchente%20alagamento%20inunda%C3%A7%C3%A3o&q.op=OR&defType=edismax&indent=true&qf=title%5E50%20tags%5E20%20excerpt%5E10%20text%5E0.1&bf=recip(ms(NOW,datetime),1,1,1)%5E1e12'
 ]
 
 QRELS_FILES = qrelFiles(len(QUERY_URL))
@@ -147,6 +183,7 @@ for idx in range(len(QUERY_URL_BOOSTED)):
     # Read qrels to extract relevant documents
     relevant = list(map(lambda el: el.strip(),
                     open(QRELS_FILES_BOOSTED[idx]).readlines()))
+
     # Get query results from Solr instance
     results = requests.get(QUERY_URL_BOOSTED[idx]).json()['response']['docs']
 

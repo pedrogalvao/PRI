@@ -64,7 +64,13 @@
             "type": "articleText",
             "indexed": true
         },
-
+        {
+            "name": "text_length",
+            "type": "pint",
+            "indexed": false,
+            "multiValued": false,
+            "stored": true
+        },
         {
             "name": "datetime",
             "type": "pdate",
