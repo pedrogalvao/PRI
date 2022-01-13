@@ -24,6 +24,9 @@
                     "format": "snowball",
                     "words": "lang/stopwords_pt.txt",
                     "ignoreCase": "true"
+                },
+                {
+                    "class": "solr.PortugueseStemFilterFactory"
                 }
 
             ]
@@ -45,6 +48,9 @@
                     "ignoreCase": "true",
                     "synonyms": "synonyms.txt",
                     "tokenizerFactory": "solr.StandardTokenizerFactory"
+                },
+                {
+                    "class": "solr.PortugueseStemFilterFactory"
                 }
 
             ]
