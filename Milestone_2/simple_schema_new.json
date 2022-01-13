@@ -14,7 +14,7 @@
                     "class": "solr.LowerCaseFilterFactory"
                 },
                 {
-                    "class": "solr.SynonymFilterFactory",
+                    "class": "solr.SynonymGraphFilterFactory",
                     "expand": "true",
                     "ignoreCase": "true",
                     "synonyms": "synonyms.txt"
@@ -24,6 +24,9 @@
                     "format": "snowball",
                     "words": "lang/stopwords_pt.txt",
                     "ignoreCase": "true"
+                },
+                {
+                    "class": "solr.PortugueseStemFilterFactory"
                 }
 
             ]
@@ -40,11 +43,13 @@
                     "class": "solr.LowerCaseFilterFactory"
                 },
                 {
-                    "class": "solr.SynonymFilterFactory",
+                    "class": "solr.SynonymGraphFilterFactory",
                     "expand": "true",
                     "ignoreCase": "true",
-                    "synonyms": "synonyms.txt",
-                    "tokenizerFactory": "solr.StandardTokenizerFactory"
+                    "synonyms": "synonyms.txt"
+                },
+                {
+                    "class": "solr.PortugueseStemFilterFactory"
                 }
 
             ]
