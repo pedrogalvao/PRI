@@ -1,4 +1,3 @@
-import './App.css';
 import  MyNavbar  from './components/MyNavbar'
 import NewsList from './components/NewsList'
 import axios from 'axios';
@@ -6,7 +5,25 @@ import {useState, useEffect} from 'react';
 
 function App() {
 
-  const [articles, setArticles] = useState([])
+  const [articles, setArticles] = useState([
+
+    {
+      title: 'Ministério Público manda constituir arguido ex-ministro Eduardo Cabrita',
+      tags: ['política', 'governo'],
+      text: 'O ex-ministro Eduardo Cabrita e o “responsável pela segurança da comitiva” vão ser constituídos arguido no processo do atropelamento mortal na A6, segundo o despacho do diretor do DIAP de Évora que reabriu o inquérito.'
+    },
+    {
+      title: 'Ministério Público manda constituir arguido ex-ministro Eduardo Cabrita',
+      tags: ['política', 'governo'],
+      text: 'O ex-ministro Eduardo Cabrita e o “responsável pela segurança da comitiva” vão ser constituídos arguido no processo do atropelamento mortal na A6, segundo o despacho do diretor do DIAP de Évora que reabriu o inquérito.'
+    },
+    {
+      title: 'Ministério Público manda constituir arguido ex-ministro Eduardo Cabrita',
+      tags: ['política', 'governo'],
+      text: 'O ex-ministro Eduardo Cabrita e o “responsável pela segurança da comitiva” vão ser constituídos arguido no processo do atropelamento mortal na A6, segundo o despacho do diretor do DIAP de Évora que reabriu o inquérito.'
+    },
+
+  ])
 
   useEffect(() => {
     fetchArticles()

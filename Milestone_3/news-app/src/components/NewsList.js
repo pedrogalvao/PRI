@@ -4,32 +4,28 @@ import {Card, CardBody, CardTitle, CardSubtitle, CardText, Button} from 'reactst
 const NewsList = ({news}) => {
 
     return (
-        <div className='mt-5 container'>
+        <div className='mt-5 container text-left'>
              <div className="row">
             {news.map(article => { 
                
             return <Card
-            body
             color="secondary"
             outline
             className='col-4'
         >
             <CardBody>
-            <CardTitle tag="h5">
-                {article.text}
+            <CardTitle tag="h5" className='mb-2'>
+                {article.title}
             </CardTitle>
             <CardSubtitle
-                className="mb-2 text-muted"
+                className="my-4 text-muted text-left"
                 tag="h6"
             >
-                Card subtitle
+                {article.tags.map((item) => `${item}, `)}
             </CardSubtitle>
             <CardText>
-                Some quick example text to build on the card title and make up the bulk of the card's content.
+                {article.text}
             </CardText>
-            <Button>
-                Button
-            </Button>
             </CardBody>
         </Card>;})}
         </div>
