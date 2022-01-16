@@ -16,6 +16,8 @@ function NotFound() {
     val = arr[0];
   }
 
+  
+
   return (
     <div className="main">
       <Header />

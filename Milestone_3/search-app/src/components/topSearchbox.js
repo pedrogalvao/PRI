@@ -32,6 +32,8 @@ const TopSearchBox = () => {
   if (arr) {
     val = arr[0];
   }
+  val = decodeURI(val)
+
 
   const imgStyle = {
     verticalAlign: "middle",
@@ -109,11 +111,13 @@ const TopSearchBox = () => {
   }
 
   // Search Website, which works by pushing search term to the url
+  //TODO
   const history = useHistory();
   const searchWebsite = () => {
     let path = document.querySelector(".search-input").value;
     if (path) {
       history.push(path);
+      history.go(0)
     }
   };
 
@@ -219,7 +223,7 @@ const TopSearchBox = () => {
             title="Clear"
             onClick={clear}
           />
-          <FontAwesomeIcon className="si fa-search-right" icon={faSearch} />
+          <FontAwesomeIcon onClick={clear} className="si fa-search-right" icon={faSearch} />
           </div>
         </div>
       </div>

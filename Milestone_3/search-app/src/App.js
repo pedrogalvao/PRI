@@ -18,6 +18,7 @@ import NotFound from "./pages/notFound";
 import ProjectsPage from "./pages/projectsPage";
 import ImagesPage from "./pages/imagesPage";
 import BlogPage from "./pages/blogPage";
+import SearchResult from "./pages/searchResult";
 
 class App extends Component {
   render() {
@@ -33,7 +34,8 @@ class App extends Component {
           <Route path="/projects" component={ProjectsPage} />
           <Route path="/images" component={ImagesPage} /> */}
           <Route path="/blog" component={BlogPage} />
-          <Route component={NotFound} />
+          {/* <Route component={NotFound} /> */}
+          <Route component={SearchResult} />
         </Switch>
       </Router>
     );
