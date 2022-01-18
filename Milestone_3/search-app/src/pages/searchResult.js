@@ -81,7 +81,8 @@ function SearchResult() {
     console.log(text)*/
     const queryString = window.location.search;    
     const urlParams = new URLSearchParams(queryString);
-    var startDate = urlParams.get("date")
+    var startDate = urlParams.get("startDate")
+    var endDate = urlParams.get("endDate")
     console.log(startDate)
     var params = {
         "q": `${val}`,
@@ -93,9 +94,12 @@ function SearchResult() {
         "indent": "true",
         "rows": 10000000
       };
-    if (startDate !== null) {
-      console.log(startDate)
+    if (startDate !== null && endDate == null ) {
       params["fq"] = `datetime:[${startDate} TO NOW]`;
+    }else if (startDate !== null && endDate != null) {
+      params["fq"] = `datetime:[${startDate} TO ${endDate}]`;
+    }else if (startDate == null && endDate != null) {
+      params["fq"] = `datetime:[2020-01-01T00:00:00Z TO ${endDate}]`;
     }
     else {
       console.log("ELSE")

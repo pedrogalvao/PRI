@@ -20,7 +20,7 @@ const FilterMenu = () => {
   const queryString = window.location.search;
    
   const urlParams = new URLSearchParams(queryString);
-  var newStartDate = urlParams.get("date")
+  var newStartDate = urlParams.get("startDate")
   if (newStartDate !== null){
     newStartDate = newStartDate.replace(".0Z","")
     for (var i=0; i<10; i++) {
@@ -29,6 +29,19 @@ const FilterMenu = () => {
     }
     newStartDate = new Date(newStartDate);
   }
+
+  var newEndDate = urlParams.get("endDate")
+  if (newEndDate !== null){
+    newEndDate = newEndDate.replace(".0Z","")
+    for (var i=0; i<10; i++) {
+      newEndDate = newEndDate.replace("-"+i+"-","-0"+i+"-");
+      newEndDate = newEndDate.replace("-"+i+"T","-0"+i+"T");
+    }
+    newEndDate = new Date(newEndDate);
+  }
+
+  var minDate = new Date(2021, 4, 6);
+  var maxDate = new Date(2021, 11, 17);
 
 
   return (
@@ -66,8 +79,10 @@ const FilterMenu = () => {
           <FontAwesomeIcon className="icon" icon={faNewspaper} />
           <span> News </span>
         </NavLink>
+        <p>Start Date: 
         {
-          <DatePicker selected={newStartDate} onChange={
+          
+          <DatePicker selected={newStartDate}  dateFormat="DD/MM/yyyy" minDate={minDate} maxDate={maxDate} onChange={
             (date) => {
               var date_str = "" + date.getUTCFullYear();
               date_str += "-" + (date.getUTCMonth() + 1);
@@ -75,7 +90,7 @@ const FilterMenu = () => {
               date_str += "T" + date.toTimeString().split(" ")[0] + ".0Z"
               var prev_href = window.location.href;
               var splited = prev_href.split("?")
-              window.location.href = splited[0] + "?date=" + date_str;
+              window.location.href = splited[0] + "?startDate=" + date_str;
               /*const history = useHistory();              
               let path = document.querySelector(".search-input").value;
               console.log(path)*/
@@ -84,8 +99,37 @@ const FilterMenu = () => {
                 //history.go(0)
               //}
             }
-          } value={newStartDate}></DatePicker>
+          } value={newStartDate}>
+            
+          </DatePicker>   
         }
+        </p>
+        
+        <p>End Date:   {
+          <DatePicker selected={newEndDate} dateFormat="DD/MM/yyyy" minDate={minDate} maxDate={maxDate} onChange={
+            (date) => {
+              var date_str = "" + date.getUTCFullYear();
+              date_str += "-" + (date.getUTCMonth() + 1);
+              date_str += "-" + date.getUTCDate();
+              date_str += "T" + date.toTimeString().split(" ")[0] + ".0Z"
+              var prev_href = window.location.href;
+              var splited = prev_href.split("?")
+              window.location.href = splited[0] + "?endDate=" + date_str;
+              /*const history = useHistory();              
+              let path = document.querySelector(".search-input").value;
+              console.log(path)*/
+              //if (path) {
+                //history.push(path);
+                //history.go(0)
+              //}
+            }
+          } value={newEndDate}></DatePicker>
+          
+          
+        }</p>
+       
+        
+
 
         {/* <LocalizationProvider dateAdapter={DateFnsAdapter}>...</LocalizationProvider> */}
         {/* <NavLink
