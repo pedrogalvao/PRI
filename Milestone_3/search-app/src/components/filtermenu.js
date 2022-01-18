@@ -16,23 +16,19 @@ import {
 import { NavLink } from "react-router-dom";
 
 const FilterMenu = () => {
-  const [startDate, setStartDate] = useState(new Date());
-  /*const [searchParams, setSearchParams] = useSearchParams();
-  var d = searchParams.get("date");
-  console.log("date pram:");
-  console.log(d);*/
 
   const queryString = window.location.search;
-  console.log(queryString);
    
   const urlParams = new URLSearchParams(queryString);
-  console.log(urlParams);
-  console.log(urlParams.get("date"));
-  var newStartDate = new Date(urlParams.get("date").replace(".0Z",""));
-  console.log("newStartDate");
-  console.log(newStartDate);
-  
-
+  var newStartDate = urlParams.get("date")
+  if (newStartDate !== null){
+    newStartDate = newStartDate.replace(".0Z","")
+    for (var i=0; i<10; i++) {
+      newStartDate = newStartDate.replace("-"+i+"-","-0"+i+"-");
+      newStartDate = newStartDate.replace("-"+i+"T","-0"+i+"T");
+    }
+    newStartDate = new Date(newStartDate);
+  }
 
 
   return (
