@@ -8,14 +8,13 @@ with open("data.json","r") as data_json:
 print(df["datetime"])
 
 with open("pop_data.json","w+") as pop_data:
-    df["datetime"]
+    #df["datetime"]
     df = df.transpose()
     row_list = []
     for row_idx in df:
         row = dict(df[row_idx])
-        splitted = str(row["datetime"]).split(" ")
-        row["datetime"] = "T".join(splitted).replace("+00:00",":00:00") + "Z"
-        
+        #splitted = str(row["datetime"]).split(" ")
+        #row["datetime"] = "T".join(splitted).replace("+00:00",":00:00") + "Z"        
         #print(row["datetime"])
         row_list += [row]
     
