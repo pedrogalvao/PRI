@@ -26,9 +26,11 @@ const FilterMenu = () => {
   console.log(queryString);
    
   const urlParams = new URLSearchParams(queryString);
-  console.log(urlParams)
-  console.log(urlParams.get("date"))
-  var newStartDate = urlParams.get("date")
+  console.log(urlParams);
+  console.log(urlParams.get("date"));
+  var newStartDate = new Date(urlParams.get("date").replace(".0Z",""));
+  console.log("newStartDate");
+  console.log(newStartDate);
   
 
 
@@ -86,7 +88,7 @@ const FilterMenu = () => {
                 //history.go(0)
               //}
             }
-          } value={startDate}></DatePicker>
+          } value={newStartDate}></DatePicker>
         }
 
         {/* <LocalizationProvider dateAdapter={DateFnsAdapter}>...</LocalizationProvider> */}
