@@ -1,5 +1,8 @@
 import "./filtermenu.css";
-import React from "react";
+import React, { useState } from 'react';
+import DatePicker from 'react-date-picker';
+import { useSearchParams } from "react-router-dom";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import DateFnsAdapter from '@material-ui/lab/AdapterDateFns';
 // import LocalizationProvider from '@material-ui/lab/LocalizationProvider';
@@ -13,6 +16,21 @@ import {
 import { NavLink } from "react-router-dom";
 
 const FilterMenu = () => {
+  const [startDate, setStartDate] = useState(new Date());
+  /*const [searchParams, setSearchParams] = useSearchParams();
+  var d = searchParams.get("date");
+  console.log("date pram:");
+  console.log(d);*/
+
+  const queryString = window.location.search;
+  console.log(queryString);
+   
+  const urlParams = new URLSearchParams(queryString);
+  console.log(urlParams)
+  console.log(urlParams.get("date"))
+  var newStartDate = urlParams.get("date")
+  
+
 
 
   return (
@@ -50,6 +68,27 @@ const FilterMenu = () => {
           <FontAwesomeIcon className="icon" icon={faNewspaper} />
           <span> News </span>
         </NavLink>
+        {
+          <DatePicker selected={newStartDate} onChange={
+            (date) => {
+              var date_str = "" + date.getUTCFullYear();
+              date_str += "-" + (date.getUTCMonth() + 1);
+              date_str += "-" + date.getUTCDate();
+              date_str += "T" + date.toTimeString().split(" ")[0] + ".0Z"
+              var prev_href = window.location.href;
+              var splited = prev_href.split("?")
+              window.location.href = splited[0] + "?date=" + date_str;
+              /*const history = useHistory();              
+              let path = document.querySelector(".search-input").value;
+              console.log(path)*/
+              //if (path) {
+                //history.push(path);
+                //history.go(0)
+              //}
+            }
+          } value={startDate}></DatePicker>
+        }
+
         {/* <LocalizationProvider dateAdapter={DateFnsAdapter}>...</LocalizationProvider> */}
         {/* <NavLink
           className="filter-menu-item"

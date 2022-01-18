@@ -77,18 +77,29 @@ function SearchResult() {
 
 
   async function getNews(text) {
-
-
-     const params = {
-      "q": `${val}`,
-      "defType": 'edismax',
-      "wt": 'json',
-      "q.op": 'AND',
-      "qf": "title^4 tags^3 excerpt^2 text",
-      "indent": "true",
-      "rows": 10000000
-    };
-
+    /*console.log("text")
+    console.log(text)*/
+    const queryString = window.location.search;    
+    const urlParams = new URLSearchParams(queryString);
+    var startDate = urlParams.get("date")
+    console.log(startDate)
+    var params = {
+        "q": `${val}`,
+        "defType": 'edismax',
+        "wt": 'json',
+        "q.op": 'AND',
+        "qf": "title^4 tags^3 excerpt^2 text",
+        "bf":"recip(ms(NOW,datetime),1,1,1)^1e11",
+        "indent": "true",
+        "rows": 10000000
+      };
+    if (startDate !== null) {
+      console.log(startDate)
+      params["fq"] = `datetime:[${startDate} TO NOW]`;
+    }
+    else {
+      console.log("ELSE")
+    }
     const solr = axios.create({
       baseURL: 'http://localhost:8983/solr/news',
       timeout: 4000
