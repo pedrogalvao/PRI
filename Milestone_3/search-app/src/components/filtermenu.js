@@ -1,6 +1,8 @@
 import "./filtermenu.css";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import DateFnsAdapter from '@material-ui/lab/AdapterDateFns';
+// import LocalizationProvider from '@material-ui/lab/LocalizationProvider';
 import {
   faSearch,
   faImage,
@@ -48,6 +50,7 @@ const FilterMenu = () => {
           <FontAwesomeIcon className="icon" icon={faNewspaper} />
           <span> News </span>
         </NavLink>
+        {/* <LocalizationProvider dateAdapter={DateFnsAdapter}>...</LocalizationProvider> */}
         {/* <NavLink
           className="filter-menu-item"
           exact

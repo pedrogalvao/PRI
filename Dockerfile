@@ -14,3 +14,11 @@ ENTRYPOINT ["./startup.sh"]
 
 #docker build . -t news_sapo
 #docker run -p 8983:8983 news_sapo
+
+# FROM node:alpine
+# RUN mkdir search-app
+# WORKDIR /search-app
+# COPY Milestone_3/search-app/package.json /search-app
+# RUN npm install
+# COPY . /search-app
+# CMD ["npm", "start"]
