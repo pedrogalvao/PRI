@@ -21,61 +21,6 @@ function SearchResult() {
 
   const [news, setNews] = useState([])
 
-
-
-  async function makePostRequest() {
-    console.log("1B")
-
-    solr_url = 'http://localhost:8983/solr/news/update?commit=true';
-
-
-    let data = { 
-      id: '942f2d551e412a685edfdb6bcdd94952',
-      title:{"set":"MODIFIED DOCUMENT"},
-      text:{"set":"MODIFIED DOCUMENT"},
-      text_length:{"set":1438}
-     };
-
-    var config = {
-      method: 'post',
-      url: solr_url ,
-      headers: { 
-        'Access-Control-Allow-Origin': '*', 
-        'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS', 
-        // 'Access-Control-Allow-Headers': 'append,delete,entries,foreach,get,has,keys,set,values,Authorization', 
-        'Access-Control-Allow-Headers': 'X-Requested-With,content-type', 
-        'Access-Control-Allow-Credentials': true, 
-        // 'Origin': 'http://localhost:8983/solr/news/', 
-        // 'app_id': '<app_id>', 
-        // 'app_key': '<app_key>'
-      }
-    };
-    
-    axios.post(solr_url, data, config)
-    .then(function (response) {
-      console.log("2B")
-      console.log(JSON.stringify(response.data));
-    })
-    .catch(function (error) {
-      console.log("ERRO:")
-      console.log(error);
-    });
-
-
-     console.log("1C")
-    
-
-    // let res = await axios.post('http://localhost:8983/solr/news/update', payload);
-    // console.log("1D")
-
-    // let data = res.data;
-    // console.log("ZAAAAAAAAAAAAS");
-    // console.log(data);
-    // console.log("1E")
-
-}
-
-
   
 async function incrementArticleCounter(e, item){
 
@@ -110,7 +55,7 @@ async function incrementArticleCounter(e, item){
         "wt": 'json',
         "q.op": 'AND',
         "qf": "title^4 tags^3 excerpt^2 text",
-        "bf":"recip(ms(NOW,datetime),1,1,1)^1e11",
+        "bf":"mul(log(sum(1,popularity)),recip(ms(NOW,datetime),1,1,1))^1e11",
         "indent": "true",
         "rows": 10000000
       };
