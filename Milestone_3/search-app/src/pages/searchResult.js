@@ -43,7 +43,7 @@ function SearchResult() {
     "defType": 'edismax',
     "wt": 'json',
     "q.op": 'AND',
-    "qf": "title^4 tags^3 excerpt^2 text",
+    "qf": "title^7 tags^4 excerpt^2 text",
     "bf":"mul(log(sum(1,popularity)),recip(ms(NOW,datetime),1,1,1))^1e11",
     "indent": "true",
     "rows": 10000000,
