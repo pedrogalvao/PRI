@@ -7,6 +7,7 @@ import Footer from "../components/footer";
 import FilterMenu from "../components/filtermenu";
 import axios from 'axios';
 import sapo24logo from '../images/sapo24.png';
+import FacetCheckboxList from "../components/FacetCheckboxList";
 
 function SearchResult() {
   // Get url pathname to use as search value
@@ -20,11 +21,27 @@ function SearchResult() {
   val = decodeURI(val)
 
   const [news, setNews] = useState([])
+  const [facets, setFacets] = useState([])
+  const [counts, setCounts] = useState([])
+
+  var params = {
+    "q": `${val}`,
+    "defType": 'edismax',
+    "wt": 'json',
+    "q.op": 'AND',
+    "qf": "title^4 tags^3 excerpt^2 text",
+    "bf":"recip(ms(NOW,datetime),1,1,1)^1e11",
+    "indent": "true",
+    "rows": 10000000,
+    "facet": "true",
+    "facet.field":"tags",
+    "facet.limit":"10"
+
+  };
 
 
 
   async function makePostRequest() {
-    console.log("1B")
 
     solr_url = 'http://localhost:8983/solr/news/update?commit=true';
 
@@ -53,16 +70,12 @@ function SearchResult() {
     
     axios.post(solr_url, data, config)
     .then(function (response) {
-      console.log("2B")
       console.log(JSON.stringify(response.data));
     })
     .catch(function (error) {
       console.log("ERRO:")
       console.log(error);
     });
-
-
-     console.log("1C")
     
 
     // let res = await axios.post('http://localhost:8983/solr/news/update', payload);
@@ -75,27 +88,53 @@ function SearchResult() {
 
 }
 
+  function facetsMap(facets){
+    console.log("zas")
+    console.log(facets.length)
+    let map = new Map();
+    for (let index = 0; index < facets.length; index+=2) {
+      console.log("FACETS MAP")
+      const element = facets[index];
+      map.set(element,facets[index+1])
+      
+      console.log(index +" " + element)
+      
+    }
+    return map
+  }
+
+  function facetsArray(facets){
+    console.log(facets.length)
+    let array = [];
+    for (let index = 0; index < facets.length; index+=2) {
+      console.log("FACETS MAP")
+      const element = facets[index];
+      array.push(element )
+      
+    }
+    return array
+  }
+  function facetsArrayCounts(facets){
+    console.log(facets.length)
+    let array = [];
+    for (let index = 1; index < facets.length; index+=2) {
+      const element = facets[index];
+      array.push(element )
+      
+    }
+    return array
+  }
 
 
 
-  async function getNews(text) {
-    /*console.log("text")
-    console.log(text)*/
+
+  async function getNews(params) {
     const queryString = window.location.search;    
     const urlParams = new URLSearchParams(queryString);
     var startDate = urlParams.get("startDate")
     var endDate = urlParams.get("endDate")
-    console.log(startDate)
-    var params = {
-        "q": `${val}`,
-        "defType": 'edismax',
-        "wt": 'json',
-        "q.op": 'AND',
-        "qf": "title^4 tags^3 excerpt^2 text",
-        "bf":"recip(ms(NOW,datetime),1,1,1)^1e11",
-        "indent": "true",
-        "rows": 10000000
-      };
+
+    
     if (startDate !== null && endDate == null ) {
       params["fq"] = `datetime:[${startDate} TO NOW]`;
     }else if (startDate !== null && endDate != null) {
@@ -104,7 +143,7 @@ function SearchResult() {
       params["fq"] = `datetime:[2020-01-01T00:00:00Z TO ${endDate}]`;
     }
     else {
-      console.log("ELSE")
+      console.log("NULL Dates")
     }
     const solr = axios.create({
       baseURL: 'http://localhost:8983/solr/news',
@@ -115,6 +154,11 @@ function SearchResult() {
       .then(function (response) {
         if (response.data.response.numFound !== 0){
           setNews(response.data.response.docs)
+          let zas = facetsArray(response.data.facet_counts.facet_fields.tags)
+          let counts = facetsArrayCounts(response.data.facet_counts.facet_fields.tags)
+          setFacets(zas)
+          setCounts(counts)
+          
         }  
         else{
           //TODO Por NOTFOUND
@@ -128,7 +172,7 @@ function SearchResult() {
 
 
   useEffect(async () => {
-    getNews()
+    getNews(params)
     console.log("1A")
     //makeGetRequest();
   }, [])
@@ -142,6 +186,7 @@ function SearchResult() {
   return (
     <div className="main">
       <Header />
+      <FacetCheckboxList counts={counts} facets={facets}></FacetCheckboxList>
       <FilterMenu />
       <div className="all-results-container blogpage-container">
         <p className="result-count">
