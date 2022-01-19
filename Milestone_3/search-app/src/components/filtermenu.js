@@ -2,6 +2,7 @@ import "./filtermenu.css";
 import React, { useState } from 'react';
 import DatePicker from 'react-date-picker';
 import { useSearchParams } from "react-router-dom";
+import { URL } from "url";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import DateFnsAdapter from '@material-ui/lab/AdapterDateFns';
@@ -79,16 +80,12 @@ const FilterMenu = () => {
               date_str += "-" + (date.getUTCMonth() + 1);
               date_str += "-" + date.getUTCDate();
               date_str += "T" + date.toTimeString().split(" ")[0] + ".0Z"
-              var prev_href = window.location.href;
-              var splited = prev_href.split("?")
-              window.location.href = splited[0] + "?startDate=" + date_str;
-              /*const history = useHistory();              
-              let path = document.querySelector(".search-input").value;
-              console.log(path)*/
-              //if (path) {
-                //history.push(path);
-                //history.go(0)
-              //}
+              
+              const queryString = window.location.search;    
+              var urlParams = new URLSearchParams(queryString);
+              urlParams.set("startDate", date_str);
+              window.location.href = window.location.href.split("?")[0] + "?" + urlParams.toString();
+
             }
           } value={newStartDate}>
             
@@ -100,16 +97,12 @@ const FilterMenu = () => {
               date_str += "-" + (date.getUTCMonth() + 1);
               date_str += "-" + date.getUTCDate();
               date_str += "T" + date.toTimeString().split(" ")[0] + ".0Z"
-              var prev_href = window.location.href;
-              var splited = prev_href.split("?")
-              window.location.href = splited[0] + "?endDate=" + date_str;
-              /*const history = useHistory();              
-              let path = document.querySelector(".search-input").value;
-              console.log(path)*/
-              //if (path) {
-                //history.push(path);
-                //history.go(0)
-              //}
+              
+              const queryString = window.location.search;    
+              var urlParams = new URLSearchParams(queryString);
+              urlParams.set("endDate", date_str);
+              window.location.href = window.location.href.split("?")[0] + "?" + urlParams.toString();
+
             }
           } value={newEndDate}></DatePicker>        
 
