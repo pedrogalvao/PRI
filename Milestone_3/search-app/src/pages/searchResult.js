@@ -24,6 +24,20 @@ function SearchResult() {
   const [facets, setFacets] = useState([])
   const [counts, setCounts] = useState([])
 
+  // var params = {
+  //   "q": `${val}`,
+  //   "defType": 'edismax',
+  //   "wt": 'json',
+  //   "q.op": 'AND',
+  //   "qf": "title^4 tags^3 excerpt^2 text",
+  //   "bf":"mul(log(sum(1,popularity)),recip(ms(NOW,datetime),1,1,1))^1e11",
+  //   "indent": "true",
+  //   "rows": 10000000,
+  //   "facet": "true",
+  //   "facet.field":"tags",
+  //   "facet.limit":"10", 
+  // };
+
   var params = {
     "q": `${val}`,
     "defType": 'edismax',
@@ -35,9 +49,7 @@ function SearchResult() {
     "rows": 10000000,
     "facet": "true",
     "facet.field":"tags",
-    "facet.limit":"10",
- 
-
+    "facet.limit":"10", 
   };
 
   
@@ -59,22 +71,8 @@ async function incrementArticleCounter(e, item){
 
 }
 
-  function facetsMap(facets){
-    console.log("zas")
-    console.log(facets.length)
-    let map = new Map();
-    for (let index = 0; index < facets.length; index+=2) {
-      const element = facets[index];
-      map.set(element,facets[index+1])
-      
-      console.log(index +" " + element)
-      
-    }
-    return map
-  }
 
   function facetsArray(facets){
-    console.log(facets.length)
     let array = [];
     for (let index = 0; index < facets.length; index+=2) {
       const element = facets[index];
@@ -84,7 +82,6 @@ async function incrementArticleCounter(e, item){
     return array
   }
   function facetsArrayCounts(facets){
-    console.log(facets.length)
     let array = [];
     for (let index = 1; index < facets.length; index+=2) {
       const element = facets[index];
@@ -93,15 +90,6 @@ async function incrementArticleCounter(e, item){
     }
     return array
   }
-  function func(){
-    console.log("ZAS")
-  }
-
-  function updateNews(params){
-    setNews(getNews(params))
-  }
-
-
 
 
   async function getNews(params) {
@@ -150,20 +138,13 @@ async function incrementArticleCounter(e, item){
 
   useEffect(async () => {
     getNews(params)
-    console.log("1A")
-    //makeGetRequest();
   }, [])
 
-  
-
-
-  
- 
 
   return (
     <div className="main">
       <Header />
-      <FacetCheckboxList counts={counts} facets={facets} getNews={getNews} params={params}></FacetCheckboxList>
+      <FacetCheckboxList counts={counts} facets={facets} setNews={setNews} params={params}></FacetCheckboxList>
       <FilterMenu />
       <div className="all-results-container blogpage-container">
         <p className="result-count">

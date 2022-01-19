@@ -5,47 +5,59 @@ import axios from 'axios';
 
 // const getFormattedPrice = (price) => `$${price.toFixed(2)}`;
 
-export default function FacetCheckboxList({facets, counts, getNews, params}) {
+export default function FacetCheckboxList({facets, counts, setNews, params}) {
 
-  
-
-  async function getNews(params) {
-    
+  function parseFq(params){
+      //Nao e nesta funçao
     const queryString = window.location.search;    
     const urlParams = new URLSearchParams(queryString);
+
     var startDate = urlParams.get("startDate")
     var endDate = urlParams.get("endDate")
+      if(params["fq"] == null){
+        if (startDate !== null && endDate == null ) {
+            params["fq"] = `datetime:[${startDate} TO NOW]`;
+          }else if (startDate !== null && endDate != null) {
+            params["fq"] = `datetime:[${startDate} TO ${endDate}]`;
+          }else if (startDate == null && endDate != null) {
+            params["fq"] = `datetime:[2020-01-01T00:00:00Z TO ${endDate}]`;
+          }
+      }else{
+        if (startDate !== null && endDate == null ) {
+            params["fq"] =params["fq"] + " && " + `datetime:[${startDate} TO NOW]`;
+          }else if (startDate !== null && endDate != null) {
+            params["fq"] = params["fq"] + " && " + `datetime:[${startDate} TO ${endDate}]`;
+          }else if (startDate == null && endDate != null) {
+            params["fq"] =params["fq"] + " && " + `datetime:[2020-01-01T00:00:00Z TO ${endDate}]`;
+          }
+      }
+  }
 
-    
-    if (startDate !== null && endDate == null ) {
-      params["fq"] = `datetime:[${startDate} TO NOW]`;
-    }else if (startDate !== null && endDate != null) {
-      params["fq"] = `datetime:[${startDate} TO ${endDate}]`;
-    }else if (startDate == null && endDate != null) {
-      params["fq"] = `datetime:[2020-01-01T00:00:00Z TO ${endDate}]`;
-    }
-    else {
-      console.log("NULL Dates")
-    }
+  async function getNews(params) {
+
+    parseFq(params)
     const solr = axios.create({
       baseURL: 'http://localhost:8983/solr/news',
       timeout: 4000
     });
 
+
     solr.get('/select', {params: params})
       .then(function (response) {
+          console.log(response.data.response.numFound)
         if (response.data.response.numFound !== 0){
-          console.log(response.data.response)
-          response.data.response.docs
+        //   setNews(response.data.response.docs)
         }  
         else{
           //TODO Por NOTFOUND
-          console.log('error 1 ')
+          console.log('error 1 novo ')
         }
       })
-      .catch(() => {
-        console.log('error 2')
+      .catch((err) => {
+        console.log('error 2 novo')
+        console.log(err.message)
       })
+
   }
 
 
@@ -61,15 +73,15 @@ export default function FacetCheckboxList({facets, counts, getNews, params}) {
     return arr;
   }
 
-  function addParams(tag,params){
+  function addParams(tag){
+
       if(params["fq"]!=null){
         params["fq"] = params["fq"] + " && tags:" + tag 
       }else{
         params["fq"] = 'tags:' + tag 
       }
   }
-  function removeParams(tag,params){
-
+  function removeParams(tag){
     params["fq"] = params["fq"].split(" && ");
     params["fq"] = removeItemOnce(params["fq"], "tags:"+tag);
     params["fq"].join("&&");
@@ -85,16 +97,17 @@ export default function FacetCheckboxList({facets, counts, getNews, params}) {
     );
     setCheckedState(updatedCheckedState);
 
+   
+
     if(!checkedState[position]){
-        addParams(facets[position],params)
+        addParams(facets[position])
     } 
     else {
-        removeParams(facets[position],params)
+        removeParams(facets[position])
     }
     // else removeParams(facets[position])
-
+    console.log(params)
     getNews(params);
-    console.log(params);
     
   };
 
