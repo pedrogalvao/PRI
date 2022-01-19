@@ -76,6 +76,24 @@ function SearchResult() {
 }
 
 
+  
+async function incrementArticleCounter(e, item){
+
+  console.log("Doing POST request...");
+  //e.preventDeault();
+  //post aqui
+  console.log(item);
+
+  let solr_url = 'http://localhost:8983/solr/news/update?commit=true';
+
+  let data = [{
+    id: item.id,
+    popularity: { "set": item.popularity+1 }
+  }];
+
+  await axios.post(solr_url, data);
+
+}
 
 
   async function getNews(text) {
@@ -150,7 +168,7 @@ function SearchResult() {
         </p>
         <div className="blog-content">
           {news.map((item) => (
-            <a href={`https://24.sapo.pt${item.url}`} target='_blank' className="blog-card">
+            <a href={`https://24.sapo.pt${item.url}`}  onClick={(e)=>incrementArticleCounter(e, item)} target='_blank' className="blog-card">
               <div className="blog-text-container">
                 <div className="category">
                   <img src={sapo24logo} className="blog-icon"/> 
