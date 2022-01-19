@@ -1,10 +1,52 @@
 import { useEffect, useState } from "react";
-import Badge from 'react-bootstrap/Badge'
+import Badge from 'react-bootstrap/Badge';
+import axios from 'axios';
 // import "./styles.css";
 
 // const getFormattedPrice = (price) => `$${price.toFixed(2)}`;
 
-export default function FacetCheckboxList({facets,counts,getNews, params}) {
+export default function FacetCheckboxList({facets, counts, getNews, params}) {
+
+  
+
+  async function getNews(params) {
+    
+    const queryString = window.location.search;    
+    const urlParams = new URLSearchParams(queryString);
+    var startDate = urlParams.get("startDate")
+    var endDate = urlParams.get("endDate")
+
+    
+    if (startDate !== null && endDate == null ) {
+      params["fq"] = `datetime:[${startDate} TO NOW]`;
+    }else if (startDate !== null && endDate != null) {
+      params["fq"] = `datetime:[${startDate} TO ${endDate}]`;
+    }else if (startDate == null && endDate != null) {
+      params["fq"] = `datetime:[2020-01-01T00:00:00Z TO ${endDate}]`;
+    }
+    else {
+      console.log("NULL Dates")
+    }
+    const solr = axios.create({
+      baseURL: 'http://localhost:8983/solr/news',
+      timeout: 4000
+    });
+
+    solr.get('/select', {params: params})
+      .then(function (response) {
+        if (response.data.response.numFound !== 0){
+          console.log(response.data.response)
+          response.data.response.docs
+        }  
+        else{
+          //TODO Por NOTFOUND
+          console.log('error 1 ')
+        }
+      })
+      .catch(() => {
+        console.log('error 2')
+      })
+  }
 
 
   const [checkedState, setCheckedState] = useState(
@@ -51,8 +93,8 @@ export default function FacetCheckboxList({facets,counts,getNews, params}) {
     }
     // else removeParams(facets[position])
 
-    
-    console.log(params)
+    getNews(params);
+    console.log(params);
     
   };
 
