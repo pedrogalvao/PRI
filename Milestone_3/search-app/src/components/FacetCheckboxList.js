@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Badge from 'react-bootstrap/Badge'
 // import "./styles.css";
 
@@ -8,7 +8,7 @@ export default function FacetCheckboxList({facets,counts,getNews, params}) {
 
 
   const [checkedState, setCheckedState] = useState(
-    new Array(facets.length).fill(false)
+    [false,false,false,false,false,false,false,false,false,false]
   );
 
   function removeItemOnce(arr, value) {
@@ -19,55 +19,40 @@ export default function FacetCheckboxList({facets,counts,getNews, params}) {
     return arr;
   }
 
-  function addParams(tag){
+  function addParams(tag,params){
       if(params["fq"]!=null){
         params["fq"] = params["fq"] + " && tags:" + tag 
       }else{
         params["fq"] = 'tags:' + tag 
       }
-      console.log(params)
   }
-  function removeParams(tag){
+  function removeParams(tag,params){
 
-    var params = params["fq"].split(" && ");
-    console.log(1)
-    console.log(params)
-    var params = removeItemOnce(splitted, "tags:"+tag);
-    console.log(2)
-    console.log(params)
-    params.join("&&");
-    console.log(params)
-      
-
-    
-
+    params["fq"] = params["fq"].split(" && ");
+    params["fq"] = removeItemOnce(params["fq"], "tags:"+tag);
+    params["fq"].join("&&");
 }
 
-  const [total, setTotal] = useState(0);
+  
+   
 
   const handleOnChange = (position) => {
+ 
     const updatedCheckedState = checkedState.map((item, index) =>
-      index === position ? !item : item
-      
+      index === position ? !item : item  
     );
+    setCheckedState(updatedCheckedState);
 
-    console.log("OIOIOI")
-
-
-  console.log(checkedState[position])
     if(!checkedState[position]){
-        addParams(facets[position])
+        addParams(facets[position],params)
     } 
     else {
-        console.log("BEM LINDO")
+        removeParams(facets[position],params)
     }
     // else removeParams(facets[position])
 
-    setCheckedState(updatedCheckedState);
     
-    console.log("checkbox" + position)
-    
-
+    console.log(params)
     
   };
 
