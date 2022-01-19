@@ -35,7 +35,9 @@ function SearchResult() {
     "rows": 10000000,
     "facet": "true",
     "facet.field":"tags",
-    "facet.limit":"10"
+    "facet.limit":"10",
+ 
+
   };
 
   
@@ -62,7 +64,6 @@ async function incrementArticleCounter(e, item){
     console.log(facets.length)
     let map = new Map();
     for (let index = 0; index < facets.length; index+=2) {
-      console.log("FACETS MAP")
       const element = facets[index];
       map.set(element,facets[index+1])
       
@@ -76,7 +77,6 @@ async function incrementArticleCounter(e, item){
     console.log(facets.length)
     let array = [];
     for (let index = 0; index < facets.length; index+=2) {
-      console.log("FACETS MAP")
       const element = facets[index];
       array.push(element )
       
@@ -93,11 +93,19 @@ async function incrementArticleCounter(e, item){
     }
     return array
   }
+  function func(){
+    console.log("ZAS")
+  }
+
+  function updateNews(params){
+    setNews(getNews(params))
+  }
 
 
 
 
   async function getNews(params) {
+    
     const queryString = window.location.search;    
     const urlParams = new URLSearchParams(queryString);
     var startDate = urlParams.get("startDate")
@@ -150,12 +158,12 @@ async function incrementArticleCounter(e, item){
 
 
   
-  
+ 
 
   return (
     <div className="main">
       <Header />
-      <FacetCheckboxList counts={counts} facets={facets}></FacetCheckboxList>
+      <FacetCheckboxList counts={counts} facets={facets} getNews={getNews} params={params}></FacetCheckboxList>
       <FilterMenu />
       <div className="all-results-container blogpage-container">
         <p className="result-count">

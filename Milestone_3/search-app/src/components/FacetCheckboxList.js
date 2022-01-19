@@ -1,13 +1,47 @@
 import { useState } from "react";
+import Badge from 'react-bootstrap/Badge'
 // import "./styles.css";
 
 // const getFormattedPrice = (price) => `$${price.toFixed(2)}`;
 
-export default function FacetCheckboxList({facets,counts}) {
+export default function FacetCheckboxList({facets,counts,getNews, params}) {
+
 
   const [checkedState, setCheckedState] = useState(
     new Array(facets.length).fill(false)
   );
+
+  function removeItemOnce(arr, value) {
+    var index = arr.indexOf(value);
+    if (index > -1) {
+      arr.splice(index, 1);
+    }
+    return arr;
+  }
+
+  function addParams(tag){
+      if(params["fq"]!=null){
+        params["fq"] = params["fq"] + " && tags:" + tag 
+      }else{
+        params["fq"] = 'tags:' + tag 
+      }
+      console.log(params)
+  }
+  function removeParams(tag){
+
+    var params = params["fq"].split(" && ");
+    console.log(1)
+    console.log(params)
+    var params = removeItemOnce(splitted, "tags:"+tag);
+    console.log(2)
+    console.log(params)
+    params.join("&&");
+    console.log(params)
+      
+
+    
+
+}
 
   const [total, setTotal] = useState(0);
 
@@ -16,6 +50,18 @@ export default function FacetCheckboxList({facets,counts}) {
       index === position ? !item : item
       
     );
+
+    console.log("OIOIOI")
+
+
+  console.log(checkedState[position])
+    if(!checkedState[position]){
+        addParams(facets[position])
+    } 
+    else {
+        console.log("BEM LINDO")
+    }
+    // else removeParams(facets[position])
 
     setCheckedState(updatedCheckedState);
     
@@ -44,7 +90,7 @@ export default function FacetCheckboxList({facets,counts}) {
                     checked={checkedState[index]}
                     onChange={() => handleOnChange(index)}
                   />
-                  <label htmlFor={`custom-checkbox-${index}`}>{data + ": "+ counts[index]}</label>
+                  {<label htmlFor={`custom-checkbox-${index}`}>{data}</label>}
                 </div>
               </div>
             </li>
