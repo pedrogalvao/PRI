@@ -146,17 +146,18 @@ def qrelFilesBoosted(num_queries):
 
 
 QUERY_URL = [
-    'http://localhost:8983/solr/news/query?q=(%0A%20%20%20%20(title:%22pol%C3%ADtica%22%20OR%20title:%22governo%22%20OR%20title:%22partido%22)%5E2%20OR%20(text:%22pol%C3%ADtica%22%20OR%20text:%22governo%22%20OR%20text:%22partido%22)%0A%20%20%20%20OR%20(tags:%22Aut%C3%A1rquicas2021%22%20OR%20tags:%22PSD%22)%0A)%20AND%20datetime:%5B%20NOW-1MONTHS%20TO%20NOW%5D&q.op=OR&indent=true&wt=json',
-    'http://localhost:8983/solr/news/query?q=%22Antonio%20Costa%22%20%20%22Marcelo%20Rebelo%20de%20Sousa%22&q.op=AND&defType=dismax&indent=true&wt=json&qf=title%20tags%20excerpt%20text&qt=',
+    # 'http://localhost:8983/solr/news/query?q=(%0A%20%20%20%20(title:%22pol%C3%ADtica%22%20OR%20title:%22governo%22%20OR%20title:%22partido%22)%5E2%20OR%20(text:%22pol%C3%ADtica%22%20OR%20text:%22governo%22%20OR%20text:%22partido%22)%0A%20%20%20%20OR%20(tags:%22Aut%C3%A1rquicas2021%22%20OR%20tags:%22PSD%22)%0A)%20AND%20datetime:%5B%20NOW-1MONTHS%20TO%20NOW%5D&q.op=OR&indent=true&wt=json',
+    'http://localhost:8983/solr/news/query?q=%22Marcelo%20Rebelo%20de%20Sousa%22%20%20%22Ant%C3%B3nio%20Costa%22&q.op=AND&defType=dismax&indent=true&qf=title%20tags%20excerpt%20text&rows=10&fl=*,%20score&wt=json&debugQuery=false',
     'http://localhost:8983/solr/news/query?q=Covid-19&q.op=OR&defType=dismax&indent=true&qf=title%20tags%20excerpt%20text&fq=text_length:%5B0%20TO%201000%5D',
-    'http://localhost:8983/solr/news/query?q=ciclone%20furac%C3%A3o%20tornado%20tuf%C3%A3o%20sismo%20terramoto%20enchente%20alagamento%20inunda%C3%A7%C3%A3o&q.op=OR&defType=edismax&indent=true&qf=title%20tags%20excerpt%20text&sort=datetime%20desc'
+    'http://localhost:8983/solr/news/query?q=Cat%C3%A1strofe%20Natural&q.op=AND&defType=dismax&indent=true&qf=title%20tags%20excerpt%20text&rows=10&fl=*,%20score&wt=json&debugQuery=false&qs=10'
 ]
 
 QUERY_URL_BOOSTED = [
-    'http://localhost:8983/solr/news/query?q=(%0A%20%20%20%20(title:%22pol%C3%ADtica%22%20OR%20title:%22governo%22%20OR%20title:%22partido%22)%5E2%20OR%20(text:%22pol%C3%ADtica%22%20OR%20text:%22governo%22%20OR%20text:%22partido%22)%0A%20%20%20%20OR%20(tags:%22Aut%C3%A1rquicas2021%22%20OR%20tags:%22PSD%22)%0A)%20AND%20datetime:%5B%20NOW-1MONTHS%20TO%20NOW%5D&q.op=OR&indent=true&wt=json',
-    'http://localhost:8983/solr/news/query?q=%22Antonio%20Costa%22%20%20%22Marcelo%20Rebelo%20de%20Sousa%22&q.op=AND&defType=dismax&indent=true&wt=json&fl=*,score&qf=title%5E5%20tags%5E4%20excerpt%5E3%20text&qs=10&qt=',
+    # 'http://localhost:8983/solr/news/query?q=(%0A%20%20%20%20(title:%22pol%C3%ADtica%22%20OR%20title:%22governo%22%20OR%20title:%22partido%22)%5E2%20OR%20(text:%22pol%C3%ADtica%22%20OR%20text:%22governo%22%20OR%20text:%22partido%22)%0A%20%20%20%20OR%20(tags:%22Aut%C3%A1rquicas2021%22%20OR%20tags:%22PSD%22)%0A)%20AND%20datetime:%5B%20NOW-1MONTHS%20TO%20NOW%5D&q.op=OR&indent=true&wt=json',
+    # 'http://localhost:8983/solr/news/query?q=%22http://localhost:8983/solr/news/query?q=%22Ant%C3%B3nio%20Costa%22%20%22Marcelo%20Rebelo%20de%20Sousa%22&q.op=AND&defType=dismax&indent=true&qf=title%5E5%20tags%5E4%20excerpt%5E3%20text&rows=100&fl=*,%20score&wt=json&debugQuery=false&qs=10Antonio%20Costa%22%20%20%22Marcelo%20Rebelo%20de%20Sousa%22&q.op=AND&defType=dismax&indent=true&wt=json&fl=*,score&qf=title%5E5%20tags%5E4%20excerpt%5E3%20text&qs=10&qt=',
+    'http://localhost:8983/solr/news/query?q=%22Ant%C3%B3nio%20Costa%22%20%22Marcelo%20Rebelo%20de%20Sousa%22&q.op=AND&defType=dismax&indent=true&qf=title%5E5%20tags%5E4%20excerpt%5E3%20text&rows=10&fl=*,%20score&wt=json&debugQuery=false&qs=10',
     'http://localhost:8983/solr/news/query?q=Covid-19&q.op=OR&defType=dismax&indent=true&qf=title%5E10%20tags%5E5%20excerpt%5E1.2%20text%5E0.8&bf=product(recip(ms(NOW,datetime),1,1,1),recip(text_length,1,1,1))%5E1e15',
-    'http://localhost:8983/solr/news/query?q=ciclone%20furac%C3%A3o%20tornado%20tuf%C3%A3o%20sismo%20terramoto%20enchente%20alagamento%20inunda%C3%A7%C3%A3o&q.op=OR&defType=edismax&indent=true&qf=title%5E50%20tags%5E20%20excerpt%5E10%20text%5E0.1&bf=recip(ms(NOW,datetime),1,1,1)%5E1e12'
+    'http://localhost:8983/solr/news/query?q=Cat%C3%A1strofes%20Naturais&q.op=AND&defType=dismax&indent=true&qf=title%5E4%20tags%5E3%20excerpt%5E2%20text&rows=10&fl=*,%20score&wt=json&debugQuery=false'
 ]
 
 QRELS_FILES = qrelFiles(len(QUERY_URL))

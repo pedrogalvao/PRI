@@ -1,5 +1,6 @@
-Marcelo Rebelo de Sousa, Presidente da República, Presidente Portugal
-António Costa, Primeiro Ministro Portugal
+Marcelo Rebelo de Sousa, Presidente da República, Presidente de Portugal, Marcelo
 ciclone, furacão, tornado, sismo, terramoto, enchente, alagamento, inundação, maremoto, tsunami, tempestade
+António Costa, Primeiro Ministro Portugal, Costa
 Covid,Covid-19, Coronavírus, SARS-CoV-2
-Luxemburgo, Google
+Desastre Natural, Catástrofe Natural
+Desastres Naturais => ciclone, furacão, tornado, tufão, sismo, terramoto, tsunami
