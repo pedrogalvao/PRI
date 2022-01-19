@@ -74,7 +74,14 @@
         {
             "name": "text_length",
             "type": "pint",
-            "indexed": false,
+            "indexed": true,
+            "multiValued": false,
+            "stored": true
+        },
+        {
+            "name": "popularity",
+            "type": "pint",
+            "indexed": true,
             "multiValued": false,
             "stored": true
         },

@@ -30,61 +30,30 @@ function SearchResult() {
     "wt": 'json',
     "q.op": 'AND',
     "qf": "title^4 tags^3 excerpt^2 text",
-    "bf":"recip(ms(NOW,datetime),1,1,1)^1e11",
+    "bf":"mul(log(sum(1,popularity)),recip(ms(NOW,datetime),1,1,1))^1e11",
     "indent": "true",
     "rows": 10000000,
     "facet": "true",
     "facet.field":"tags",
     "facet.limit":"10"
-
   };
 
+  
+async function incrementArticleCounter(e, item){
 
+  console.log("Doing POST request...");
+  //e.preventDeault();
+  //post aqui
+  console.log(item);
 
-  async function makePostRequest() {
+  let solr_url = 'http://localhost:8983/solr/news/update?commit=true';
 
-    solr_url = 'http://localhost:8983/solr/news/update?commit=true';
+  let data = [{
+    id: item.id,
+    popularity: { "set": item.popularity+1 }
+  }];
 
-
-    let data = { 
-      id: '942f2d551e412a685edfdb6bcdd94952',
-      title:{"set":"MODIFIED DOCUMENT"},
-      text:{"set":"MODIFIED DOCUMENT"},
-      text_length:{"set":1438}
-     };
-
-    var config = {
-      method: 'post',
-      url: solr_url ,
-      headers: { 
-        'Access-Control-Allow-Origin': '*', 
-        'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS', 
-        // 'Access-Control-Allow-Headers': 'append,delete,entries,foreach,get,has,keys,set,values,Authorization', 
-        'Access-Control-Allow-Headers': 'X-Requested-With,content-type', 
-        'Access-Control-Allow-Credentials': true, 
-        // 'Origin': 'http://localhost:8983/solr/news/', 
-        // 'app_id': '<app_id>', 
-        // 'app_key': '<app_key>'
-      }
-    };
-    
-    axios.post(solr_url, data, config)
-    .then(function (response) {
-      console.log(JSON.stringify(response.data));
-    })
-    .catch(function (error) {
-      console.log("ERRO:")
-      console.log(error);
-    });
-    
-
-    // let res = await axios.post('http://localhost:8983/solr/news/update', payload);
-    // console.log("1D")
-
-    // let data = res.data;
-    // console.log("ZAAAAAAAAAAAAS");
-    // console.log(data);
-    // console.log("1E")
+  await axios.post(solr_url, data);
 
 }
 
@@ -195,7 +164,7 @@ function SearchResult() {
         </p>
         <div className="blog-content">
           {news.map((item) => (
-            <a href={`https://24.sapo.pt${item.url}`} target='_blank' className="blog-card">
+            <a href={`https://24.sapo.pt${item.url}`}  onClick={(e)=>incrementArticleCounter(e, item)} target='_blank' className="blog-card">
               <div className="blog-text-container">
                 <div className="category">
                   <img src={sapo24logo} className="blog-icon"/> 
