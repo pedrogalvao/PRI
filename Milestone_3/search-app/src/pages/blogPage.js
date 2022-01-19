@@ -11,7 +11,7 @@ import axios from 'axios';
 
 
 
-const BlogPage = ({ results }) => {
+const BlogPage = () => {
 
   
   const [news, setNews] = useState([])
@@ -53,6 +53,24 @@ const BlogPage = ({ results }) => {
   }, [])
 
   
+  async function incrementArticleCounter(e){
+
+    e.preventDeault();
+    //post aqui
+    console.log("Doing POST request...");
+
+    let solr_url = 'http://localhost:8983/solr/news/update?commit=true';
+
+    let data = {
+      id: '942f2d551e412a685edfdb6bcdd94952',
+      title: { "set": "MODIFIED DOCUMENT" },
+      text: { "set": "MODIFIED DOCUMENT" },
+      text_length: { "set": 1438 }
+    };
+
+    await axios.post(solr_url, data);
+
+  }
 
 
 
@@ -66,7 +84,7 @@ const BlogPage = ({ results }) => {
         </p>
         <div className="blog-content">
           {news.map((item) => (
-            <a key={item.id} href={`https://24.sapo.pt${item.url}`} target='_blank' className="blog-card">
+            <div key={item.id} onClick={(e)=>incrementArticleCounter(e)} href={`https://24.sapo.pt${item.url}`} target='_blank' className="blog-card">
               <div className="blog-text-container">
                 <div className="category">
                   {/* <img src={require('./images/sapo24.png')} className="blog-icon"/> */}
@@ -79,7 +97,7 @@ const BlogPage = ({ results }) => {
               {/* <div className="blog-img-container">
                 <img src={item.img} alt={item.name} />
               </div> */}
-            </a>
+            </div>
           ))}
         </div>
       </div>

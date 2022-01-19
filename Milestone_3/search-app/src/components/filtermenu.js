@@ -71,16 +71,7 @@ const FilterMenu = () => {
           <FontAwesomeIcon className="icon" icon={faImage} />
           <span> Images </span>
         </NavLink> */}
-        <NavLink
-          className="filter-menu-item fmi"
-          to="/blog"
-          activeClassName="item-active"
-        >
-          <FontAwesomeIcon className="icon" icon={faNewspaper} />
-          <span> News </span>
-        </NavLink>
-        <p>Start Date: 
-        {
+        
           
           <DatePicker selected={newStartDate}  dateFormat="DD/MM/yyyy" minDate={minDate} maxDate={maxDate} onChange={
             (date) => {
@@ -102,10 +93,7 @@ const FilterMenu = () => {
           } value={newStartDate}>
             
           </DatePicker>   
-        }
-        </p>
         
-        <p>End Date:   {
           <DatePicker selected={newEndDate} dateFormat="DD/MM/yyyy" minDate={minDate} maxDate={maxDate} onChange={
             (date) => {
               var date_str = "" + date.getUTCFullYear();
@@ -123,12 +111,7 @@ const FilterMenu = () => {
                 //history.go(0)
               //}
             }
-          } value={newEndDate}></DatePicker>
-          
-          
-        }</p>
-       
-        
+          } value={newEndDate}></DatePicker>        
 
 
         {/* <LocalizationProvider dateAdapter={DateFnsAdapter}>...</LocalizationProvider> */}

@@ -6,6 +6,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import FilterMenu from "../components/filtermenu";
 import axios from 'axios';
+import sapo24logo from '../images/sapo24.png';
 
 function SearchResult() {
   // Get url pathname to use as search value
@@ -22,7 +23,7 @@ function SearchResult() {
 
 
 
-  async function makeGetRequest() {
+  async function makePostRequest() {
     console.log("1B")
 
     solr_url = 'http://localhost:8983/solr/news/update?commit=true';
@@ -129,7 +130,7 @@ function SearchResult() {
   useEffect(async () => {
     getNews()
     console.log("1A")
-    makeGetRequest();
+    //makeGetRequest();
   }, [])
 
   
@@ -152,7 +153,7 @@ function SearchResult() {
             <a href={`https://24.sapo.pt${item.url}`} target='_blank' className="blog-card">
               <div className="blog-text-container">
                 <div className="category">
-                  {/* <img src={require('./images/sapo24.png')} className="blog-icon"/> */}
+                  <img src={sapo24logo} className="blog-icon"/> 
                   <p> {`SAPO Atualidade`} </p>
                 </div>
                 <h3>{`${item.title}`}</h3>
