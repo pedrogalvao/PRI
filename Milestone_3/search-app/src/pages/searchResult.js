@@ -24,20 +24,6 @@ function SearchResult() {
   const [facets, setFacets] = useState([])
   const [counts, setCounts] = useState([])
 
-  // var params = {
-  //   "q": `${val}`,
-  //   "defType": 'edismax',
-  //   "wt": 'json',
-  //   "q.op": 'AND',
-  //   "qf": "title^4 tags^3 excerpt^2 text",
-  //   "bf":"mul(log(sum(1,popularity)),recip(ms(NOW,datetime),1,1,1))^1e11",
-  //   "indent": "true",
-  //   "rows": 10000000,
-  //   "facet": "true",
-  //   "facet.field":"tags",
-  //   "facet.limit":"10", 
-  // };
-
   var params = {
     "q": `${val}`,
     "defType": 'edismax',
@@ -107,9 +93,7 @@ async function incrementArticleCounter(e, item){
     }else if (startDate == null && endDate != null) {
       params["fq"] = `datetime:[2020-01-01T00:00:00Z TO ${endDate}]`;
     }
-    else {
-      console.log("NULL Dates")
-    }
+    
     const solr = axios.create({
       baseURL: 'http://localhost:8983/solr/news',
       timeout: 4000
@@ -153,7 +137,7 @@ async function incrementArticleCounter(e, item){
         </p>
         <div className="blog-content">
           {news.map((item) => (
-            <a href={`https://24.sapo.pt${item.url}`}  onClick={(e)=>incrementArticleCounter(e, item)} target='_blank' className="blog-card">
+            <a href={`https://24.sapo.pt${item.url}`} key={item.url}  onClick={(e)=>incrementArticleCounter(e, item)} target='_blank' className="blog-card">
               <div className="blog-text-container">
                 <div className="category">
                   <img src={sapo24logo} className="blog-icon"/> 

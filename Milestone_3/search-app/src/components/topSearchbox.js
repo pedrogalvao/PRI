@@ -186,6 +186,7 @@ const TopSearchBox = () => {
               <div className="search-options">
                 {options.map((option) => (
                   <div
+                    key={option.name + "za"}
                     className="topmenu-search-option search-option"
                     type="button"
                   >

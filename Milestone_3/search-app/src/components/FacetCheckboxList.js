@@ -1,11 +1,13 @@
-import { useEffect, useState } from "react";
-import Badge from 'react-bootstrap/Badge';
+import { useState } from "react";
+import ToggleButton from '@mui/material/ToggleButton';
+import { Container } from "@mui/material";
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import axios from 'axios';
-// import "./styles.css";
 
-// const getFormattedPrice = (price) => `$${price.toFixed(2)}`;
 
 export default function FacetCheckboxList({facets, counts, setNews, params}) {
+
+  const [formats, setFormats] = useState(()=>[]);
 
   function parseFq(params){
       //Nao e nesta funçao
@@ -46,9 +48,8 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
 
     solr.get('/select', {params: zas})
       .then(function (response) {
-          
         if (response.data.response.numFound !== 0){
-        //    setNews(response.data.response.docs)
+           setNews(response.data.response.docs)
         }  
         else{
           //TODO Por NOTFOUND
@@ -63,9 +64,7 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
   }
 
 
-  const [checkedState, setCheckedState] = useState(
-    [false,false,false,false,false,false,false,false,false,false]
-  );
+  
 
   function removeItemOnce(arr, value) {
     var index = arr.indexOf(value);
@@ -126,33 +125,56 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
     
   };
 
-  return (
-    <div className="FacetCheckboxList">
-      <h3>Common filters for your search:</h3>
-      <ul className="facets-list">
-        {
-          
-        facets.map((data,index) => {
- 
-          return (
-            <li key={index}>
-              <div className="facets-list-item">
-                <div className="left-section">
-                  <input
-                    type="checkbox"
-                    id={`custom-checkbox-${index}`}
-                    value={data }
-                    checked={checkedState[index]}
-                    onChange={() => handleOnChange(index)}
-                  />
-                  {<label htmlFor={`custom-checkbox-${index}`}>{data}</label>}
-                </div>
-              </div>
-            </li>
-          );
-        })}
+  function buildFq(newFormats){
+
+      var fq = '';
+      if(newFormats.length==1){
+          fq='tags:"' + newFormats[0]+ '"';
+      }else if(newFormats.length>1){
+        fq='tags:"' + newFormats[0]+ '"';
+          for (let index = 1; index < newFormats.length; index++) {
+              fq = fq + ' && tags:' + '"' + newFormats[index] + '"';
+              
+          }
+      }
+      return fq;
       
-      </ul>
-    </div>
+  }
+
+  const handleFormat = (event, newFormats) => {
+    setFormats(newFormats);
+    let fq = buildFq(newFormats)
+    params["fq"] = fq;
+    getNews(params);
+
+  };
+
+  
+
+  let count = 0;
+  return (
+    <Container maxWidth="xl" sx={{
+      marginBottom: 2
+    }}>
+      <h3>Common filters for your search:</h3>
+
+      <ToggleButtonGroup
+      value={formats}
+      onChange={handleFormat}
+      aria-label="text formatting"
+    >
+    {facets.map((data,index) => {
+      count++;
+ 
+      return (
+        <ToggleButton key={"tog"+count} sx={{ fontSize: 12 }} value={data} aria-label="italic">
+          {data}
+        </ToggleButton>
+            
+      );
+    })}
+      
+      </ToggleButtonGroup>
+    </Container>
   );
 }
