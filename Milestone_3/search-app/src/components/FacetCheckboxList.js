@@ -46,10 +46,9 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
 
     solr.get('/select', {params: params})
       .then(function (response) {
-          console.log(response.data.response.numFound)
+
         if (response.data.response.numFound !== 0){
-          console.log(params)
-        //   setNews(response.data.response.docs)
+           setNews(response.data.response.docs)
         }  
         else{
           //TODO Por NOTFOUND
@@ -107,15 +106,37 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
         removeParams(facets[position])
     }
     // else removeParams(facets[position])
-    console.log(params)
     getNews(params);
     
   };
 
+  function buildFq(newFormats){
+
+      var fq = '';
+      if(newFormats.length==1){
+          fq='tags:"' + newFormats[0]+ '"';
+      }else if(newFormats.length>1){
+        fq='tags:"' + newFormats[0]+ '"';
+          for (let index = 1; index < newFormats.length; index++) {
+              fq = fq + ' && tags:' + '"' + newFormats[index] + '"';
+              
+          }
+      }
+      return fq;
+      
+  }
+
   const handleFormat = (event, newFormats) => {
     setFormats(newFormats);
+    let fq = buildFq(newFormats)
+    params["fq"] = fq;
+    getNews(params);
+
   };
 
+  
+
+  let count = 0;
   return (
     <Container maxWidth="xl" sx={{
       marginBottom: 2
@@ -128,9 +149,10 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
       aria-label="text formatting"
     >
     {facets.map((data,index) => {
+      count++;
  
       return (
-        <ToggleButton sx={{ fontSize: 12 }} value={data} aria-label="italic">
+        <ToggleButton key={"tog"+count} sx={{ fontSize: 12 }} value={data} aria-label="italic">
           {data}
         </ToggleButton>
             
