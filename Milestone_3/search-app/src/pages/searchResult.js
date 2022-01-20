@@ -145,7 +145,7 @@ async function incrementArticleCounter(e, item){
                 </div>
                 <h3>{`${item.title}`}</h3>
                 <p className="blog-excerpt">{`${item.excerpt}`}</p>
-                <p className="blog-date">{`${item.datetime}`}</p>
+                <p className="blog-date">{`${new Date(item.datetime).toLocaleDateString('pt-PT', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}`}</p>
               </div>
               {/* <div className="blog-img-container">
                 <img src={item.img} alt={item.name} />
