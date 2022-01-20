@@ -43,10 +43,11 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
       timeout: 4000
     });
 
+    const zas = params
 
-    solr.get('/select', {params: params})
+
+    solr.get('/select', {params: zas})
       .then(function (response) {
-
         if (response.data.response.numFound !== 0){
            setNews(response.data.response.docs)
         }  
@@ -75,16 +76,29 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
 
   function addParams(tag){
 
-      if(params["fq"]!=null){
-        params["fq"] = params["fq"] + " && tags:" + tag 
-      }else{
+      if(params["fq"]==null || params["fq"]==[] || params["fq"]==""){
         params["fq"] = 'tags:' + tag 
+         
+      }else{
+        params["fq"] = params["fq"] + " && tags:" + tag 
       }
+      console.log(params["fq"])
   }
   function removeParams(tag){
-    params["fq"] = params["fq"].split(" && ");
-    params["fq"] = removeItemOnce(params["fq"], "tags:"+tag);
-    params["fq"].join("&&");
+
+    if(params["fq"]==null || params["fq"]==[] || params["fq"]==""){
+
+    }else{
+        params["fq"] = params["fq"].split(" && ");
+        params["fq"] = removeItemOnce(params["fq"], "tags:"+tag);
+        if(params["fq"].length == 0){
+            params["fq"] =""
+        }else {
+            params["fq"].join("&&");
+        }
+    }
+
+    // if(typeof(params["fq"]) == )
 }
 
   
@@ -103,6 +117,7 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
         addParams(facets[position])
     } 
     else {
+        console.log(params)
         removeParams(facets[position])
     }
     // else removeParams(facets[position])
@@ -163,18 +178,3 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
     </Container>
   );
 }
-
-{/* <li key={index}>
-              <div className="facets-list-item">
-                <div className="left-section">
-                  <input
-                    type="checkbox"
-                    id={`custom-checkbox-${index}`}
-                    value={data }
-                    checked={checkedState[index]}
-                    onChange={() => handleOnChange(index)}
-                  />
-                  {<label htmlFor={`custom-checkbox-${index}`}>{data}</label>}
-                </div>
-              </div>
-            </li> */}

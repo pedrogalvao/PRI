@@ -147,6 +147,49 @@ const SearchBox = (props) => {
     }
   };
 
+  async function getNews() {
+
+    const solr = axios.create({
+      baseURL: 'http://localhost:8983/solr/news',
+      timeout: 4000
+    });
+
+
+    var params = {
+      "q": `${val}`,
+      "defType": 'edismax',
+      "wt": 'json',
+      "q.op": 'AND',
+      "qf": "title^7 tags^4 excerpt^2 text",
+      "bf":"mul(log(sum(1,popularity)),recip(ms(NOW,datetime),1,1,1))^1e11",
+      "indent": "true",
+      "rows": 10000000,
+      "facet": "true",
+      "facet.field":"tags",
+      "facet.limit":"10", 
+    };
+
+    solr.get('/select', {params: params})
+      .then(function (response) {
+          
+        if (response.data.response.numFound !== 0){
+            let value3 = Math.floor(Math.random() * response.data.response.numFound)-1;
+            let doc = response.data.response.docs[value3].url;
+            console.log(doc)
+        //    setNews(response.data.response.docs)
+        }  
+        else{
+          //TODO Por NOTFOUND
+          console.log('error 1 lucky ')
+        }
+      })
+      .catch((err) => {
+        console.log('error 2 lucky')
+        console.log(err.message)
+      })
+
+  }
+
   // I'm Feeling Lucky search
   function feelingLucky() {
     let path = document.querySelector(".search-input").value;
@@ -234,7 +277,7 @@ const SearchBox = (props) => {
                     className="search-btn ifl"
                     type="button"
                     value="I'm Feeling Lucky"
-                    onClick={feelingLucky}
+                    onClick={getNews}
                   />
                 </div>
               }

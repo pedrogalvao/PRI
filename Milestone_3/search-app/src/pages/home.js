@@ -8,6 +8,8 @@ import ProfileMenuDrop from "../components/profilemenudrop";
 import { useHistory } from "react-router-dom";
 import { Content } from "../data/content";
 import { Link } from "react-router-dom";
+import axios from 'axios';
+
 
 function Home() {
   const history = useHistory();
@@ -49,6 +51,51 @@ function Home() {
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  async function getNews() {
+
+    const solr = axios.create({
+      baseURL: 'http://localhost:8983/solr/news',
+      timeout: 4000
+    });
+
+
+    var params = {
+      "q": `*:*`,
+      "rows": 100,
+
+
+    };
+
+    solr.get('/select', {params: params})
+      .then(function (response) {
+
+        console.log(1)
+          
+        if (response.data.response.numFound !== 0){
+        console.log(2)
+
+            let value3 = Math.floor(Math.random() * 99)-1;
+        console.log(3)
+
+            let doc = "https://24.sapo.pt" + response.data.response.docs[value3]["url"]
+            console.log(doc)
+            window.location.href = doc;
+            // history.push(doc);
+
+        //    setNews(response.data.response.docs)
+        }  
+        else{
+          //TODO Por NOTFOUND
+          console.log('error 1 lucky ')
+        }
+      })
+      .catch((err) => {
+        console.log('error 2 lucky')
+        console.log(err.message)
+      })
+
+  }
 
   // I'm Feeling Lucky search
   function feelingLucky() {
@@ -104,7 +151,7 @@ function Home() {
             className="search-btn ifl"
             type="button"
             value="I'm Feeling Lucky"
-            onClick={feelingLucky}
+            onClick={getNews}
           />
         </div>
       </div>
