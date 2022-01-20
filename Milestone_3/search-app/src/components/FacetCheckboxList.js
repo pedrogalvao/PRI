@@ -46,8 +46,7 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
 
     solr.get('/select', {params: params})
       .then(function (response) {
-          console.log(response.data.response.numFound)
-          console.log(params)
+
         if (response.data.response.numFound !== 0){
            setNews(response.data.response.docs)
         }  
@@ -113,13 +112,13 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
 
   function buildFq(newFormats){
 
-      var fq = "";
+      var fq = '';
       if(newFormats.length==1){
-          fq="tags:" + newFormats[0];
+          fq='tags:"' + newFormats[0]+ '"';
       }else if(newFormats.length>1){
-        fq="tags:" + newFormats[0];
+        fq='tags:"' + newFormats[0]+ '"';
           for (let index = 1; index < newFormats.length; index++) {
-              fq = fq + " && tags:" + newFormats[index];
+              fq = fq + ' && tags:' + '"' + newFormats[index] + '"';
               
           }
       }
