@@ -117,7 +117,9 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
   };
 
   return (
-    <Container maxWidth="xl" className="FacetCheckboxList">
+    <Container maxWidth="xl" sx={{
+      marginBottom: 2
+    }}>
       <h3>Common filters for your search:</h3>
 
       <ToggleButtonGroup
