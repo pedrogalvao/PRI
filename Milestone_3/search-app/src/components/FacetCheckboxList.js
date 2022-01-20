@@ -48,7 +48,7 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
       .then(function (response) {
           
         if (response.data.response.numFound !== 0){
-           setNews(response.data.response.docs)
+        //    setNews(response.data.response.docs)
         }  
         else{
           //TODO Por NOTFOUND
