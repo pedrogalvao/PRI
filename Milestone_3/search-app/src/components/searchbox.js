@@ -193,7 +193,7 @@ const SearchBox = (props) => {
             <div className="search-select">
               <div className="search-options">
                 {props.options.map((option) => (
-                  <div className="search-option" type="button">
+                  <div key={option.name+"io"} className="search-option" type="button">
                     <span>
                       <FontAwesomeIcon
                         className="fas"
