@@ -136,7 +136,7 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
 
   
 
-
+  let count = 0;
   return (
     <Container maxWidth="xl" className="FacetCheckboxList">
       <h3>Common filters for your search:</h3>
@@ -147,9 +147,10 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
       aria-label="text formatting"
     >
     {facets.map((data,index) => {
+      count++;
  
       return (
-        <ToggleButton sx={{ fontSize: 12 }} value={data} aria-label="italic">
+        <ToggleButton key={"tog"+count} sx={{ fontSize: 12 }} value={data} aria-label="italic">
           {data}
         </ToggleButton>
             

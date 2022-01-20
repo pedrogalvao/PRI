@@ -156,7 +156,7 @@ const MobileSearch = () => {
           <div className="mobile-search-select">
             <div className="mobile-search-options">
               {options.map((option) => (
-                <div className="mobile-search-option" type="button">
+                <div key={option.name +"oi"} className="mobile-search-option" type="button">
                   <span>
                     <span>
                       <FontAwesomeIcon className="clock-icon" icon={faClock} />
