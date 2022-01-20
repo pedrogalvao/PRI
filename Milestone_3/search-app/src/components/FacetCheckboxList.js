@@ -1,11 +1,13 @@
-import { useEffect, useState } from "react";
-import Badge from 'react-bootstrap/Badge';
+import { useState } from "react";
+import ToggleButton from '@mui/material/ToggleButton';
+import { Container } from "@mui/material";
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import axios from 'axios';
-// import "./styles.css";
 
-// const getFormattedPrice = (price) => `$${price.toFixed(2)}`;
 
 export default function FacetCheckboxList({facets, counts, setNews, params}) {
+
+  const [formats, setFormats] = useState(()=>[]);
 
   function parseFq(params){
       //Nao e nesta funçao
@@ -46,6 +48,7 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
       .then(function (response) {
           console.log(response.data.response.numFound)
         if (response.data.response.numFound !== 0){
+          console.log(params)
         //   setNews(response.data.response.docs)
         }  
         else{
@@ -61,9 +64,7 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
   }
 
 
-  const [checkedState, setCheckedState] = useState(
-    [false,false,false,false,false,false,false,false,false,false]
-  );
+  
 
   function removeItemOnce(arr, value) {
     var index = arr.indexOf(value);
@@ -111,16 +112,35 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
     
   };
 
+  const handleFormat = (event, newFormats) => {
+    setFormats(newFormats);
+  };
+
   return (
-    <div className="FacetCheckboxList">
+    <Container maxWidth="xl" className="FacetCheckboxList">
       <h3>Common filters for your search:</h3>
-      <ul className="facets-list">
-        {
-          
-        facets.map((data,index) => {
+
+      <ToggleButtonGroup
+      value={formats}
+      onChange={handleFormat}
+      aria-label="text formatting"
+    >
+    {facets.map((data,index) => {
  
-          return (
-            <li key={index}>
+      return (
+        <ToggleButton sx={{ fontSize: 12 }} value={data} aria-label="italic">
+          {data}
+        </ToggleButton>
+            
+      );
+    })}
+      
+      </ToggleButtonGroup>
+    </Container>
+  );
+}
+
+{/* <li key={index}>
               <div className="facets-list-item">
                 <div className="left-section">
                   <input
@@ -133,11 +153,4 @@ export default function FacetCheckboxList({facets, counts, setNews, params}) {
                   {<label htmlFor={`custom-checkbox-${index}`}>{data}</label>}
                 </div>
               </div>
-            </li>
-          );
-        })}
-      
-      </ul>
-    </div>
-  );
-}
+            </li> */}

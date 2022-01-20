@@ -24,20 +24,6 @@ function SearchResult() {
   const [facets, setFacets] = useState([])
   const [counts, setCounts] = useState([])
 
-  // var params = {
-  //   "q": `${val}`,
-  //   "defType": 'edismax',
-  //   "wt": 'json',
-  //   "q.op": 'AND',
-  //   "qf": "title^4 tags^3 excerpt^2 text",
-  //   "bf":"mul(log(sum(1,popularity)),recip(ms(NOW,datetime),1,1,1))^1e11",
-  //   "indent": "true",
-  //   "rows": 10000000,
-  //   "facet": "true",
-  //   "facet.field":"tags",
-  //   "facet.limit":"10", 
-  // };
-
   var params = {
     "q": `${val}`,
     "defType": 'edismax',
