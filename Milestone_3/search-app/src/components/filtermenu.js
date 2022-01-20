@@ -56,14 +56,14 @@ const FilterMenu = () => {
           minDate={new Date(2021, 4, 6)}
           maxDate={new Date(2021, 11, 17)} 
           onChange={(date) => {
-            let date_str = "" + date.getUTCFullYear();
-            date_str += "-" + (date.getUTCMonth() + 1);
-            date_str += "-" + date.getUTCDate();
-            date_str += "T" + date.toTimeString().split(" ")[0] + ".0Z"
+            let date_str_start = "" + date.getUTCFullYear();
+            date_str_start += "-" + (date.getUTCMonth() + 1);
+            date_str_start += "-" + (date.getUTCDate() + 1);
+            date_str_start += "T" + date.toTimeString().split(" ")[0] + ".0Z"
               
             const queryString = window.location.search;    
             var urlParams = new URLSearchParams(queryString);
-            urlParams.set("startDate", date_str);
+            urlParams.set("startDate", date_str_start);
 
             /* setStartDate(new Date(newStartDate)); */
             window.location.href = window.location.href.split("?")[0] + "?" + urlParams.toString();
@@ -85,14 +85,14 @@ const FilterMenu = () => {
           value={endDate}
           onChange={(date) => {
 
-            var date_str = "" + date.getUTCFullYear();
-            date_str += "-" + (date.getUTCMonth() + 1);
-            date_str += "-" + date.getUTCDate();
-            date_str += "T" + date.toTimeString().split(" ")[0] + ".0Z"
+            var date_str_end = "" + date.getUTCFullYear();
+            date_str_end += "-" + (date.getUTCMonth() + 1);
+            date_str_end += "-" +  (date.getUTCDate() + 1);
+            date_str_end += "T" + date.toTimeString().split(" ")[0] + ".0Z"
               
             const queryString = window.location.search;    
             let urlParams = new URLSearchParams(queryString);
-            urlParams.set("endDate", date_str);
+            urlParams.set("endDate", date_str_end);
 
             window.location.href = window.location.href.split("?")[0] + "?" + urlParams.toString();
           }}
